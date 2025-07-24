@@ -1,0 +1,42 @@
+# Age Groups Data
+# Used across all training products
+
+- age_range: "U8-U10"
+  phase_name: "Foundation Phase"
+  session_count: "67"
+  description: "Fun-focused sessions that develop basic skills, coordination, and love for the game."
+  key_focus:
+    - "Ball familiarity"
+    - "Basic coordination"
+    - "Fun and engagement"
+    - "Social development"
+
+- age_range: "U11-U13" 
+  phase_name: "Development Phase"
+  session_count: "89"
+  description: "Technical skill building with introduction to tactical concepts and team play."
+  key_focus:
+    - "Technical fundamentals"
+    - "Basic tactical awareness"
+    - "Skill refinement"
+    - "Competition introduction"
+
+- age_range: "U14-U16"
+  phase_name: "Specialization Phase" 
+  session_count: "98"
+  description: "Advanced technical work combined with sophisticated tactical understanding."
+  key_focus:
+    - "Advanced techniques"
+    - "Tactical complexity"
+    - "Position specialization"
+    - "Mental development"
+
+- age_range: "U17+"
+  phase_name: "Performance Phase"
+  session_count: "74"
+  description: "High-intensity sessions preparing players for adult football demands."
+  key_focus:
+    - "Performance optimization"
+    - "Physical demands"
+    - "Mental toughness"
+    - "Professional preparation"

@@ -1,0 +1,68 @@
+# Session Categories Data
+# Used for the 328 Sessions page and other training resources
+
+- name: "Technical Development"
+  icon: "⚽"
+  session_count: "89"
+  description: "Master the fundamentals with sessions focused on ball mastery, passing, receiving, and first touch development."
+  features:
+    - "Ball Mastery & 1v1 Skills"
+    - "Passing & Receiving Techniques"
+    - "First Touch Development"
+    - "Shooting & Finishing"
+    - "Defensive Techniques"
+
+- name: "Tactical Understanding"
+  icon: "🧠"
+  session_count: "76"
+  description: "Develop intelligent players who understand the game through progressive tactical sessions."
+  features:
+    - "Small-Sided Games"
+    - "Positional Play Concepts"
+    - "Pressing & Defending"
+    - "Transition Training"
+    - "Game Understanding"
+
+- name: "Physical Preparation" 
+  icon: "💪"
+  session_count: "52"
+  description: "Build athletic players with football-specific fitness, agility, and coordination sessions."
+  features:
+    - "Speed & Agility Training"
+    - "Coordination & Balance"
+    - "Football-Specific Fitness"
+    - "Injury Prevention"
+    - "Recovery & Flexibility"
+
+- name: "Finishing & Scoring"
+  icon: "🎯"
+  session_count: "43"
+  description: "Create clinical finishers with varied shooting situations and goal-scoring opportunities."
+  features:
+    - "1v1 Finishing Situations"
+    - "Power & Placement Techniques"
+    - "Volleys & Half-Volleys"
+    - "Headers & Crosses"
+    - "Penalty & Free Kick Practice"
+
+- name: "Rondos & Possession"
+  icon: "🔄"
+  session_count: "38"
+  description: "Master possession football with varied rondo formats and passing combination exercises."
+  features:
+    - "Classic Rondo Variations"
+    - "Possession Under Pressure"
+    - "Quick Passing Combinations"
+    - "Switching Play Training"
+    - "Keeping the Ball Games"
+
+- name: "Warm-Up & Activation"
+  icon: "🏃"
+  session_count: "30"
+  description: "Get players ready to perform with dynamic warm-ups and injury prevention routines."
+  features:
+    - "Dynamic Movement Patterns"
+    - "Ball Work Integration"
+    - "Activation Exercises"
+    - "Pre-Match Routines"
+    - "Age-Specific Preparations"

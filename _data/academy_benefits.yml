@@ -1,0 +1,68 @@
+# Academy Benefits Data
+# Used for the Football Coaching Academy benefits section
+
+- name: "Monthly Live Masterclasses"
+  icon: "🎓"
+  value: "£97/month"
+  description: "Exclusive 90-minute deep-dive sessions with Kevin covering advanced coaching topics you won't find anywhere else."
+  details:
+    - "Live Q&A with Kevin Middleton"
+    - "Guest experts from professional clubs"
+    - "Downloadable session recordings"
+    - "Detailed implementation guides"
+    - "Follow-up resource packs"
+
+- name: "Elite Coaching Network"
+  icon: "🌐"
+  value: "£127/month"
+  description: "Connect, collaborate, and learn from coaches at professional academies and clubs worldwide."
+  details:
+    - "Private networking events"
+    - "Coaching exchange programs"
+    - "Job opportunity sharing"
+    - "Mentorship matching"
+    - "International coaching visits"
+
+- name: "Cutting-Edge Research Access"
+  icon: "🔬"
+  value: "£78/month"
+  description: "Be the first to learn about new player development research, sports science findings, and tactical innovations."
+  details:
+    - "Monthly research summaries"
+    - "Access to sports science studies"
+    - "Tactical trend analysis"
+    - "Technology integration guides"
+    - "Performance data insights"
+
+- name: "Personalized Development Path"
+  icon: "🎯"
+  value: "£89/month"
+  description: "Custom coaching development journey based on your experience level, goals, and career aspirations."
+  details:
+    - "Skills assessment and gap analysis"
+    - "Personalized learning curriculum"
+    - "Progress tracking and milestones"
+    - "Career advancement guidance"
+    - "Individual coaching consultations"
+
+- name: "Exclusive Resources Library"
+  icon: "📚"
+  value: "£156/month"
+  description: "Access to Kevin's complete coaching vault including unpublished materials, case studies, and advanced methodologies."
+  details:
+    - "Unreleased session plans"
+    - "Player development case studies"
+    - "Advanced tactical analysis"
+    - "Psychology and mindset resources"
+    - "Business and career development"
+
+- name: "Direct Mentor Access"
+  icon: "🎯"
+  value: "£234/month"
+  description: "Monthly opportunities for direct coaching advice, career guidance, and problem-solving with Kevin Middleton."
+  details:
+    - "Monthly office hours with Kevin"
+    - "Direct message access"
+    - "Priority response to questions"
+    - "Career advancement strategy"
+    - "Personal coaching challenges support"

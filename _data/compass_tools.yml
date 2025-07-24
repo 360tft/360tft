@@ -1,0 +1,67 @@
+# Coach's Compass Tools and Features
+# Used for the tools showcase section
+
+- name: "5-Minute Team Diagnostic"
+  icon: "🎯"
+  description: "Instantly identify what your team needs to work on most. No guesswork, no wasted time."
+  features:
+    - "Simple observation framework"
+    - "Instant problem identification"
+    - "Priority ranking system"
+    - "Works for any age group"
+    - "Match or training analysis"
+
+- name: "Emergency Session Solutions"
+  icon: "🚨"
+  description: "When your session plan goes wrong, these protocols save the day."
+  features:
+    - "Weather adaptation guides"
+    - "Equipment shortage solutions"
+    - "Player number adjustments"
+    - "Space limitation workarounds"
+    - "Instant session pivots"
+    - "Crisis management protocols"
+
+- name: "Mindset Reset Protocols"
+  icon: "🧠"
+  description: "Transform frustrated players into motivated match-winners with proven psychological techniques."
+  features:
+    - "Confidence building frameworks"
+    - "Error reframe techniques"
+    - "Pre-session motivators"
+    - "Individual player solutions"
+    - "Team chemistry builders"
+    - "Performance anxiety reducers"
+
+- name: "Small-Sided Game Mastery"
+  icon: "⚽"
+  description: "Master the art of small-sided games with progressive formats and clear objectives."
+  features:
+    - "Age-appropriate formats"
+    - "Progressive complexity"
+    - "Objective-based variations"
+    - "Space optimization"
+    - "Player development focus"
+    - "Competitive elements"
+
+- name: "Match Analysis Templates"
+  icon: "📊"
+  description: "Turn match observations into targeted training solutions with systematic analysis."
+  features:
+    - "Performance tracking sheets"
+    - "Problem identification guides"
+    - "Solution prioritization"
+    - "Training plan generation"
+    - "Progress monitoring"
+    - "Parent communication tools"
+
+- name: "Player Development Diagnostics"
+  icon: "📈"
+  description: "Identify individual player needs and create targeted development pathways."
+  features:
+    - "Skill assessment frameworks"
+    - "Individual development plans"
+    - "Progress tracking systems"
+    - "Parent feedback guides"
+    - "Position-specific analysis"
+    - "Talent identification markers"

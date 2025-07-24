@@ -1,269 +1,90 @@
----
-layout: default
----
-
-<!-- Product Page Layout Template -->
-<!-- This layout will be used by ALL product pages for consistency -->
-
-<main class="product-page">
-    <!-- Hero Section -->
-    <section class="product-hero">
-        <div class="container">
-            <div class="product-hero-content">
-                {% if page.badge %}
-                <div class="product-badge">{{ page.badge }}</div>
-                {% endif %}
-                
-                <h1 class="product-title">{{ page.title }}</h1>
-                
-                {% if page.subtitle %}
-                <p class="product-subtitle">{{ page.subtitle }}</p>
-                {% endif %}
-                
-                <p class="product-description">{{ page.description }}</p>
-                
-                {% if page.pricing %}
-                <div class="price-highlight">
-                    {% if page.pricing.old_price %}
-                    <span class="price-old">{{ page.pricing.old_price }}</span>
-                    {% endif %}
-                    <span class="price-current">{{ page.pricing.current_price }}</span>
-                </div>
-                {% endif %}
-                
-                <div class="product-cta-group">
-                    <a href="{{ page.purchase_url }}" class="product-cta-primary">
-                        {{ page.cta_text | default: "Get Instant Access" }}
-                    </a>
-                    {% if page.demo_url %}
-                    <a href="{{ page.demo_url }}" class="product-cta-secondary">
-                        {{ page.demo_text | default: "View Demo" }}
-                    </a>
-                    {% endif %}
-                </div>
-                
-                {% if page.guarantees %}
-                <div class="product-guarantees">
-                    {% for guarantee in page.guarantees %}
-                    <span class="guarantee-item">✅ {{ guarantee }}</span>
-                    {% endfor %}
-                </div>
-                {% endif %}
-            </div>
-        </div>
-    </section>
-
-    <!-- What's Included Section -->
-    {% if page.included_items %}
-    <section class="product-included">
-        <div class="container">
-            <div class="section-header">
-                <h2>{{ page.included_title | default: "What's Included" }}</h2>
-                {% if page.included_subtitle %}
-                <p>{{ page.included_subtitle }}</p>
-                {% endif %}
-            </div>
-            
-            <div class="included-grid">
-                {% for item in page.included_items %}
-                <div class="included-item">
-                    <div class="included-header">
-                        <div class="included-icon">{{ item.icon }}</div>
-                        <h3>{{ item.name }}</h3>
-                    </div>
-                    <p>{{ item.description }}</p>
-                    {% if item.features %}
-                    <ul class="included-features">
-                        {% for feature in item.features %}
-                        <li>{{ feature }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                    {% if item.value %}
-                    <div class="included-value">
-                        <span class="value-price">{{ item.value }}</span>
-                    </div>
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
-            
-            {% if page.total_value %}
-            <div class="total-value-box">
-                <h3>Total Package Value: {{ page.total_value.full }}</h3>
-                <h2>Your Investment Today: {{ page.total_value.current }}</h2>
-                <p>That's {{ page.total_value.discount }}% off the individual component value</p>
-            </div>
-            {% endif %}
-        </div>
-    </section>
-    {% endif %}
-
-    <!-- Social Proof / Testimonials -->
-    {% if page.testimonials %}
-    <section class="product-testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>{{ page.testimonials_title | default: "What Coaches Are Saying" }}</h2>
-                {% if page.testimonials_subtitle %}
-                <p>{{ page.testimonials_subtitle }}</p>
-                {% endif %}
-            </div>
-            
-            <div class="testimonials-grid">
-                {% for testimonial in page.testimonials %}
-                <div class="testimonial-card">
-                    <p class="testimonial-text">{{ testimonial.quote }}</p>
-                    <div class="testimonial-author">{{ testimonial.name }}</div>
-                    {% if testimonial.role %}
-                    <div class="testimonial-role">{{ testimonial.role }}</div>
-                    {% endif %}
-                    {% if testimonial.result %}
-                    <div class="testimonial-result">{{ testimonial.result }}</div>
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-    {% endif %}
-
-    <!-- FAQ Section -->
-    {% if page.faqs %}
-    <section class="product-faqs">
-        <div class="container">
-            <div class="section-header">
-                <h2>{{ page.faq_title | default: "Frequently Asked Questions" }}</h2>
-                {% if page.faq_subtitle %}
-                <p>{{ page.faq_subtitle }}</p>
-                {% endif %}
-            </div>
-            
-            <div class="faq-list">
-                {% for faq in page.faqs %}
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        {{ faq.question }}
-                    </div>
-                    <div class="faq-answer">
-                        {{ faq.answer }}
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-    {% endif %}
-
-    <!-- Final CTA Section -->
-    <section class="product-final-cta">
-        <div class="container">
-            {% if page.urgency_text %}
-            <div class="urgency-badge">{{ page.urgency_text }}</div>
-            {% endif %}
-            
-            <h2>{{ page.final_cta_title | default: "Ready to Transform Your Coaching?" }}</h2>
-            {% if page.final_cta_subtitle %}
-            <p>{{ page.final_cta_subtitle }}</p>
-            {% endif %}
-            
-            {% if page.guarantee %}
-            <div class="guarantee-box">
-                <h3>{{ page.guarantee.title }}</h3>
-                <p>{{ page.guarantee.description }}</p>
-            </div>
-            {% endif %}
-            
-            <div class="final-pricing">
-                <h3>{{ page.title }}</h3>
-                {% if page.pricing.old_price %}
-                <div class="final-price-old">{{ page.pricing.old_price }}</div>
-                {% endif %}
-                <div class="final-price-current">{{ page.pricing.current_price }}</div>
-                <p>{{ page.pricing.terms | default: "One-time payment • Lifetime access • Instant download" }}</p>
-            </div>
-            
-            <a href="{{ page.purchase_url }}" class="final-cta-button">
-                {{ page.final_cta_text | default: "🚀 Get Instant Access Now" }}
-            </a>
-            
-            {% if page.payment_info %}
-            <div class="payment-info">
-                {% for info in page.payment_info %}
-                <p>{{ info }}</p>
-                {% endfor %}
-            </div>
-            {% endif %}
-        </div>
-    </section>
-
-    <!-- Sticky CTA -->
-    {% if page.sticky_cta %}
-    <a href="{{ page.purchase_url }}" class="sticky-cta">
-        {{ page.sticky_cta.text }} {{ page.sticky_cta.icon | default: "🚀" }}
-    </a>
-    {% endif %}
-
-    <!-- Custom Content Sections -->
-    {% if page.custom_sections %}
-    {% for section in page.custom_sections %}
-    <section class="custom-section custom-section--{{ section.type }}">
-        <div class="container">
-            {{ section.content }}
-        </div>
-    </section>
-    {% endfor %}
-    {% endif %}
-</main>
-
-<!-- Product Page JavaScript -->
-<script>
-// FAQ Toggle Functionality
-function toggleFAQ(element) {
-    const answer = element.nextElementSibling;
-    const isActive = answer.classList.contains('active');
-    
-    // Close all FAQ answers
-    document.querySelectorAll('.faq-answer').forEach(item => {
-        item.classList.remove('active');
-    });
-    
-    // Open clicked FAQ if it wasn't active
-    if (!isActive) {
-        answer.classList.add('active');
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  {% include head.html %}
+  
+  <!-- Product-specific meta -->
+  {% if page.product_name %}
+  <meta property="product:price:amount" content="{{ page.product_price | remove: '£' }}">
+  <meta property="product:price:currency" content="GBP">
+  {% endif %}
+  
+  <!-- Additional product tracking -->
+  {% if page.product_type %}
+  <meta name="product-type" content="{{ page.product_type }}">
+  {% endif %}
+</head>
+<body class="{{ page.body_class | default: 'product-page' }}">
+  {% include header.html %}
+  
+  <main class="product-main">
+    {{ content }}
+  </main>
+  
+  {% include footer.html %}
+  {% include scripts.html %}
+  
+  <!-- Product-specific tracking -->
+  <script>
+    // Track product page views
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'page_view', {
+        page_title: '{{ page.title }}',
+        page_location: '{{ page.url | absolute_url }}',
+        product_name: '{{ page.product_name }}',
+        product_type: '{{ page.product_type }}',
+        product_price: '{{ page.product_price }}'
+      });
     }
-}
 
-// Track product page interactions
-document.addEventListener('DOMContentLoaded', function() {
-    // Track CTA clicks
-    document.querySelectorAll('.product-cta-primary, .final-cta-button, .sticky-cta').forEach(button => {
-        button.addEventListener('click', () => {
-            if (typeof TFTUtilities !== 'undefined') {
-                TFTUtilities.trackEvent('Product CTA', 'Click', '{{ page.title }}');
-            }
-        });
-    });
-    
-    // Track FAQ interactions
-    document.querySelectorAll('.faq-question').forEach(question => {
-        question.addEventListener('click', () => {
-            if (typeof TFTUtilities !== 'undefined') {
-                TFTUtilities.trackEvent('FAQ', 'Click', question.textContent);
-            }
-        });
-    });
-    
-    // Scroll depth tracking
-    let maxScroll = 0;
-    window.addEventListener('scroll', () => {
-        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-        if (scrollPercent > maxScroll && scrollPercent % 25 === 0) {
-            maxScroll = scrollPercent;
-            if (typeof TFTUtilities !== 'undefined') {
-                TFTUtilities.trackEvent('Scroll Depth', '{{ page.title }}', `${scrollPercent}%`);
-            }
+    // Track CTA clicks with product context
+    document.querySelectorAll('.cta-purchase').forEach(button => {
+      button.addEventListener('click', function() {
+        const productName = this.getAttribute('data-product') || '{{ page.product_type }}';
+        
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'begin_checkout', {
+            currency: 'GBP',
+            value: {{ page.product_price | remove: '£' | default: 0 }},
+            items: [{
+              item_id: productName,
+              item_name: '{{ page.product_name }}',
+              category: '{{ page.product_type }}',
+              price: {{ page.product_price | remove: '£' | default: 0 }},
+              quantity: 1
+            }]
+          });
         }
+        
+        // Facebook Pixel tracking
+        if (typeof fbq !== 'undefined') {
+          fbq('track', 'InitiateCheckout', {
+            content_name: '{{ page.product_name }}',
+            content_category: '{{ page.product_type }}',
+            value: {{ page.product_price | remove: '£' | default: 0 }},
+            currency: 'GBP'
+          });
+        }
+      });
     });
-});
-</script>
+
+    // Sticky CTA scroll behaviour
+    const stickyCTA = document.querySelector('.sticky-cta');
+    const pricingSection = document.querySelector('.pricing, .final-cta');
+    
+    if (stickyCTA && pricingSection) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            stickyCTA.style.display = 'none';
+          } else {
+            stickyCTA.style.display = 'block';
+          }
+        });
+      });
+      
+      observer.observe(pricingSection);
+    }
+  </script>
+</body>
+</html>
