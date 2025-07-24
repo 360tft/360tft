@@ -1,315 +1,145 @@
-// Homepage Specific Interactions and Animations
-// Integrates with main.js global utilities
+# Site settings
+title: "360TFT - Master The Game"
+description: "Transform average players into match-winners with proven football coaching methodologies. 15+ years experience, 1000+ coaches trained worldwide."
+url: "https://360tft.github.io"
+baseurl: "/360tft"
 
-document.addEventListener('DOMContentLoaded', function() {
-    initializeHomepageFeatures();
-});
+# Author information
+author:
+  name: "Kevin Middleton"
+  email: "kevin@360tft.com"
+  twitter: "coach_kevin_m"
 
-function initializeHomepageFeatures() {
-    initializeProductCards();
-    initializeNewsletterForm();
-    initializeStatCounters();
-    initializeScrollAnimations();
-    initializeHeroAnimations();
-}
+# SEO settings
+lang: en-GB
+timezone: Europe/London
 
-// Enhanced Product Card Interactions
-function initializeProductCards() {
-    const cards = document.querySelectorAll('.product-card');
-    
-    cards.forEach(card => {
-        // Enhanced hover effects
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-8px) scale(1.02)';
-            
-            // Animate the icon
-            const icon = this.querySelector('.product-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1.15) rotate(10deg)';
-            }
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-            
-            // Reset icon
-            const icon = this.querySelector('.product-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1) rotate(0deg)';
-            }
-        });
+# Social media
+social:
+  twitter: "coach_kevin_m"
+  youtube: "@360TFT"
+  linkedin: "kevinmiddleton360"
+  instagram: "360tft"
 
-        // Track card interactions
-        card.addEventListener('click', function(e) {
-            const productName = this.querySelector('h3')?.textContent || 'Unknown Product';
-            
-            // Track with global analytics if available
-            if (typeof TFTUtilities !== 'undefined') {
-                TFTUtilities.trackEvent('Product Card', 'Click', productName);
-            }
-        });
-    });
-}
+# Navigation menu
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Complete System"
+    url: "/complete-coaching-mastery-system"
+  - title: "328 Sessions"
+    url: "/328-football-training-sessions"
+  - title: "Coach's Compass"
+    url: "/coaches-compass"
+  - title: "Academy"
+    url: "/football-coaching-academy"
+  - title: "About Kevin"
+    url: "/about-kevin-middleton"
 
-// Newsletter Form Enhancement
-function initializeNewsletterForm() {
-    const form = document.querySelector('.newsletter-form');
-    const input = form?.querySelector('.newsletter-input');
-    const button = form?.querySelector('.newsletter-submit');
-    
-    if (!form) return;
+# Footer links
+footer_links:
+  - title: "Training Resources"
+    links:
+      - title: "328 Training Sessions"
+        url: "/328-football-training-sessions"
+      - title: "360TFT Game Model"
+        url: "/360tft-game-model"
+      - title: "Coach's Compass"
+        url: "/coaches-compass"
+      - title: "Coaching Cheatsheets"
+        url: "/coaching-cheatsheet-vault"
+      - title: "Grassroots Pack"
+        url: "/grassroots-football-pack"
+  - title: "Community"
+    links:
+      - title: "Free Community"
+        url: "https://www.skool.com/360tft-6754"
+      - title: "Coaching Academy"
+        url: "https://www.skool.com/coachingacademy"
+      - title: "Weekly Masterclasses"
+        url: "/academy#masterclasses"
+      - title: "Success Stories"
+        url: "/success-stories"
+  - title: "About Kevin"
+    links:
+      - title: "Biography"
+        url: "/about-kevin-middleton"
+      - title: "Coaching Philosophy"
+        url: "/about-kevin-middleton#philosophy"
+      - title: "Testimonials"
+        url: "/testimonials"
+      - title: "Speaking"
+        url: "/speaking"
+  - title: "Support"
+    links:
+      - title: "Contact Us"
+        url: "/contact"
+      - title: "FAQ"
+        url: "/faq"
+      - title: "Help Center"
+        url: "/help"
+      - title: "Refund Policy"
+        url: "/refund-policy"
 
-    // Enhanced form validation
-    input?.addEventListener('input', function() {
-        const email = this.value;
-        const isValid = validateEmail(email);
-        
-        // Visual feedback
-        this.style.borderColor = email ? (isValid ? '#4CAF50' : '#f44336') : '';
-        
-        // Update button state
-        if (button) {
-            button.disabled = !isValid;
-            button.style.opacity = isValid ? '1' : '0.6';
-        }
-    });
-    
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const email = input?.value;
-        if (!validateEmail(email)) {
-            showNotification('Please enter a valid email address', 'error');
-            return;
-        }
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
 
-        // Show loading state
-        const originalText = button?.textContent;
-        if (button) {
-            button.textContent = 'Subscribing...';
-            button.classList.add('loading');
-        }
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
 
-        // Simulate API call (replace with actual newsletter service)
-        setTimeout(() => {
-            // Track newsletter signup
-            if (typeof TFTUtilities !== 'undefined') {
-                TFTUtilities.trackEvent('Newsletter', 'Homepage Signup', email);
-            }
-            
-            // Show success message
-            showNotification('Thanks for subscribing! Welcome to the 360TFT coaching community.', 'success');
-            form.reset();
-            
-            // Reset button
-            if (button) {
-                button.textContent = originalText;
-                button.classList.remove('loading');
-                button.disabled = true;
-                button.style.opacity = '0.6';
-            }
-        }, 1500);
-    });
-}
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
 
-// Animated Stat Counters
-function initializeStatCounters() {
-    const stats = document.querySelectorAll('.credential-number');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.dataset.animated) {
-                animateCounter(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.5,
-        rootMargin: '0px 0px -50px 0px'
-    });
-    
-    stats.forEach(stat => observer.observe(stat));
-}
+# Collections for blog posts (if needed later)
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
 
-function animateCounter(element) {
-    const finalText = element.textContent;
-    const numberMatch = finalText.match(/(\d+)/);
-    
-    if (!numberMatch) return;
-    
-    const number = parseInt(numberMatch[1]);
-    const suffix = finalText.replace(/\d+/, '');
-    
-    let current = 0;
-    const increment = Math.ceil(number / 50);
-    const duration = 2000; // 2 seconds
-    const stepTime = duration / (number / increment);
-    
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= number) {
-            element.textContent = finalText;
-            clearInterval(timer);
-            element.dataset.animated = 'true';
-            
-            // Add completion animation
-            element.style.transform = 'scale(1.1)';
-            setTimeout(() => {
-                element.style.transform = 'scale(1)';
-            }, 200);
-        } else {
-            element.textContent = current + suffix;
-        }
-    }, stepTime);
-}
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
-// Scroll-based Animations
-function initializeScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.product-card, .credential-item, .resource-card');
-    
-    // Add animation classes
-    animatedElements.forEach(el => {
-        el.classList.add('animate-on-scroll');
-    });
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    });
-    
-    animatedElements.forEach(el => observer.observe(el));
-}
+# Site constants for reuse
+site_constants:
+  brand_color: "#976bdd"
+  accent_color: "#ff5757"
+  years_experience: "15+"
+  coaches_mentored: "1000+"
+  players_developed: "5000+"
+  sessions_created: "328"
+  
+# Contact information
+contact:
+  email: "support@360tft.com"
+  academy_email: "academy@360tft.com"
+  phone: "+44 (0) 123 456 7890"
+  
+# Analytics (add your tracking IDs)
+google_analytics: "G-XXXXXXXXXX"
+facebook_pixel: "XXXXXXXXXX"
 
-// Hero Section Enhancements
-function initializeHeroAnimations() {
-    const heroContent = document.querySelector('.hero-content');
-    const heroElements = heroContent?.querySelectorAll('.hero-badge, h1, .hero-subtitle, .hero-description, .hero-cta-group, .social-proof');
-    
-    if (!heroElements) return;
-    
-    // Staggered entrance animation
-    heroElements.forEach((element, index) => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(30px)';
-        element.style.transition = 'all 0.8s ease';
-        
-        setTimeout(() => {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }, index * 200);
-    });
-    
-    // Parallax effect for hero background
-    let ticking = false;
-    
-    function updateParallax() {
-        const scrolled = window.pageYOffset;
-        const parallax = document.querySelector('.hero::before');
-        const hero = document.querySelector('.hero');
-        
-        if (hero && scrolled < hero.offsetHeight) {
-            const speed = scrolled * -0.5;
-            hero.style.transform = `translateY(${speed}px)`;
-        }
-        
-        ticking = false;
-    }
-    
-    function requestTick() {
-        if (!ticking) {
-            requestAnimationFrame(updateParallax);
-            ticking = true;
-        }
-    }
-    
-    window.addEventListener('scroll', requestTick, { passive: true });
-}
-
-// Utility Functions
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-
-function showNotification(message, type = 'info') {
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification--${type}`;
-    notification.textContent = message;
-    
-    // Style the notification
-    Object.assign(notification.style, {
-        position: 'fixed',
-        top: '20px',
-        right: '20px',
-        padding: '15px 20px',
-        borderRadius: '8px',
-        color: 'white',
-        fontWeight: 'bold',
-        zIndex: '10000',
-        transform: 'translateX(400px)',
-        transition: 'transform 0.3s ease',
-        backgroundColor: type === 'success' ? '#4CAF50' : type === 'error' ? '#f44336' : '#2196F3'
-    });
-    
-    document.body.appendChild(notification);
-    
-    // Animate in
-    setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
-    }, 100);
-    
-    // Auto remove
-    setTimeout(() => {
-        notification.style.transform = 'translateX(400px)';
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.parentNode.removeChild(notification);
-            }
-        }, 300);
-    }, 4000);
-}
-
-// Kevin Photo Easter Egg
-function initializeKevinPhotoEasterEgg() {
-    const kevinPhoto = document.querySelector('.kevin-photo');
-    let clickCount = 0;
-    
-    if (kevinPhoto) {
-        kevinPhoto.addEventListener('click', function() {
-            clickCount++;
-            
-            if (clickCount === 1) {
-                this.style.transform = 'rotate(5deg) scale(1.05)';
-                setTimeout(() => {
-                    this.style.transform = 'rotate(0deg) scale(1)';
-                }, 300);
-            } else if (clickCount === 3) {
-                // Easter egg: Show motivational quote
-                showNotification("\"The best coaches make themselves obsolete\" - Kevin", 'info');
-                clickCount = 0;
-            }
-        });
-    }
-}
-
-// Initialize easter egg
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(initializeKevinPhotoEasterEgg, 1000);
-});
-
-// Export functions for potential use by other scripts
-if (typeof window.HomepageInteractions === 'undefined') {
-    window.HomepageInteractions = {
-        initializeProductCards,
-        initializeNewsletterForm,
-        initializeStatCounters,
-        validateEmail,
-        showNotification
-    };
-}
+# SEO
+seo:
+  type: Organization
+  name: "360TFT"
+  logo: "/assets/images/logo-360tft.jpg"
