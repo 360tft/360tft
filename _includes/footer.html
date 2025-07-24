@@ -1,0 +1,92 @@
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+            {%- for section in site.footer_links -%}
+            <div class="footer-section">
+                <h4 class="footer-section-title">{{ section.title }}</h4>
+                <ul class="footer-links">
+                    {%- for link in section.links -%}
+                    <li class="footer-link-item">
+                        <a href="{{ link.url | relative_url }}" 
+                           class="footer-link"
+                           {% if link.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>
+                            {{ link.title }}
+                        </a>
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+            {%- endfor -%}
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <!-- Social Links -->
+            <div class="social-links">
+                {%- if site.social.twitter -%}
+                <a href="https://x.com/{{ site.social.twitter }}" 
+                   class="social-link" 
+                   target="_blank" 
+                   rel="noopener"
+                   aria-label="Follow on Twitter">
+                    <span class="social-icon">𝕏</span>
+                </a>
+                {%- endif -%}
+                
+                {%- if site.social.youtube -%}
+                <a href="https://www.youtube.com/{{ site.social.youtube }}" 
+                   class="social-link" 
+                   target="_blank" 
+                   rel="noopener"
+                   aria-label="Subscribe on YouTube">
+                    <span class="social-icon">📺</span>
+                </a>
+                {%- endif -%}
+                
+                {%- if site.social.linkedin -%}
+                <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" 
+                   class="social-link" 
+                   target="_blank" 
+                   rel="noopener"
+                   aria-label="Connect on LinkedIn">
+                    <span class="social-icon">💼</span>
+                </a>
+                {%- endif -%}
+                
+                {%- if site.social.instagram -%}
+                <a href="https://www.instagram.com/{{ site.social.instagram }}" 
+                   class="social-link" 
+                   target="_blank" 
+                   rel="noopener"
+                   aria-label="Follow on Instagram">
+                    <span class="social-icon">📷</span>
+                </a>
+                {%- endif -%}
+            </div>
+            
+            <!-- Copyright -->
+            <p class="footer-copyright">
+                &copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.
+            </p>
+            
+            <!-- Tagline -->
+            <p class="footer-tagline">
+                Helping coaches develop better players since 2010
+            </p>
+            
+            <!-- Legal Links -->
+            <div class="footer-legal">
+                <a href="{{ '/privacy-policy' | relative_url }}" class="legal-link">Privacy Policy</a>
+                <a href="{{ '/terms-of-service' | relative_url }}" class="legal-link">Terms of Service</a>
+                <a href="{{ '/cookie-policy' | relative_url }}" class="legal-link">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top" style="display: none;">
+    <span class="back-to-top-icon">↑</span>
+</button>
