@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360TFT - What Players & Coaches Say</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .player-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #667eea;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .player-info {
+            flex: 1;
+        }
+        
+        .player-info h4 {
+            font-size: 1.3rem;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .player-info p {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .quote {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #444;
+            font-style: italic;
+            position: relative;
+            flex: 1;
+        }
+        
+        .quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: #667eea;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            opacity: 0.3;
+            font-family: serif;
+        }
+        
+        .author {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+        }
+        
+        .author-info h4 {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .pro-badge {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .youth-badge {
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .secondary-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>What Players & Coaches Are Saying</h1>
+            <p>When you're building something that works, people notice. Here's what happens when players experience training that actually makes them better—not just busier.</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">YE</div>
+                    <div class="player-info">
+                        <h4>Yasin Ben El-Mhanni</h4>
+                        <p>Ex-Newcastle United</p>
+                        <span class="pro-badge">Professional</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game—strengthening their weaknesses as well as their strengths.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">BL</div>
+                    <div class="player-info">
+                        <h4>Bobby Linn</h4>
+                        <p>Arbroath FC</p>
+                        <span class="pro-badge">Professional</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    When I played with Arbroath FC, Kevin would invite me along to his sessions, which has inspired me to get into the coaching side of football. Teaching the basics with kids of all ages, his communication skills are exemplary. He made the sessions enjoyable for all. Kevin is very approachable and happy to share his knowledge with anyone who asks.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">MB</div>
+                    <div class="player-info">
+                        <h4>Michael Bakare</h4>
+                        <p>Arbroath FC | Glacis United</p>
+                        <span class="pro-badge">Professional</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    I had the privilege of doing extra training sessions with Kevin during my time with Arbroath FC. The precision striker drills were challenging, but match realistic. This is all a player can ask for when they are looking to improve their game. The sessions are good, very technical, and high intensity.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">JB</div>
+                    <div class="player-info">
+                        <h4>Jay Bird</h4>
+                        <p>Arbroath FC | Salford City</p>
+                        <span class="pro-badge">Professional</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    I enjoyed Kevin's sessions a lot—they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">DF</div>
+                    <div class="player-info">
+                        <h4>Dan Fosu</h4>
+                        <p>Arbroath FC</p>
+                        <span class="pro-badge">Professional</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    If you are looking for a 1-2-1 session, Kev's your man! Kevin demonstrates attention to detail in every session, enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions bringing out the best in every individual, strengthening their weaknesses as well as their strengths.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">SA</div>
+                    <div class="player-info">
+                        <h4>Skye Allan</h4>
+                        <p>AFCW</p>
+                        <span class="youth-badge">Female Footballer</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    Kevin's sessions are great, high intensity, and very well explained, which makes them really easy to follow. Kevin's sessions are always very beneficial for game days. They're quality sessions that I have definitely benefited from and improved my game.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">SW</div>
+                    <div class="player-info">
+                        <h4>Sarah Ward</h4>
+                        <p>AFCW</p>
+                        <span class="youth-badge">Female Footballer</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    Kevin's sessions are high intensity, quality sessions. It's always clear why we are working on what we are working on and how this is implemented into a game. I've become a better player over the last couple of months and can't wait to keep improving.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">A</div>
+                    <div class="player-info">
+                        <h4>Adam</h4>
+                        <p>Age 14</p>
+                        <span class="youth-badge">Youth Player</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    I trained with Kevin when I was younger and he is still the coach that has improved my footballing ability the most. Everything that he taught me, I still try and bring to my games every week. He is highly motivated and doesn't give up on you when you are having a bad game.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">MO</div>
+                    <div class="player-info">
+                        <h4>Marcel Oakley</h4>
+                        <p>Birmingham City</p>
+                        <span class="pro-badge">Professional</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    Kevin's sessions are high intensity. The sessions are good, very technical. This is all a player can ask for when they are looking to improve their game.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">JN</div>
+                    <div class="player-info">
+                        <h4>Jess Norey</h4>
+                        <p>Arbroath FC</p>
+                        <span class="pro-badge">Professional</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    Kevin's sessions are high intensity, quality sessions that I have definitely benefited from and improved my game. The sessions are always very beneficial for game days.
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="player-image">K</div>
+                    <div class="player-info">
+                        <h4>Kase</h4>
+                        <p>Age 10</p>
+                        <span class="youth-badge">Youth Player</span>
+                    </div>
+                </div>
+                <div class="quote">
+                    Kev is a brilliant coach because he does fitness with us and helps us by going for runs with us. I've learned how to pass and tackle better. He is fair and treats us well.
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2>Ready to Transform Your Game?</h2>
+            <p>These aren't just nice words—they're the result of training that actually works. Join the community that's raising the standard.</p>
+            <div class="cta-buttons">
+                <a href="https://www.skool.com/360tft-6754" class="cta-button">Join Our Community</a>
+                <a href="https://kev1wired.gumroad.com/" class="cta-button secondary-button">Browse Training Resources</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
