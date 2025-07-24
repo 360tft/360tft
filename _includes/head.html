@@ -1,0 +1,127 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page Title -->
+<title>
+    {%- if page.seo_title -%}
+        {{ page.seo_title }}
+    {%- elsif page.title -%}
+        {{ page.title }} | {{ site.title }}
+    {%- else -%}
+        {{ site.title }} | {{ site.description }}
+    {%- endif -%}
+</title>
+
+<!-- Meta Description -->
+<meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+<!-- Keywords -->
+{%- if page.keywords -%}
+<meta name="keywords" content="{{ page.keywords | join: ', ' }}">
+{%- endif -%}
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta property="og:image" content="{{ page.og_image | default: '/assets/images/360tft-social-share.jpg' | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ page.url | absolute_url }}">
+<meta property="twitter:title" content="{{ page.twitter_title | default: page.title | default: site.title }}">
+<meta property="twitter:description" content="{{ page.twitter_description | default: page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta property="twitter:image" content="{{ page.twitter_image | default: page.og_image | default: '/assets/images/360tft-social-share.jpg' | absolute_url }}">
+{%- if site.social.twitter -%}
+<meta property="twitter:site" content="@{{ site.social.twitter }}">
+<meta property="twitter:creator" content="@{{ site.social.twitter }}">
+{%- endif -%}
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<!-- Page-specific CSS -->
+{%- if page.css -%}
+    {%- for css_file in page.css -%}
+    <link rel="stylesheet" href="{{ css_file | relative_url }}">
+    {%- endfor -%}
+{%- endif -%}
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "{{ page.schema_type | default: 'WebPage' }}",
+    "name": "{{ page.title | default: site.title }}",
+    "description": "{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}",
+    "url": "{{ page.url | absolute_url }}",
+    {%- if page.schema_type == 'Organization' or page.schema_type == 'LocalBusiness' -%}
+    "logo": "{{ '/assets/images/logo-360tft.jpg' | absolute_url }}",
+    "sameAs": [
+        "https://x.com/{{ site.social.twitter }}",
+        "https://www.linkedin.com/in/{{ site.social.linkedin }}",
+        "https://www.youtube.com/{{ site.social.youtube }}"
+    ],
+    {%- endif -%}
+    {%- if page.schema_type == 'Person' -%}
+    "jobTitle": "{{ page.job_title | default: 'Football Coach & Player Development Expert' }}",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "{{ site.title }}"
+    },
+    {%- endif -%}
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.title }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ '/assets/images/logo-360tft.jpg' | absolute_url }}"
+        }
+    }
+}
+</script>
+
+<!-- Analytics -->
+{%- if site.google_analytics and jekyll.environment == 'production' -%}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+</script>
+{%- endif -%}
+
+{%- if site.facebook_pixel and jekyll.environment == 'production' -%}
+<!-- Facebook Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '{{ site.facebook_pixel }}');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={{ site.facebook_pixel }}&ev=PageView&noscript=1"
+/></noscript>
+{%- endif -%}
