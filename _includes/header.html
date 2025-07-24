@@ -1,3 +1,92 @@
-<nav class="header-nav">
-    <!-- Your shared navigation -->
-  </nav>
+<!-- Header Navigation -->
+<nav class="header-nav" id="header-nav">
+    <div class="nav-container">
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+            <img class="logo" src="{{ '/assets/images/logo-360tft.jpg' | relative_url }}" alt="{{ site.title }} - Football Coaching Excellence">
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu" id="nav-menu">
+            {%- for item in site.navigation -%}
+            <li class="nav-item">
+                <a href="{{ item.url | relative_url }}" 
+                   class="nav-link{% if page.url == item.url %} active{% endif %}"
+                   {% if item.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>
+                    {{ item.title }}
+                </a>
+            </li>
+            {%- endfor -%}
+        </ul>
+        
+        <!-- CTA Button -->
+        <a href="https://www.skool.com/coachingacademy" 
+           class="nav-cta" 
+           target="_blank" 
+           rel="noopener">
+            Join Academy
+        </a>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img class="mobile-logo" src="{{ '/assets/images/logo-360tft.jpg' | relative_url }}" alt="{{ site.title }}">
+                <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close navigation menu">
+                    <span class="close-icon">&times;</span>
+                </button>
+            </div>
+            
+            <ul class="mobile-nav-menu">
+                {%- for item in site.navigation -%}
+                <li class="mobile-nav-item">
+                    <a href="{{ item.url | relative_url }}" 
+                       class="mobile-nav-link{% if page.url == item.url %} active{% endif %}"
+                       {% if item.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>
+                        {{ item.title }}
+                    </a>
+                </li>
+                {%- endfor -%}
+                
+                <li class="mobile-nav-item mobile-cta-item">
+                    <a href="https://www.skool.com/coachingacademy" 
+                       class="mobile-nav-cta" 
+                       target="_blank" 
+                       rel="noopener">
+                        Join Academy
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Breadcrumbs (optional, for non-homepage) -->
+{%- unless page.url == '/' -%}
+{%- if page.show_breadcrumbs != false -%}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="{{ '/' | relative_url }}">Home</a>
+            </li>
+            {%- if page.breadcrumb_parent -%}
+            <li class="breadcrumb-item">
+                <a href="{{ page.breadcrumb_parent.url | relative_url }}">{{ page.breadcrumb_parent.title }}</a>
+            </li>
+            {%- endif -%}
+            <li class="breadcrumb-item active" aria-current="page">
+                {{ page.breadcrumb_title | default: page.title }}
+            </li>
+        </ol>
+    </div>
+</nav>
+{%- endif -%}
+{%- endunless -%}
