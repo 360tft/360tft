@@ -1,0 +1,16 @@
+<!-- Main JavaScript -->
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+<!-- Page-specific JavaScript -->
+{%- if page.js -%}
+    {%- for js_file in page.js -%}
+    <script src="{{ js_file | relative_url }}"></script>
+    {%- endfor -%}
+{%- endif -%}
+
+<!-- Inline JavaScript for page-specific functionality -->
+{%- if page.inline_js -%}
+<script>
+{{ page.inline_js }}
+</script>
+{%- endif -%}
