@@ -107,7 +107,7 @@ schema_type: "Organization"
                 <div class="step-number">2</div>
                 <div class="step-content">
                     <h3>Session Solutions</h3>
-                    <p>Get session fixes for your team's biggest problems. Sessions designed to work in the real world, not perfect conditions.</p>
+                    <p>Get session fixes for your team's biggest problems. Designed to work in the real world, not perfect conditions.</p>
                     <a href="https://360tft.github.io/328-sessions/" class="step-cta">Get The Sessions</a>
                 </div>
             </div>
@@ -195,12 +195,13 @@ schema_type: "Organization"
             <div class="testimonial-card professional">
                 <div class="testimonial-header">
                     <div class="player-info">
-                        <h4>Yasin Ben El-Mhanni</h4>
-                        <p>Ex-Newcastle United</p>
+                        <h4>Marcel Oakley</h4>
+                        <p>Birmingham City | Solihull Moors</p>
                         <span class="pro-badge">Professional Player</span>
                     </div>
                 </div>
-                <blockquote>"Kevin Middleton possesses the characteristics of a <strong>top level coach</strong> demonstrating his <strong>attention to detail in every session</strong>. His enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions, <strong>bringing out the best in every individual</strong> and improving their all-round game."</blockquote>
+                <blockquote>"Kevin's sessions are high intensity. The sessions are good, very technical. This is all a player can ask for when they are looking to improve their game.
+"</blockquote>
             </div>
             
             <div class="testimonial-card youth">
