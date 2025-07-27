@@ -104,7 +104,7 @@ schema_type: "Organization"
             <div class="step-card">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>Session Solutions</h3>
+                    <h3>Session Solution Design</h3>
                     <p>Get session fixes for your team's biggest problems. Designed to work in the real world, not perfect conditions.</p>
                     <a href="https://360tft.github.io/328-sessions/" class="step-cta">Get The Sessions</a>
                 </div>
@@ -212,6 +212,15 @@ schema_type: "Organization"
                 </div>
                 <blockquote>"I trained with Kevin when I was younger and <strong>he is still the coach that has improved my footballing ability the most</strong>. Everything that he taught me, I still try and bring to my games every week. He is highly motivated and doesn't give up on you."</blockquote>
             </div>
+        </div>
+        
+        <!-- Link to Full Testimonials Page -->
+        <div class="testimonials-cta">
+            <p class="testimonials-note">These are just a few examples of the transformation coaches and players experience with 360TFT.</p>
+            <a href="https://360tft.github.io/360tft/Testimonials" class="testimonials-link">
+                Read All Testimonials
+                <span class="link-arrow">→</span>
+            </a>
         </div>
     </div>
 </section>
