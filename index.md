@@ -354,8 +354,8 @@ schema_type: "Organization"
     <div class="container">
         <div class="academy-content">
             <div class="academy-text">
-                <h2>Join 1000+ Coaches Solving Problems Together</h2>
-                <p>The Football Coaching Academy isn't just another course - it's a community of coaches helping each other solve real coaching challenges every day.</p>
+                <h2>Join 1200+ Coaches Solving Problems Together</h2>
+                <p>The Football Coaching Academy isn't just another course,  it's a community of coaches helping each other solve real coaching challenges every day.</p>
                 
                 <div class="academy-benefits">
                     <div class="benefit-item">
@@ -373,21 +373,21 @@ schema_type: "Organization"
                 </div>
                 
                 <div class="academy-pricing">
-                    <div class="price-current">£47/month</div>
-                    <div class="price-increase">Price rises to £67/month on August 1st</div>
+                    <div class="price-current">$10/month</div>
+                    <div class="price-increase">Price rises to $14/month on August 1st</div>
                 </div>
             </div>
             
             <div class="academy-testimonial">
-                <blockquote>"The Academy community opened doors I never knew existed. The job opportunities shared within the network led directly to my current role at one of England's top academies."</blockquote>
-                <cite>Michael Roberts, Head of Player Development, London</cite>
+                <blockquote>"I am coaching a new age range that I haven’t coached before. The resources from Kevin have been fantastic in supporting our players development but also mine as a coach."</blockquote>
+                <cite>Jason Howe</cite>
             </div>
         </div>
         
         <div class="academy-cta">
             <a href="https://www.skool.com/coachingacademy" class="academy-button">
                 Join The Academy Today
-                <span class="button-subtext">Lock in £47/month pricing for life</span>
+                <span class="button-subtext">Lock in $10/month pricing for life</span>
             </a>
         </div>
     </div>

@@ -1,323 +1,261 @@
 ---
-layout: product
-title: "The Coach's Compass | Never Waste Another Training Session"
-description: "The complete football coaching diagnostic system. Identify exactly what your team needs, solve any coaching challenge, and develop players systematically. Used by 1000+ coaches worldwide."
-keywords: [football coaching tools, player development diagnostic, coaching compass, football team analysis, coaching problem solving, youth football development, Kevin Middleton, 360TFT]
-seo_title: "The Coach's Compass | Never Waste Another Training Session | 360TFT"
+layout: default
+title: "The Coach's Compass - Free | 5-Minute Team Diagnostic"
+description: "Get the free 5-minute team diagnostic that identifies your team's biggest weakness and the exact training focus that fixes it. Used by 1200+ coaches worldwide."
+keywords: [football team diagnostic, free coaching tool, team analysis, coaching problems, youth football development, Kevin Middleton, 360TFT, coaching assessment]
+seo_title: "Free Football Team Diagnostic | The Coach's Compass | 360TFT"
 
 # Product-specific meta
 product_name: "The Coach's Compass"
-product_price: "£67"
-product_tagline: "Navigate Any Coaching Challenge"
-product_badge: "🧭 Instant Problem-Solving Tool"
+product_price: "FREE"
+product_tagline: "5-Minute Team Diagnostic"
+product_badge: "🆓 Completely Free"
 
 # Open Graph
 og_type: product
-og_title: "The Coach's Compass - Never Waste Another Training Session"
-og_description: "The diagnostic system that identifies exactly what your team needs to work on. Solve any coaching challenge with proven protocols."
-og_image: "/assets/images/coaches-compass-preview.jpg"
+og_title: "The Coach's Compass - Free 5-Minute Team Diagnostic"
+og_description: "Identify your team's biggest weakness and get the exact training focus that fixes it. Completely free."
+og_image: "/assets/images/coaches-compass-free.jpg"
 
 # Twitter
-twitter_title: "The Coach's Compass - Never Waste Another Training Session"
-twitter_description: "The diagnostic system that identifies exactly what your team needs to work on. Solve any coaching challenge with proven protocols."
-twitter_image: "/assets/images/coaches-compass-preview.jpg"
+twitter_title: "Free Football Team Diagnostic - The Coach's Compass"
+twitter_description: "5-minute diagnostic identifies your team's biggest weakness. Completely free from 360TFT."
+twitter_image: "/assets/images/coaches-compass-free.jpg"
 
 # Page-specific CSS/JS
-css: ["/assets/css/product-pages.css", "/assets/css/compass-specific.css"]
-js: ["/assets/js/product-tracking.js", "/assets/js/compass-demo.js"]
-body_class: "compass-page"
+css: ["/assets/css/product-pages.css", "/assets/css/free-product.css"]
+js: ["/assets/js/free-product-tracking.js"]
+body_class: "compass-page free-product"
 
 # Product data
-product_type: "diagnostic_tool"
-buy_url: "https://360tft.com/buy-coaches-compass"
+product_type: "free_diagnostic"
+gumroad_url: "https://kev1wired.gumroad.com/l/TheCoachCompass?wanted=true"
 schema_type: "Product"
 ---
 
-<!-- Sticky Buy Button -->
-<a href="#buy-now" class="sticky-cta">Get Coach's Compass 🧭</a>
-
 <!-- Hero Section -->
-<section class="hero compass-hero">
+<section class="hero free-hero">
     <div class="container">
         <div class="hero-content">
             <div class="hero-badge">{{ page.product_badge }}</div>
-            <h1>{{ page.product_name }}</h1>
-            <p class="hero-subtitle">{{ page.product_tagline }}</p>
-            <p class="hero-description">The diagnostic system that identifies exactly what your team needs to work on most. No more wasted training time. No more guessing what comes next. Just systematic development that gets results.</p>
+            <h1>Most Football Coaches Guess What's Wrong With Their Team.</h1>
+            <h2 class="hero-subtitle">Successful Coaches Know Exactly Where To Start.</h2>
+            <p class="hero-description">Get The 5-Minute Team Diagnostic That Identifies Your Team's Biggest Weakness (And The Exact Training Focus That Fixes It)</p>
             
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">5</span>
-                    <span class="stat-text">Minutes to Diagnose</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-text">Instant Solutions</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">{{ site.site_constants.coaches_mentored }}</span>
-                    <span class="stat-text">Coaches Using This</span>
-                </div>
+            <div class="value-proposition">
+                <h3>Here's what separates coaches who get results from coaches who get frustrated:</h3>
+                <p><strong>Results-driven coaches diagnose before they prescribe.</strong></p>
+                <p>They don't waste time running random exercises hoping something works. They identify the specific problem, apply the targeted solution, and watch their team transform.</p>
             </div>
             
-            <a href="#buy-now" class="hero-cta">Get Instant Access - {{ page.product_price }}</a>
-            <a href="#demo" class="hero-cta-secondary">See Live Demo</a>
-            
-            <p class="hero-guarantee">
-                ✅ Works for Any Age Group • ✅ Instant Download • ✅ 30-Day Guarantee
-            </p>
+            <div class="hero-cta-group">
+                <a href="{{ page.gumroad_url }}" class="hero-cta-primary">Get Your Free Team Diagnostic Now</a>
+                <p class="hero-guarantee">✅ Completely Free • ✅ Instant Access • ✅ No Email Required</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Problem Scenarios -->
-<section class="problem-scenarios">
+<!-- Problem Identification -->
+<section class="problem-section">
     <div class="container">
         <div class="section-header">
-            <h2>Every Coach Knows These Moments...</h2>
-            <p>The panic when your planned session isn't working</p>
+            <h2>Right Now, You're Probably:</h2>
         </div>
         
-        <div class="scenarios-grid">
-            {% assign problem_scenarios = site.data.coaching_problems %}
-            {% for scenario in problem_scenarios %}
-            <div class="scenario-card">
-                <div class="scenario-icon">{{ scenario.icon }}</div>
-                <h3>{{ scenario.title }}</h3>
-                <p class="scenario-problem">"{{ scenario.problem }}"</p>
-                <div class="scenario-solution">
-                    <strong>Compass Solution:</strong> {{ scenario.solution }}
-                </div>
+        <div class="problems-grid">
+            <div class="problem-card">
+                <h3>Running the Same Sessions, Getting Different Results</h3>
+                <p>You plan what you think is a good session, but your team's performance is inconsistent week after week.</p>
             </div>
-            {% endfor %}
+            
+            <div class="problem-card">
+                <h3>Watching Players Make the Same Mistakes</h3>
+                <p>Despite your coaching, the same errors keep happening. You're not sure how to break the cycle.</p>
+            </div>
+            
+            <div class="problem-card">
+                <h3>Feeling Frustrated About Untapped Potential</h3>
+                <p>You know your team has ability, but you can't seem to unlock it consistently.</p>
+            </div>
+            
+            <div class="problem-card">
+                <h3>Spending Hours Planning Sessions That Miss the Mark</h3>
+                <p>You put in the preparation time, but your sessions don't address the real issues holding your team back.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- How It Works -->
-<section class="how-it-works">
+<!-- Solution Section -->
+<section class="solution-section">
     <div class="container">
         <div class="solution-content">
-            <div class="solution-text">
-                <h2>The 5-Minute Coaching Transformation</h2>
-                <p>Stop guessing what your team needs. The Coach's Compass gives you a systematic approach to identify problems and implement solutions instantly.</p>
-                
-                <ul class="solution-benefits">
-                    <li>Spot development gaps in under 5 minutes</li>
-                    <li>Get instant session recommendations</li>
-                    <li>Never waste another training session</li>
-                    <li>Build confidence in your coaching decisions</li>
-                    <li>Create systematic player development</li>
+            <h2>The Coach's Compass Gives You What Successful Coaches Have:</h2>
+            <h3 class="solution-main">Complete clarity on exactly what to fix first.</h3>
+            
+            <div class="diagnostic-preview">
+                <h4>In 5 minutes, you'll know:</h4>
+                <ul class="diagnostic-results">
+                    <li>✓ Your team's weakest area (Technical, Tactical, Physical, or Mental)</li>
+                    <li>✓ The specific training focus that will help</li>
+                    <li>✓ Where you can accelerate their development</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What You Get -->
+<section class="package-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>What You Get FREE:</h2>
+        </div>
+        
+        <div class="package-grid">
+            <div class="package-item">
+                <div class="package-icon">📊</div>
+                <h3>The 5-Minute Team Diagnostic</h3>
+                <p class="package-value">Value: £97</p>
+                <p>Quick assessment that identifies your team's biggest weakness across all four development areas.</p>
             </div>
             
-            <div class="compass-preview">
-                <h3>🧭 How The Diagnostic Works</h3>
-                <ol class="diagnostic-steps">
-                    <li>1. Observe 3 key performance indicators</li>
-                    <li>2. Answer 5 targeted questions</li>  
-                    <li>3. Get instant diagnosis + solution</li>
-                    <li>4. Access ready-made session plan</li>
-                    <li>5. Implement and see immediate results</li>
-                </ol>
+            <div class="package-item">
+                <div class="package-icon">🎯</div>
+                <h3>Instant Personalised Recommendations</h3>
+                <p class="package-value">Value: £47</p>
+                <p>Get specific training focuses tailored to your team's exact needs and development level.</p>
+            </div>
+            
+            <div class="package-item">
+                <div class="package-icon">🔗</div>
+                <h3>Direct Links to Proven Solutions</h3>
+                <p class="package-value">Value: £27</p>
+                <p>Access to Kevin's tested session plans and development protocols that fix the identified problems.</p>
+            </div>
+        </div>
+        
+        <div class="total-value">
+            <div class="value-breakdown">
+                <span class="total-text">Total Value: £171</span>
+                <span class="your-price">Your Investment: £0</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Tools Section -->
-<section class="tools">
+<!-- Authority Section -->
+<section class="authority-section">
     <div class="container">
-        <div class="section-header">
-            <h2>Your Complete Coaching Toolkit</h2>
-            <p>Everything you need to solve any coaching challenge</p>
-        </div>
-        
-        <div class="tools-grid">
-            {% assign compass_tools = site.data.compass_tools %}
-            {% for tool in compass_tools %}
-            <div class="tool-card">
-                <div class="tool-icon">{{ tool.icon }}</div>
-                <h3>{{ tool.name }}</h3>
-                <p>{{ tool.description }}</p>
-                <ul class="tool-features">
-                    {% for feature in tool.features %}
-                    <li>{{ feature }}</li>
-                    {% endfor %}
-                </ul>
+        <div class="authority-content">
+            <div class="kevin-info">
+                <img src="{{ '/assets/images/kevin-middleton-coach.jpg' | relative_url }}" alt="Kevin Middleton - Football Coach">
             </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<!-- Live Demo Section -->
-<section class="demo-section" id="demo">
-    <div class="container">
-        <div class="section-header">
-            <h2>See The Coach's Compass In Action</h2>
-            <p>Watch how quickly you can diagnose and solve coaching challenges</p>
-        </div>
-        
-        <div class="demo-container">
-            <div class="demo-scenario">
-                <h3>🔍 Sample Diagnostic: "My Team Can't Keep Possession"</h3>
+            <div class="kevin-credentials">
+                <p><strong>Kevin Middleton</strong> has {{ site.site_constants.years_experience }} years of coaching experience and has helped {{ site.site_constants.coaches_mentored }} coaches in the Football Coaching Academy community develop better players at every level.</p>
                 
-                <div class="demo-steps">
-                    <div class="demo-step">
-                        <h4>Step 1: Quick Observation</h4>
-                        <ul>
-                            <li>✅ Players panic under pressure</li>
-                            <li>✅ First touch sending ball away from body</li>
-                            <li>✅ No scanning before receiving</li>
-                        </ul>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">{{ site.site_constants.years_experience }}</span>
+                        <span class="stat-text">Years Coaching Experience</span>
                     </div>
-                    
-                    <div class="demo-step">
-                        <h4>Step 2: Compass Diagnosis</h4>
-                        <div class="diagnosis-result">
-                            <strong>Primary Issue:</strong> Receiving Under Pressure<br>
-                            <strong>Root Cause:</strong> Poor first touch + lack of awareness<br>
-                            <strong>Recommended Focus:</strong> Technical + Cognitive
-                        </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{ site.site_constants.coaches_mentored }}</span>
+                        <span class="stat-text">Coaches Helped</span>
                     </div>
-                    
-                    <div class="demo-step">
-                        <h4>Step 3: Instant Solution</h4>
-                        <div class="solution-preview">
-                            <strong>Session Plan:</strong> "Possession Under Pressure"<br>
-                            <strong>Duration:</strong> 60 minutes<br>
-                            <strong>Key Drill:</strong> 4v2+2 Transition Squares<br>
-                            <strong>Coaching Points:</strong> Body shape, scanning, first touch
-                        </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Professional</span>
+                        <span class="stat-text">Player Approved</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Urgency Section -->
+<section class="urgency-section">
+    <div class="container">
+        <div class="urgency-content">
+            <h2>Your Next Training Session Is Coming</h2>
+            <p>You can arrive with another generic plan, or you can arrive knowing exactly what your team needs most.</p>
             
-            <div class="demo-results">
-                <h4>⚡ Total Time: Under 5 Minutes</h4>
-                <p>From problem identification to having your complete session plan ready to implement.</p>
-                <a href="#buy-now" class="demo-button">Get Your Coach's Compass Now</a>
+            <div class="choice-comparison">
+                <div class="choice-card generic">
+                    <h3>❌ Generic Approach</h3>
+                    <ul>
+                        <li>Run the same drills as last week</li>
+                        <li>Hope something clicks</li>
+                        <li>Watch the same problems persist</li>
+                        <li>Feel frustrated with lack of progress</li>
+                    </ul>
+                </div>
+                
+                <div class="choice-card targeted">
+                    <h3>✅ Targeted Approach</h3>
+                    <ul>
+                        <li>Know exactly what to work on</li>
+                        <li>Address the real issues</li>
+                        <li>See immediate improvement</li>
+                        <li>Build confidence in your coaching</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Success Stories -->
-<section class="success-stories">
+<!-- Final CTA -->
+<section class="final-cta-section">
     <div class="container">
-        <div class="section-header">
-            <h2>Real Results from Real Coaches</h2>
-            <p>How the Coach's Compass transformed their coaching</p>
-        </div>
-        
-        <div class="stories-grid">
-            {% assign compass_testimonials = site.data.testimonials_compass %}
-            {% for story in compass_testimonials %}
-            <div class="story-card">
-                <p class="story-text">"{{ story.text }}"</p>
-                <div class="story-author">{{ story.author }}</div>
-                <div class="story-role">{{ story.role }}</div>
-                {% if story.result %}
-                <div class="story-result">{{ story.result }}</div>
-                {% endif %}
+        <div class="final-cta-content">
+            <h2>Get Your Free Team Diagnostic Now</h2>
+            <p>Stop guessing. Start knowing exactly what your team needs.</p>
+            
+            <div class="cta-benefits">
+                <div class="benefit-item">
+                    <span class="benefit-icon">⏱️</span>
+                    <span>Takes just 5 minutes</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">🆓</span>
+                    <span>Completely free</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">📧</span>
+                    <span>No email required</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">⚡</span>
+                    <span>Instant results</span>
+                </div>
             </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<!-- Pricing Section -->
-<section class="pricing" id="buy-now">
-    <div class="container">
-        <h2>Your Compass to Coaching Success</h2>
-        <p class="pricing-subtitle">Never waste another training session</p>
-        
-        <div class="pricing-card">
-            <h3>{{ page.product_name }}</h3>
-            <div class="price-display">{{ page.product_price }}</div>
-            <div class="price-description">One-time payment • Lifetime access • Instant download</div>
             
-            <ul class="pricing-features">
-                <li>5-Minute Team Diagnostic System</li>
-                <li>50+ Emergency Session Solutions</li>
-                <li>Player Development Diagnostics</li>
-                <li>Mindset Reset Protocols</li>
-                <li>Small-Sided Game Mastery Guide</li>
-                <li>Match Analysis Templates</li>
-                <li>Equipment Shortage Solutions</li>
-                <li>Weather Adaptation Protocols</li>
-                <li>PDF + Interactive Formats</li>
-                <li>Lifetime Updates Included</li>
-                <li>30-Day Money-Back Guarantee</li>
-            </ul>
-            
-            <a href="{{ page.buy_url }}" class="hero-cta cta-purchase" data-product="coaches-compass">
-                🧭 Get Instant Access Now
+            <a href="{{ page.gumroad_url }}" class="final-cta-button">
+                🧭 Get Your Free Team Diagnostic Now
             </a>
             
-            <p class="payment-security">
-                Secure payment • Instant download • All major cards accepted
-            </p>
-        </div>
-
-        <div class="perfect-for">
-            <h3>💡 Perfect For:</h3>
-            <div class="perfect-for-grid">
-                <div>✅ Parent coaches feeling overwhelmed</div>
-                <div>✅ Experienced coaches seeking efficiency</div>
-                <div>✅ Academy coaches managing multiple teams</div>
-                <div>✅ Any coach who wants systematic development</div>
-            </div>
+            <p class="gumroad-note">Powered by Gumroad • Instant download • No spam</p>
         </div>
     </div>
 </section>
 
-<!-- Final CTA Section -->
-<section class="final-cta">
+<!-- Social Sharing -->
+<section class="sharing-section">
     <div class="container">
-        <h2>Your Coaching Transformation Starts Now</h2>
-        <p>Join {{ site.site_constants.coaches_mentored }} coaches who never waste training time again</p>
-        
-        <div class="transformation-steps">
-            <h3>🎯 What Happens Next:</h3>
-            <div class="steps-grid">
-                <div class="step-item">
-                    <strong>Step 1:</strong><br>
-                    <span>Download instantly after purchase</span>
-                </div>
-                <div class="step-item">
-                    <strong>Step 2:</strong><br>
-                    <span>Run the 5-minute diagnostic on your team</span>
-                </div>
-                <div class="step-item">
-                    <strong>Step 3:</strong><br>
-                    <span>Implement the recommended solution</span>
-                </div>
-                <div class="step-item">
-                    <strong>Step 4:</strong><br>
-                    <span>Watch your players improve dramatically</span>
-                </div>
+        <div class="sharing-content">
+            <h3>Help Other Coaches</h3>
+            <p>Share this free diagnostic tool with coaches who need it</p>
+            
+            <div class="sharing-buttons">
+                <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text=Free 5-minute football team diagnostic from @coach_kevin_m" class="share-btn twitter">
+                    Share on Twitter
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" class="share-btn facebook">
+                    Share on Facebook
+                </a>
             </div>
-        </div>
-        
-        <div class="guarantee">
-            <h3>🛡️ 30-Day Money-Back Guarantee</h3>
-            <p>Use the Coach's Compass for 30 days. If it doesn't solve your coaching challenges and save you hours of planning time, we'll refund every penny. No questions asked.</p>
-        </div>
-        
-        <div class="final-pricing">
-            <h3>Stop Guessing, Start Succeeding</h3>
-            <div class="final-price">Only {{ page.product_price }}</div>
-            <p>Less than the cost of one private coaching session!</p>
-        </div>
-        
-        <a href="{{ page.buy_url }}" class="hero-cta final-cta-button" data-product="coaches-compass">
-            🧭 Get Your Coaching Compass Now
-        </a>
-        
-        <div class="checkout-security">
-            <p>✅ Secure checkout • ✅ Instant download • ✅ 30-day guarantee</p>
         </div>
     </div>
 </section>
@@ -335,18 +273,13 @@ schema_type: "Product"
     },
     "offers": {
         "@type": "Offer",
-        "price": "67",
+        "price": "0",
         "priceCurrency": "GBP",
         "availability": "https://schema.org/InStock",
         "seller": {
             "@type": "Organization",
             "name": "{{ site.title }}"
         }
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "156"
     },
     "creator": {
         "@type": "Person",
