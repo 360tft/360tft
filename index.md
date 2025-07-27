@@ -18,7 +18,7 @@ schema_type: "Organization"
         <div class="hero-content">
             <div class="problem-badge">🎯 The Only Systematic Coaching Problem Solver</div>
             <h1>Stop Guessing What's Wrong With Your Team</h1>
-            <p class="hero-subtitle">360TFT is the fastest & most affordable coach education course you can buy. 
+            <p class="hero-subtitle">This is the fastest & most affordable coach education step you can take. 
 </p>
             <p class="hero-description">Most coaches run random sessions hoping something works. We diagnose your team's exact problems first, then give you targeted solutions that actually fix them. </p>
            <p class="hero-description">
