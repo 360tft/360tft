@@ -1,14 +1,16 @@
 /* Problem-Solving Homepage Styles */
 
-/* CSS Variables - Define if not already set */
+/* CSS Variables - Accessible Color Palette */
 :root {
-    --brand-primary: #976bdd;
-    --accent-color: #ff5757;
-    --text-light: #ffffff;
-    --text-dark: #333333;
+    --brand-primary: #2c5aa0;    /* Professional blue - WCAG AA compliant */
+    --accent-color: #e74c3c;     /* Clear red for CTAs */
+    --text-light: #ffffff;       /* Pure white for contrast */
+    --text-dark: #2c3e50;        /* Dark blue-grey for readability */
     --background-white: #ffffff;
     --background-light: #f8f9fa;
     --background-dark: #2c3e50;
+    --success-color: #27ae60;    /* Green for positive actions */
+    --warning-color: #f39c12;    /* Orange for caution */
 }
 
 /* Container */
@@ -36,14 +38,15 @@
     opacity: 0.8;
 }
 
-/* Problem Hero Section */
+/* Problem Hero Section - Accessible Design */
 .problem-hero {
-    background: linear-gradient(135deg, var(--brand-primary), var(--accent-color));
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--text-dark) 100%);
     color: var(--text-light);
     padding: 120px 0 80px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+    /* Ensure minimum contrast ratio of 4.5:1 for WCAG AA */
 }
 
 .problem-hero::before {
@@ -53,7 +56,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="30" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="30" cy="30" r="1" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
     animation: float 20s infinite linear;
 }
 
@@ -70,15 +73,16 @@
 }
 
 .problem-badge {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--success-color);
     color: var(--text-light);
     padding: 12px 24px;
     border-radius: 25px;
     display: inline-block;
     font-weight: bold;
     margin-bottom: 20px;
-    backdrop-filter: blur(10px);
     font-size: 0.9em;
+    /* High contrast for accessibility */
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .problem-hero h1 {
@@ -114,12 +118,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text-dark);
     padding: 15px 20px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
     font-size: 0.95em;
     max-width: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* High contrast for readability */
 }
 
 .problem-icon {
@@ -145,29 +151,36 @@
     font-size: 1.1em;
     transition: all 0.3s ease;
     display: inline-block;
+    border: 2px solid var(--accent-color);
+    /* Focus state for accessibility */
 }
 
-.hero-cta-primary:hover {
-    background: #e64545;
+.hero-cta-primary:hover,
+.hero-cta-primary:focus {
+    background: #c0392b;
+    border-color: #c0392b;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    outline: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-cta-secondary {
-    background: rgba(255, 255, 255, 0.2);
-    color: var(--text-light);
+    background: var(--text-light);
+    color: var(--brand-primary);
     padding: 18px 35px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
     font-size: 1.1em;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--text-light);
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
 }
 
-.hero-cta-secondary:hover {
-    background: rgba(255, 255, 255, 0.3);
+.hero-cta-secondary:hover,
+.hero-cta-secondary:focus {
+    background: var(--background-light);
+    color: var(--brand-primary);
+    outline: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .social-proof {
