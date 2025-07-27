@@ -99,14 +99,14 @@ schema_type: "Organization"
                 <div class="step-content">
                     <h3>5-Minute Team Diagnostic</h3>
                     <p>Identify your team's exact weaknesses across technical, tactical, physical, and mental areas. No guessing, just facts.</p>
-                    <a href="https://360tft.github.io/The-5-Minute-Team-Diagnostic/" class="step-cta">Try The Diagnostic Free</a>
+                    <a href="/360tft/coaches-compass" class="step-cta">Try The Diagnostic Free</a>
                 </div>
             </div>
             
             <div class="step-card">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>Emergency Session Solutions</h3>
+                    <h3>Session Solutions</h3>
                     <p>Get session fixes for your team's biggest problems. Sessions designed to work in the real world, not perfect conditions.</p>
                     <a href="https://360tft.github.io/328-sessions/" class="step-cta">Get The Sessions</a>
                 </div>
@@ -191,6 +191,17 @@ schema_type: "Organization"
                 </div>
                 <blockquote>"Kevin Middleton possesses the characteristics of a <strong>top level coach</strong> demonstrating his <strong>attention to detail in every session</strong>. His enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions, <strong>bringing out the best in every individual</strong> and improving their all-round game."</blockquote>
             </div>
+
+            <div class="testimonial-card professional">
+                <div class="testimonial-header">
+                    <div class="player-info">
+                        <h4>Yasin Ben El-Mhanni</h4>
+                        <p>Ex-Newcastle United</p>
+                        <span class="pro-badge">Professional Player</span>
+                    </div>
+                </div>
+                <blockquote>"Kevin Middleton possesses the characteristics of a <strong>top level coach</strong> demonstrating his <strong>attention to detail in every session</strong>. His enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions, <strong>bringing out the best in every individual</strong> and improving their all-round game."</blockquote>
+            </div>
             
             <div class="testimonial-card youth">
                 <div class="testimonial-header">
@@ -245,7 +256,7 @@ schema_type: "Organization"
             </div>
             
             <div class="diagnostic-cta">
-                <a href="https://360tft.github.io/The-5-Minute-Team-Diagnostic/" class="diagnostic-button">
+                <a href="/360tft/coaches-compass" class="diagnostic-button">
                     Take The Free Diagnostic Now
                     <span class="button-subtext">Get instant results + targeted solutions</span>
                 </a>
@@ -267,7 +278,7 @@ schema_type: "Organization"
                 <div class="tool-badge">Most Popular</div>
                 <div class="tool-icon">🧭</div>
                 <h3>The Coach's Compass</h3>
-                <div class="tool-price">£67</div>
+                <div class="tool-price">$0</div>
                 <p>Your complete coaching problem-solving system. Team diagnostic + emergency sessions + systematic development plans.</p>
                 <ul class="tool-features">
                     <li>5-minute team diagnostic tool</li>
@@ -275,19 +286,19 @@ schema_type: "Organization"
                     <li>7-day systematic improvement sequence</li>
                     <li>Match-day confidence protocols</li>
                 </ul>
-                <a href="/coaches-compass" class="tool-cta">Solve Your Coaching Problems</a>
+                <a href="/360tft/coaches-compass" class="tool-cta">Solve Your Coaching Problems</a>
             </div>
             
             <div class="tool-card">
                 <div class="tool-icon">⚽</div>
                 <h3>328 Training Sessions</h3>
-                <div class="tool-price">£97</div>
+                <div class="tool-price">$38</div>
                 <p>Ready-to-use sessions organised by problem type. Never wonder what to run again.</p>
                 <ul class="tool-features">
-                    <li>Sessions categorised by team problems</li>
+                    <li>Sessions categorised by area</li>
                     <li>Progressive difficulty levels</li>
-                    <li>Equipment alternatives provided</li>
-                    <li>Age-specific adaptations</li>
+                    <li>Full coaching points</li>
+                    <li>500+ pages of ready-to-go session plans that actually work</li>
                 </ul>
                 <a href="/328-sessions" class="tool-cta">Get Session Solutions</a>
             </div>
@@ -295,10 +306,10 @@ schema_type: "Organization"
             <div class="tool-card">
                 <div class="tool-icon">🎓</div>
                 <h3>Football Coaching Academy</h3>
-                <div class="tool-price">£47/month</div>
-                <p>Ongoing support from Kevin + 1000+ coaches solving problems together.</p>
+                <div class="tool-price">$10/month</div>
+                <p>Ongoing support from Kevin + 1200+ coaches solving problems together.</p>
                 <ul class="tool-features">
-                    <li>Weekly problem-solving workshops</li>
+                    <li>Regular problem-solving workshops</li>
                     <li>Direct access to Kevin's expertise</li>
                     <li>Community of experienced coaches</li>
                     <li>New solutions added monthly</li>
@@ -320,19 +331,19 @@ schema_type: "Organization"
                 <div class="emergency-card">
                     <h3>🚨 Session Going Wrong?</h3>
                     <p>Quick fixes when your planned session isn't working</p>
-                    <a href="https://360tft.github.io/Emergency-Session-Plans/" class="emergency-link">Get Emergency Sessions</a>
+                    <a href="/360tft/coaches-compass" class="emergency-link">Get Emergency Sessions</a>
                 </div>
                 
                 <div class="emergency-card">
                     <h3>😔 Team Low on Confidence?</h3>
                     <p>Protocols to rebuild player belief and motivation</p>
-                    <a href="https://360tft.github.io/The-Mindset-Reset-Protocol/" class="emergency-link">Reset Team Mindset</a>
+                    <a href="/360tft/coaches-compass" class="emergency-link">Reset Team Mindset</a>
                 </div>
                 
                 <div class="emergency-card">
                     <h3>🤔 Don't Know What's Wrong?</h3>
                     <p>5-minute assessment to identify the real problem</p>
-                    <a href="https://360tft.github.io/The-5-Minute-Team-Diagnostic/" class="emergency-link">Diagnose The Problem</a>
+                    <a href="/360tft/coaches-compass" class="emergency-link">Diagnose The Problem</a>
                 </div>
             </div>
         </div>
@@ -398,13 +409,13 @@ schema_type: "Organization"
                 <div class="cta-option">
                     <h3>Start Free</h3>
                     <p>Diagnose your team's exact problems</p>
-                    <a href="https://360tft.github.io/The-5-Minute-Team-Diagnostic/" class="cta-btn primary">Take Diagnostic</a>
+                    <a href="/360tft/coaches-compass" class="cta-btn primary">Take Diagnostic</a>
                 </div>
                 
                 <div class="cta-option">
                     <h3>Get Solutions</h3>
                     <p>Complete problem-solving toolkit</p>
-                    <a href="/coaches-compass" class="cta-btn secondary">Get Coach's Compass</a>
+                    <a href="/360tft/coaches-compass" class="cta-btn secondary">Get Coach's Compass</a>
                 </div>
                 
                 <div class="cta-option">
