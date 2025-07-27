@@ -24,16 +24,16 @@ social:
 
 # Navigation menu
 navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Complete System"
-    url: "/complete-coaching-mastery-system"
-  - title: "328 Sessions"
-    url: "/328-football-training-sessions"
+  - title: "Free Diagnostic"
+    url: "https://360tft.github.io/The-5-Minute-Team-Diagnostic/"
+  - title: "Emergency Sessions"
+    url: "https://360tft.github.io/Emergency-Session-Plans/"
   - title: "Coach's Compass"
     url: "/coaches-compass"
+  - title: "328 Sessions"
+    url: "/328-sessions"
   - title: "Academy"
-    url: "/football-coaching-academy"
+    url: "https://www.skool.com/coachingacademy"
   - title: "About Kevin"
     url: "/about-kevin-middleton"
 
@@ -127,7 +127,7 @@ site_constants:
   years_experience: "15+"
   coaches_mentored: "1200+"
   players_developed: "1000+"
-  sessions_created: "100+"
+  sessions_created: "1000+"
   
 # Contact information
 contact:
@@ -143,4 +143,4 @@ facebook_pixel: "XXXXXXXXXX"
 seo:
   type: Organization
   name: "360TFT"
-  logo: "/assets/images/logo-360tft.jpg"
+  logo: "/assets/images/logo-360tft.png"

@@ -1,16 +1,26 @@
 professional_players:
   - name: "Jay Bird"
     club: "Arbroath FC | Salford City"
-    badge: "Professional"
+    badge: "Professional Player"
     quote: "I enjoyed Kevin's sessions a lot—they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend."
 
   - name: "Yasin Ben El-Mhanni"
     club: "Ex-Newcastle United"
-    badge: "Professional"
-    quote: "Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game—strengthening their weaknesses as well as their strengths."
+    badge: "Professional Player"
+    quote: "Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game—strengthening their weaknesses as well as their strengths."
+
+  - name: "Michael Bakare"
+    club: "Arbroath FC | Glacis United"
+    badge: "Professional Player"
+    quote: "I had the privilege of doing extra training sessions with Kevin during my time with Arbroath FC. The precision striker drills were challenging, but match realistic. This is all a player can ask for when they are looking to improve their game. The sessions are good, very technical, and high intensity."
 
 youth_players:
   - name: "Adam"
     age: "Age 14"
     badge: "Youth Player"
     quote: "I trained with Kevin when I was younger and he is still the coach that has improved my footballing ability the most. Everything that he taught me, I still try and bring to my games every week. He is highly motivated and doesn't give up on you when you are having a bad game."
+    
+  - name: "Kase"
+    age: "Age 10"
+    badge: "Youth Player"
+    quote: "Kev is a brilliant coach because he does fitness with us and helps us by going for runs with us. I've learned how to pass and tackle better. He is fair and treats us well."

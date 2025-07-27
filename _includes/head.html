@@ -70,7 +70,7 @@
     "description": "{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}",
     "url": "{{ page.url | absolute_url }}",
     {%- if page.schema_type == 'Organization' or page.schema_type == 'LocalBusiness' -%}
-    "logo": "{{ '/assets/images/logo-360tft.jpg' | absolute_url }}",
+    "logo": "{{ '/assets/images/logo-360tft.png' | absolute_url }}",
     "sameAs": [
         "https://x.com/{{ site.social.twitter }}",
         "https://www.linkedin.com/in/{{ site.social.linkedin }}",
@@ -89,7 +89,7 @@
         "name": "{{ site.title }}",
         "logo": {
             "@type": "ImageObject",
-            "url": "{{ '/assets/images/logo-360tft.jpg' | absolute_url }}"
+            "url": "{{ '/assets/images/logo-360tft.png' | absolute_url }}"
         }
     }
 }

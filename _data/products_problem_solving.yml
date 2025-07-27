@@ -1,0 +1,37 @@
+main_products:
+  - name: "The Coach's Compass"
+    price: "£67"
+    icon: "🧭"
+    featured: true
+    description: "Your complete coaching problem-solving system. Team diagnostic + emergency sessions + systematic development plans."
+    features:
+      - "5-minute team diagnostic tool"
+      - "Emergency session solutions for every problem"
+      - "7-day systematic improvement sequence"
+      - "Match-day confidence protocols"
+    cta: "Solve Your Coaching Problems"
+    link: "/coaches-compass"
+    
+  - name: "328 Training Sessions"
+    price: "£97"
+    icon: "⚽"
+    description: "Ready-to-use sessions organised by problem type. Never wonder what to run again."
+    features:
+      - "Sessions categorised by team problems"
+      - "Progressive difficulty levels"
+      - "Equipment alternatives provided"
+      - "Age-specific adaptations"
+    cta: "Get Session Solutions"
+    link: "/328-sessions"
+    
+  - name: "Football Coaching Academy"
+    price: "£47/month"
+    icon: "🎓"
+    description: "Ongoing support from Kevin + 1000+ coaches solving problems together."
+    features:
+      - "Weekly problem-solving workshops"
+      - "Direct access to Kevin's expertise"
+      - "Community of experienced coaches"
+      - "New solutions added monthly"
+    cta: "Join The Community"
+    link: "https://www.skool.com/coachingacademy"

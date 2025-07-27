@@ -1,32 +1,34 @@
-# Common Coaching Problems and Solutions
-# Used for Coach's Compass problem scenarios section
+common_problems:
+  - icon: "😤"
+    title: "Players not improving despite practice"
+    description: "You're running sessions but seeing no development"
+    solution_type: "diagnostic-first"
+  
+  - icon: "😕" 
+    title: "Sessions feel chaotic and unfocused"
+    description: "You're losing confidence in your coaching"
+    solution_type: "systematic-approach"
+  
+  - icon: "🤷"
+    title: "Don't know what to work on next"
+    description: "Every week feels like guesswork"
+    solution_type: "clear-progression"
 
-- icon: "😰"
-  title: "Sunday Night Panic"
-  problem: "It's 9 PM Sunday and I have no idea what to do in training tomorrow. I'm completely out of ideas."
-  solution: "Use the Emergency Session Generator to get 3 complete session options based on your available time and equipment in under 2 minutes."
-
-- icon: "🌧️"
-  title: "Weather Disaster"
-  problem: "We're training indoors with half the space and no equipment. How do I make this worthwhile?"
-  solution: "Access 15+ indoor session alternatives with space-efficient drills that require minimal equipment but maximum engagement."
-
-- icon: "😤"
-  title: "Frustrated Players"
-  problem: "My players are getting angry and giving up when they make mistakes. The team atmosphere is terrible."
-  solution: "Deploy the Mindset Reset Protocol - 5 proven techniques to rebuild confidence and create a positive learning environment instantly."
-
-- icon: "🤔"
-  title: "Development Confusion"
-  problem: "I know something isn't working but I can't figure out what. How do I identify the real problem?"
-  solution: "Run the 5-Minute Team Diagnostic to pinpoint exactly what's holding your players back and get targeted solutions."
-
-- icon: "⏰"
-  title: "Time Pressure"
-  problem: "I only have 45 minutes today instead of the usual 90. How do I fit everything in without wasting time?"
-  solution: "Use the Session Compressor Tool to maintain quality while adapting any session to fit your available time slot."
-
-- icon: "🎯"
-  title: "Match Problems"
-  problem: "We're making the same mistakes in games that we don't see in training. How do I bridge this gap?"
-  solution: "Access Match Analysis Templates to identify game-specific issues and convert them into targeted training solutions."
+emergency_situations:
+  - title: "Session Going Wrong?"
+    icon: "🚨"
+    description: "Quick fixes when your planned session isn't working"
+    link: "https://360tft.github.io/Emergency-Session-Plans/"
+    cta: "Get Emergency Sessions"
+    
+  - title: "Team Low on Confidence?"
+    icon: "😔"
+    description: "Protocols to rebuild player belief and motivation"
+    link: "https://360tft.github.io/The-Mindset-Reset-Protocol/"
+    cta: "Reset Team Mindset"
+    
+  - title: "Don't Know What's Wrong?"
+    icon: "🤔"
+    description: "5-minute assessment to identify the real problem"
+    link: "https://360tft.github.io/The-5-Minute-Team-Diagnostic/"
+    cta: "Diagnose The Problem"
