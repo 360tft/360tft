@@ -67,8 +67,7 @@ schema_type: "Product"
         <div class="authority-content">
             <div class="kevin-info">
                 <img src="{{ '/assets/images/kevin-middleton-coach.jpg' | relative_url }}" 
-                     alt="Kevin Middleton - Football Coach with 15+ years experience"
-                     loading="lazy">
+                     alt="Kevin Middleton - Football Coach with 15+ years experience">
             </div>
             <div class="kevin-credentials">
                 <h3>Meet Your Coach</h3>
