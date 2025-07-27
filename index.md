@@ -37,7 +37,7 @@ schema_type: "Organization"
             </div>
             
             <div class="hero-cta-group">
-                <a href="#free-diagnostic" class="hero-cta-seconday">Diagnose My Team's Problems (Free)</a>
+                <a href="#free-diagnostic" class="hero-cta-secondary">Diagnose My Team's Problems (Free)</a>
                 <a href="#how-it-works" class="hero-cta-secondary">See How It Works</a>
             </div>
             
