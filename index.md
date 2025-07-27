@@ -58,19 +58,16 @@ schema_type: "Organization"
         
         <div class="problems-grid">
             <div class="problem-card">
-                <div class="problem-card-icon">🎯</div>
                 <h3>No Diagnosis = Random Solutions</h3>
                 <p>Coaches grab session plans without knowing what their team actually needs. It's like giving medicine without checking symptoms.</p>
             </div>
             
             <div class="problem-card">
-                <div class="problem-card-icon">🔄</div>
                 <h3>Session Plan Roulette</h3>
                 <p>Different drill every week with no progression. Players get confused, coaches get frustrated, improvement stalls.</p>
             </div>
             
             <div class="problem-card">
-                <div class="problem-card-icon">😰</div>
                 <h3>Confidence Killer Cycle</h3>
                 <p>When sessions don't work, coaches blame themselves. Low confidence leads to worse decisions and more problems.</p>
             </div>
@@ -213,7 +210,7 @@ schema_type: "Organization"
                 <blockquote>"I trained with Kevin when I was younger and <strong>he is still the coach that has improved my footballing ability the most</strong>. Everything that he taught me, I still try and bring to my games every week. He is highly motivated and doesn't give up on you."</blockquote>
             </div>
         </div>
-        
+
         <!-- Link to Full Testimonials Page -->
         <div class="testimonials-cta">
             <p class="testimonials-note">These are just a few examples of the transformation coaches and players experience with 360TFT.</p>
@@ -235,19 +232,15 @@ schema_type: "Organization"
             <div class="diagnostic-preview">
                 <div class="diagnostic-areas">
                     <div class="area-item">
-                        <span class="area-icon">⚽</span>
                         <span>Technical Assessment</span>
                     </div>
                     <div class="area-item">
-                        <span class="area-icon">🧠</span>
                         <span>Tactical Understanding</span>
                     </div>
                     <div class="area-item">
-                        <span class="area-icon">💪</span>
                         <span>Physical Readiness</span>
                     </div>
                     <div class="area-item">
-                        <span class="area-icon">😊</span>
                         <span>Mental Confidence</span>
                     </div>
                 </div>
@@ -255,10 +248,10 @@ schema_type: "Organization"
                 <div class="diagnostic-results">
                     <h3>You'll Get:</h3>
                     <ul>
-                        <li>✅ Exact problem identification in each area</li>
-                        <li>✅ Priority ranking of what to fix first</li>
-                        <li>✅ Targeted emergency session plans</li>
-                        <li>✅ 7-day systematic improvement plan</li>
+                        <li>Exact problem identification in each area</li>
+                        <li>Priority ranking of what to fix first</li>
+                        <li>Targeted emergency session plans</li>
+                        <li>7-day systematic improvement plan</li>
                     </ul>
                 </div>
             </div>
@@ -280,11 +273,23 @@ schema_type: "Organization"
             <h2>Your Complete Coaching Problem-Solving Toolkit</h2>
             <p>From emergency fixes to systematic development - we've got every coaching challenge covered</p>
         </div>
+
+        <div class="tool-card">
+            <div class="tool-badge">Most Popular</div>
+            <h3>Football Coaching Academy</h3>
+            <div class="tool-price">$10/month</div>
+            <p>Ongoing support from Kevin + 1200+ coaches solving problems together.</p>
+            <ul class="tool-features">
+                <li>Regular problem-solving workshops</li>
+                <li>Direct access to Kevin's expertise</li>
+                <li>Community of experienced coaches</li>
+                <li>New solutions added monthly</li>
+            </ul>
+            <a href="https://www.skool.com/coachingacademy" class="tool-cta">Join The Community</a>
+        </div>
         
         <div class="tools-grid">
             <div class="tool-card featured">
-                <div class="tool-badge">Most Popular</div>
-                <div class="tool-icon">🧭</div>
                 <h3>The Coach's Compass</h3>
                 <div class="tool-price">$0</div>
                 <p>Your complete coaching problem-solving system. Team diagnostic + emergency sessions + systematic development plans.</p>
@@ -298,7 +303,6 @@ schema_type: "Organization"
             </div>
             
             <div class="tool-card">
-                <div class="tool-icon">⚽</div>
                 <h3>328 Training Sessions</h3>
                 <div class="tool-price">$38</div>
                 <p>Ready-to-use sessions organised by problem type. Never wonder what to run again.</p>
@@ -310,20 +314,7 @@ schema_type: "Organization"
                 </ul>
                 <a href="/328-sessions" class="tool-cta">Get Session Solutions</a>
             </div>
-            
-            <div class="tool-card">
-                <div class="tool-icon">🎓</div>
-                <h3>Football Coaching Academy</h3>
-                <div class="tool-price">$10/month</div>
-                <p>Ongoing support from Kevin + 1200+ coaches solving problems together.</p>
-                <ul class="tool-features">
-                    <li>Regular problem-solving workshops</li>
-                    <li>Direct access to Kevin's expertise</li>
-                    <li>Community of experienced coaches</li>
-                    <li>New solutions added monthly</li>
-                </ul>
-                <a href="https://www.skool.com/coachingacademy" class="tool-cta">Join The Community</a>
-            </div>
+        
         </div>
     </div>
 </section>
@@ -337,19 +328,19 @@ schema_type: "Organization"
             
             <div class="emergency-grid">
                 <div class="emergency-card">
-                    <h3>🚨 Session Going Wrong?</h3>
+                    <h3>Session Going Wrong?</h3>
                     <p>Quick fixes when your planned session isn't working</p>
                     <a href="/360tft/coaches-compass" class="emergency-link">Get Emergency Sessions</a>
                 </div>
                 
                 <div class="emergency-card">
-                    <h3>😔 Team Low on Confidence?</h3>
+                    <h3>Team Low on Confidence?</h3>
                     <p>Protocols to rebuild player belief and motivation</p>
                     <a href="/360tft/coaches-compass" class="emergency-link">Reset Team Mindset</a>
                 </div>
                 
                 <div class="emergency-card">
-                    <h3>🤔 Don't Know What's Wrong?</h3>
+                    <h3>Don't Know What's Wrong?</h3>
                     <p>5-minute assessment to identify the real problem</p>
                     <a href="/360tft/coaches-compass" class="emergency-link">Diagnose The Problem</a>
                 </div>
@@ -368,19 +359,15 @@ schema_type: "Organization"
                 
                 <div class="academy-benefits">
                     <div class="benefit-item">
-                        <span class="benefit-icon">💬</span>
                         <span><strong>Daily Problem Solving:</strong> Get help with specific team challenges</span>
                     </div>
                     <div class="benefit-item">
-                        <span class="benefit-icon">🎥</span>
                         <span><strong>Weekly Workshops:</strong> Kevin tackles common coaching problems live</span>
                     </div>
                     <div class="benefit-item">
-                        <span class="benefit-icon">📚</span>
                         <span><strong>500+ Solutions:</strong> Searchable library of problem-solving sessions</span>
                     </div>
                     <div class="benefit-item">
-                        <span class="benefit-icon">🤝</span>
                         <span><strong>Peer Support:</strong> Learn from coaches facing similar challenges</span>
                     </div>
                 </div>
@@ -434,7 +421,7 @@ schema_type: "Organization"
             </div>
             
             <div class="final-guarantee">
-                <p>🛡️ <strong>30-day problem-solving guarantee:</strong> If our diagnostic system doesn't help you identify and fix your team's biggest challenge within 30 days, we'll refund every penny.</p>
+                <p><strong>30-day problem-solving guarantee:</strong> If our diagnostic system doesn't help you identify and fix your team's biggest challenge within 30 days, we'll refund every penny.</p>
             </div>
         </div>
     </div>
