@@ -18,26 +18,26 @@ schema_type: "Organization"
         <div class="hero-content">
             <div class="problem-badge">🎯 The Only Systematic Coaching Problem Solver</div>
             <h1>Stop Guessing What's Wrong With Your Team</h1>
-            <p class="hero-subtitle">Fix It Systematically With The Proven 360TFT Coaching Triage Method</p>
-            <p class="hero-description">Most coaches run random sessions hoping something works. We diagnose your team's exact problems first, then give you targeted solutions that actually fix them. Used by {{ site.site_constants.coaches_mentored }} coaches worldwide.</p>
+            <p class="hero-subtitle">360TFT is the fastest & most affordable coach education course you can buy. 
+</p>
+            <p class="hero-description">Most coaches run random sessions hoping something works. We diagnose your team's exact problems first, then give you targeted solutions that actually fix them. </p>
+           <p class="hero-description">
+
             
             <div class="problem-indicators">
                 <div class="problem-item">
-                    <span class="problem-icon">😤</span>
                     <span>Players aren't improving despite endless drills?</span>
                 </div>
                 <div class="problem-item">
-                    <span class="problem-icon">😕</span>
                     <span>Sessions feel chaotic and you're losing confidence?</span>
                 </div>
                 <div class="problem-item">
-                    <span class="problem-icon">🤷</span>
                     <span>Don't know what to work on next?</span>
                 </div>
             </div>
             
             <div class="hero-cta-group">
-                <a href="#free-diagnostic" class="hero-cta-primary">Diagnose My Team's Problems (Free)</a>
+                <a href="#free-diagnostic" class="hero-cta-seconday">Diagnose My Team's Problems (Free)</a>
                 <a href="#how-it-works" class="hero-cta-secondary">See How It Works</a>
             </div>
             
@@ -107,8 +107,8 @@ schema_type: "Organization"
                 <div class="step-number">2</div>
                 <div class="step-content">
                     <h3>Emergency Session Solutions</h3>
-                    <p>Get immediate fixes for your team's biggest problem. Sessions designed to work in the real world, not perfect conditions.</p>
-                    <a href="https://360tft.github.io/Emergency-Session-Plans/" class="step-cta">Get Emergency Sessions</a>
+                    <p>Get session fixes for your team's biggest problems. Sessions designed to work in the real world, not perfect conditions.</p>
+                    <a href="https://360tft.github.io/328-sessions/" class="step-cta">Get The Sessions</a>
                 </div>
             </div>
             
