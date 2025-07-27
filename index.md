@@ -1,19 +1,11 @@
 ---
 layout: default
 title: "Transform Average Players Into Match-Winners"
-description: "Join 1200+ coaches using the 360TFT Game Model. Access 328 ready-to-use training sessions, expert coaching guidance, and proven player development systems from Kevin Middleton."
-keywords: 
-  - football coaching
-  - soccer training sessions
-  - youth football coaching
-  - coaching courses
-  - player development
-  - Kevin Middleton
-  - 360TFT
-  - football coaching academy
+description: "Join 1000+ coaches using the 360TFT Game Model. Access 328 ready-to-use training sessions, expert coaching guidance, and proven player development systems from Kevin Middleton."
+keywords: [football coaching, soccer training sessions, youth football coaching, coaching courses, player development, Kevin Middleton, 360TFT, football coaching academy]
 seo_title: "360TFT - Transform Average Players Into Match-Winners | Football Coaching Academy"
 og_title: "360TFT - Transform Average Players Into Match-Winners"
-og_description: "Join 1200+ coaches using proven player development systems. 15+ years of coaching expertise in one place."
+og_description: "Join 1000+ coaches using proven player development systems. 15+ years of coaching expertise in one place."
 og_image: "/assets/images/360tft-social-share.jpg"
 body_class: "homepage"
 css:
@@ -50,154 +42,77 @@ js:
     <div class="container">
         <div class="authority-content">
             <div>
-                <img class="kevin-photo" src="{{ site.author.photo | default: '/assets/images/kevin-middleton-coach.jpg' }}" alt="Kevin Middleton - Football Coach">
+                <img class="kevin-photo" src="{{ '/assets/images/kevin-middleton-coach.jpg' | relative_url }}" alt="Kevin Middleton - Football Coach">
             </div>
             <div class="authority-text">
                 <h2>Meet {{ site.author.name }}</h2>
                 <p>After {{ site.site_constants.years_experience }} years of coaching at every level, I've cracked the code on what actually develops players. Not just drills that look good, but systems that create confident, capable footballers who perform when it matters.</p>
-                <p>The 360TFT Game Model isn't theory, it's battle-tested with thousands of players across grassroots to academy level. Every session plan, every coaching principle, every development pathway has been refined through real-world results.</p>
-                <p>I've helped over {{ site.site_constants.coaches_mentored }} coaches transform their teams, and now I want to help you do the same.</p>
                 
-                <div class="credentials">
-                    <div class="credential-item">
-                        <span class="credential-number">{{ site.site_constants.years_experience }}</span>
-                        <span class="credential-text">Years Coaching Experience</span>
-                    </div>
-                    <div class="credential-item">
-                        <span class="credential-number">{{ site.site_constants.coaches_mentored }}</span>
-                        <span class="credential-text">Coaches Helped</span>
-                    </div>
-                    <div class="credential-item">
-                        <span class="credential-number">{{ site.site_constants.sessions_created }}</span>
-                        <span class="credential-text">Training Sessions Created</span>
-                    </div>
-                    <div class="credential-item">
-                        <span class="credential-number">{{ site.site_constants.players_developed }}</span>
-                        <span class="credential-text">Players Coached</span>
-                    </div>
-                </div>
+                <p>My journey began with failure. Fresh-faced and eager, I thought coaching was about knowing more drills than the next person. I was wrong. My first season coaching an U12 team was humbling - despite endless energy and what I thought were great sessions, the players weren't improving.</p>
+                
+                <p>That failure became my foundation. The result? The 360TFT Game Model - a systematic approach to developing complete players.</p>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2>What Real Players & Coaches Say</h2>
+        
+        <div class="testimonials-grid">
+            {% for testimonial in site.data.testimonials_real.professional_players %}
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <h4>{{ testimonial.name }}</h4>
+                    <p>{{ testimonial.club }}</p>
+                    <span class="pro-badge">{{ testimonial.badge }}</span>
+                </div>
+                <blockquote>{{ testimonial.quote }}</blockquote>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
 
 <!-- Products Section -->
-<section class="products" id="sessions">
+<section class="products" id="products">
     <div class="container">
-        <div class="section-header">
-            <h2>Everything You Need To Develop Better Players</h2>
-            <p>From individual training sessions to complete coaching systems—choose what fits your needs</p>
-        </div>
+        <h2>From Individual Sessions to Complete Systems</h2>
+        <p>Choose what fits your needs</p>
         
         <div class="products-grid">
-            <!-- Featured Product -->
-            <div class="product-card featured-product">
-                <div class="featured-badge">Most Popular</div>
-                <div class="product-icon">🎯</div>
-                <h3>Complete Coaching Mastery System</h3>
-                <p>Everything you need to become the coach players remember forever. The complete 360TFT methodology in one comprehensive package.</p>
-                <ul class="product-features">
-                    <li>{{ site.site_constants.sessions_created }} Complete Training Sessions</li>
-                    <li>The 360TFT Game Model</li>
-                    <li>The Grassroots Football Pack</li>
-                    <li>Coach's Compass Tools</li>
-                    <li>2 Mobile Apps</li>
-                    <li>UEFA Licence Guidance</li>
-                </ul>
-                <a href="{{ '/complete-system' | relative_url }}" class="product-cta">Get Complete System</a>
-            </div>
-
-            <!-- 328 Sessions -->
+            {% for product in site.data.products.main_products %}
             <div class="product-card">
-                <div class="product-icon">⚽</div>
-                <h3>{{ site.site_constants.sessions_created }} Football Training Sessions</h3>
-                <p>Ready-to-use sessions for every age group and skill level. Never run out of ideas again.</p>
-                <ul class="product-features">
-                    <li>Sessions for U5 through Adult</li>
-                    <li>Technical, Tactical & Physical Focus</li>
-                    <li>Detailed Coaching Points</li>
-                    <li>Equipment Lists & Setup Diagrams</li>
-                    <li>Progressive Difficulty Levels</li>
-                </ul>
-                <a href="{{ '/328-sessions' | relative_url }}" class="product-cta">View Sessions</a>
+                <div class="product-icon">{{ product.icon }}</div>
+                <h3>{{ product.name }}</h3>
+                <p class="product-price">{{ product.price }}</p>
+                <p>{{ product.description }}</p>
+                <a href="#" class="product-cta">Learn More</a>
             </div>
-
-            <!-- Coach's Compass -->
-            <div class="product-card">
-                <div class="product-icon">🧭</div>
-                <h3>The Coach's Compass</h3>
-                <p>Navigate any coaching challenge with this comprehensive problem-solving toolkit.</p>
-                <ul class="product-features">
-                    <li>Emergency Session Solutions</li>
-                    <li>Player Development Diagnostics</li>
-                    <li>Mindset Reset Protocols</li>
-                    <li>Small-Sided Game Mastery</li>
-                    <li>Match Analysis Templates</li>
-                </ul>
-                <a href="{{ '/coaches-compass' | relative_url }}" class="product-cta">Explore Compass</a>
-            </div>
-
-            <!-- Football Coaching Academy -->
-            <div class="product-card">
-                <div class="product-icon">🏆</div>
-                <h3>Football Coaching Academy</h3>
-                <p>Join our exclusive community of serious coaches committed to continuous improvement.</p>
-                <ul class="product-features">
-                    <li>Monthly Live Workshops</li>
-                    <li>Direct Access to {{ site.author.name }} and Jamie Birch</li>
-                    <li>Exclusive Resources & Tools</li>
-                    <li>Peer-to-Peer Learning Network</li>
-                    <li>Priority Support & Feedback</li>
-                </ul>
-                <a href="https://www.skool.com/coachingacademy" class="product-cta" target="_blank">Join Academy</a>
-            </div>
-
-            <!-- Coaching Cheatsheet Vault -->
-            <div class="product-card">
-                <div class="product-icon">📋</div>
-                <h3>Coaching Cheatsheet Vault</h3>
-                <p>Quick-reference guides and cheatsheets for every coaching situation you'll face.</p>
-                <ul class="product-features">
-                    <li>Formation Guides & Tactical Setups</li>
-                    <li>Emergency Session Plans</li>
-                    <li>Rondo Variations Library</li>
-                    <li>Finishing Drill Collections</li>
-                    <li>Match Day Preparation Lists</li>
-                </ul>
-                <a href="{{ '/coaching-cheatsheet-vault' | relative_url }}" class="product-cta">Access Vault</a>
-            </div>
-
-            <!-- Grassroots Football Pack -->
-            <div class="product-card">
-                <div class="product-icon">🌱</div>
-                <h3>Grassroots Football Pack</h3>
-                <p>Perfect for parent coaches and volunteers starting their coaching journey.</p>
-                <ul class="product-features">
-                    <li>Age-Appropriate Session Plans</li>
-                    <li>Fun-First Development Approach</li>
-                    <li>Parent Communication Tools</li>
-                    <li>Equipment on a Budget Tips</li>
-                    <li>Building Confidence Strategies</li>
-                </ul>
-                <a href="{{ '/grassroots-pack' | relative_url }}" class="product-cta">Get Started</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
 
-<!-- Newsletter Section -->
-<section class="newsletter" id="subscribe">
+<!-- Free Resources Section -->
+<section class="free-resources" id="free-resources">
     <div class="container">
-        <h2>Never Miss a Coaching Breakthrough</h2>
-        <p>Join 5000+ coaches getting weekly insights, session ideas, and exclusive resources delivered straight to their inbox.</p>
+        <h2>Start Your Coaching Transformation Today</h2>
         
-        <form class="newsletter-form" action="#" method="POST">
-            <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
-            <button type="submit" class="newsletter-submit">Get Weekly Tips</button>
-        </form>
-        
-        <p style="font-size: 0.9em; opacity: 0.8; margin-top: 15px;">
-            No spam. Unsubscribe anytime. We respect your inbox.
-        </p>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>The 5-Minute Team Diagnostic</h3>
+                <p>Identify your team's exact weaknesses and get targeted solutions.</p>
+                <a href="https://360tft.github.io/The-5-Minute-Team-Diagnostic/" class="resource-cta">Take The Diagnostic</a>
+            </div>
+            
+            <div class="resource-card">
+                <h3>Emergency Session Plans</h3>
+                <p>Quick fixes for immediate coaching challenges.</p>
+                <a href="https://360tft.github.io/Emergency-Session-Plans/" class="resource-cta">Get Emergency Sessions</a>
+            </div>
+        </div>
     </div>
 </section>

@@ -1,0 +1,10 @@
+main_products:
+  - name: "Complete Coaching Mastery System"
+    price: "£197"
+    icon: "🏆"
+    description: "Everything you need to become the coach players remember forever. The complete 360TFT methodology in one comprehensive package."
+    
+  - name: "328 Football Training Sessions"
+    price: "£97"
+    icon: "⚽"
+    description: "Ready-to-use sessions for every age group and skill level. Never run out of ideas again."

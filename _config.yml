@@ -9,6 +9,7 @@ author:
   name: "Kevin Middleton"
   email: "kevin@360tft.com"
   twitter: "coach_kevin_m"
+  photo: "/assets/images/kevin-middleton-coach.jpg"
 
 # SEO settings
 lang: en-GB
@@ -124,9 +125,9 @@ site_constants:
   brand_color: "#976bdd"
   accent_color: "#ff5757"
   years_experience: "15+"
-  coaches_mentored: "1000+"
-  players_developed: "5000+"
-  sessions_created: "328"
+  coaches_mentored: "1200+"
+  players_developed: "1000+"
+  sessions_created: "100+"
   
 # Contact information
 contact:
