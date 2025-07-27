@@ -12,17 +12,15 @@ css: ["/assets/css/homepage-problem-solving.css"]
 js: ["/assets/js/homepage-diagnostic.js"]
 schema_type: "Organization"
 ---
+
 <!-- Problem Identification Hero -->
 <section class="hero problem-hero">
     <div class="container">
         <div class="hero-content">
-            <div class="problem-badge">🎯 The Only Systematic Coaching Problem Solver</div>
+            <div class="problem-badge">The Only Systematic Coaching Problem Solver</div>
             <h1>Stop Guessing What's Wrong With Your Team</h1>
-            <p class="hero-subtitle">This is the fastest & most affordable coach education step you can take. </p>
-</p>
-            <p class="hero-description">Most coaches run random sessions hoping something works. We diagnose your team's exact problems first, then give you targeted solutions that actually fix them. </p>
-           <p class="hero-description">
-
+            <p class="hero-subtitle">Fix It Systematically With The Proven 360TFT Coaching Triage Method</p>
+            <p class="hero-description">Most coaches run random sessions hoping something works. We diagnose your team's exact problems first, then give you targeted solutions that actually fix them. Used by {{ site.site_constants.coaches_mentored }} coaches worldwide.</p>
             
             <div class="problem-indicators">
                 <div class="problem-item">
@@ -37,7 +35,7 @@ schema_type: "Organization"
             </div>
             
             <div class="hero-cta-group">
-                <a href="#free-diagnostic" class="hero-cta-secondary">Diagnose My Team's Problems (Free)</a>
+                <a href="#free-diagnostic" class="hero-cta-primary">Diagnose My Team's Problems (Free)</a>
                 <a href="#how-it-works" class="hero-cta-secondary">See How It Works</a>
             </div>
             
