@@ -1,0 +1,115 @@
+/* Free Product Specific Styles */
+.free-hero {
+    background: linear-gradient(135deg, #976bdd 0%, #8a5bd6 100%);
+    color: white;
+    padding: 5rem 0;
+  }
+  
+  .hero-badge {
+    display: inline-block;
+    background: #ff5757;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .value-proposition {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+  }
+  
+  .value-proposition h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .value-proposition p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .value-proposition p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .hero-cta-secondary {
+    background: #ff5757;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-cta-secondary:hover {
+    background: #e04545;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 87, 87, 0.3);
+  }
+  
+  .hero-guarantee {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+  }
+  
+  /* Authority section enhancements */
+  .authority-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-link,
+  .academy-link {
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .social-link {
+    background: #1da1f2;
+    color: white;
+  }
+  
+  .social-link:hover {
+    background: #0d8bd9;
+  }
+  
+  .academy-link {
+    background: #976bdd;
+    color: white;
+  }
+  
+  .academy-link:hover {
+    background: #7d5bbf;
+  }
+  
+  @media (max-width: 768px) {
+    .authority-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .social-link,
+    .academy-link {
+      width: 200px;
+      text-align: center;
+    }
+  }

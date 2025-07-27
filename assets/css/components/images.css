@@ -1,0 +1,64 @@
+/* ===== IMAGE COMPONENT STYLES ===== */
+/* Responsive Image System */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .profile-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(151, 107, 221, 0.15);
+  }
+  
+  .profile-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 0%, rgba(151, 107, 221, 0.1) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* Lazy loading optimization */
+  img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  img[loading="lazy"].loaded {
+    opacity: 1;
+  }
+  
+  /* Profile Images */
+  .kevin-info img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(151, 107, 221, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .kevin-info img:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Mobile Responsive Images */
+  @media (max-width: 768px) {
+    .kevin-info img {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .kevin-info img {
+      max-width: 200px;
+    }
+  }

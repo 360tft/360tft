@@ -1,0 +1,73 @@
+/* ===== AUTHORITY SECTION STYLES ===== */
+.authority-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+  }
+  
+  .authority-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .kevin-credentials {
+    padding-left: 1rem;
+  }
+  
+  .kevin-credentials p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #976bdd;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-text {
+    font-size: 0.9rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Mobile Responsive for Authority Section */
+  @media (max-width: 768px) {
+    .authority-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+    }
+    
+    .kevin-credentials {
+      padding-left: 0;
+    }
+    
+    .stats-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
