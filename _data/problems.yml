@@ -1,0 +1,15 @@
+common_problems:
+  - icon: "😤"
+    title: "Players not improving despite practice"
+    description: "You're running sessions but seeing no development"
+    solution: "diagnostic-first"
+  
+  - icon: "😕" 
+    title: "Sessions feel chaotic and unfocused"
+    description: "You're losing confidence in your coaching"
+    solution: "systematic-approach"
+  
+  - icon: "🤷"
+    title: "Don't know what to work on next"
+    description: "Every week feels like guesswork"
+    solution: "clear-progression"

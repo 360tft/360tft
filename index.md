@@ -12,7 +12,6 @@ css: ["/assets/css/homepage-problem-solving.css"]
 js: ["/assets/js/homepage-diagnostic.js"]
 schema_type: "Organization"
 ---
-
 <!-- Problem Identification Hero -->
 <section class="hero problem-hero">
     <div class="container">
