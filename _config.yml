@@ -144,9 +144,9 @@ pricing:
     old: ""
     currency_symbol: ""
   game_model:
-    current: "$20"
-    regular: "$40"
-    savings: "$20"
+    current: "$40"
+    regular: "$80"
+    savings: "$40"
     currency_symbol: "$"
   uefa_c:
     current: "$20"
