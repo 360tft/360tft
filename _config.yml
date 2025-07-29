@@ -21,63 +21,57 @@ social:
   linkedin: "kevinmiddleton360"
   instagram: "360tft"
 
-# Navigation menu
+# Navigation menu (UPDATED TO INCLUDE GAME MODEL)
 navigation:
   - title: "Home"
     url: "/"
-  - title: "Complete System"
-    url: "/complete-system"
-  - title: "328 Sessions"
-    url: "/328-sessions"
-  - title: "Coach's Compass"
-    url: "/coaches-compass"
-  - title: "Academy"
-    url: "/football-coaching-academy"
   - title: "About Kevin"
-    url: "/about-kevin-middleton"
+    url: "/about-kevin-middleton/"
+  - title: "Game Model"
+    url: "/game-model/"
+  - title: "328 Sessions"
+    url: "/328-sessions/"
+  - title: "Coach's Compass"
+    url: "/coaches-compass/"
+  - title: "Academy"
+    url: "/football-coaching-academy/"
+  - title: "Success Stories"
+    url: "/testimonials/"
 
 # Footer links
 footer_links:
   - title: "Training Resources"
     links:
       - title: "328 Training Sessions"
-        url: "/328-sessions"
-      - title: "Complete System"
-        url: "/complete-system"
+        url: "/328-sessions/"
+      - title: "360TFT Game Model"
+        url: "/game-model/"
       - title: "Coach's Compass"
-        url: "/coaches-compass"
+        url: "/coaches-compass/"
       - title: "Coaching Cheatsheets"
-        url: "/coaching-cheatsheet-vault"
-      - title: "Grassroots Pack" 
-        url: "/tgfp"
+        url: "/coaching-cheatsheet-vault/"
+      - title: "Grassroots Pack"
+        url: "/tgfp/"
   - title: "Community"
     links:
-      - title: "Football Academy"
-        url: "/football-coaching-academy"
-      - title: "Free Community"
-        url: "https://www.skool.com/360tft-6754"
-      - title: "Testimonials"
-        url: "/testimonials"
+      - title: "Football Coaching Academy"
+        url: "/football-coaching-academy/"
       - title: "Success Stories"
-        url: "/testimonials"
+        url: "/testimonials/"
+      - title: "Contact"
+        url: "/contact/"
   - title: "About Kevin"
     links:
       - title: "Biography"
-        url: "/about-kevin-middleton"
+        url: "/about-kevin-middleton/"
       - title: "Coaching Philosophy"
-        url: "/about-kevin-middleton#philosophy"
-      - title: "Testimonials"
-        url: "/testimonials"
-      - title: "Speaking"
-        url: "/contact"
+        url: "/about-kevin-middleton/#philosophy"
   - title: "Support"
     links:
       - title: "Contact Us"
-        url: "/contact"
+        url: "/contact/"
       - title: "Help Center"
-        url: "/contact"
-      - title: "Refund Policy"
-        url: "/refund-policy"
+        url: "/help/"
 
 # Build settings
 markdown: kramdown
@@ -127,12 +121,17 @@ site_constants:
   sessions_created: "328"
   community_size: "1200+"
   
-# Product pricing (CORRECT DOLLAR PRICING based on requirements)
+# Product pricing (CORRECT DOLLAR PRICING)
 pricing:
   complete_system:
     current: "$127"
     old: "$305"
     payments: "4 payments of $31.75"
+    currency_symbol: "$"
+  game_model:
+    current: "$20"
+    regular: "$40"
+    savings: "$20"
     currency_symbol: "$"
   sessions_328:
     current: "$34.20"
@@ -143,11 +142,6 @@ pricing:
     current: "FREE"
     old: ""
     currency_symbol: ""
-  game_model:
-    current: "$40"
-    regular: "$80"
-    savings: "$40"
-    currency_symbol: "$"
   uefa_c:
     current: "$20"
     old: ""
@@ -168,12 +162,12 @@ pricing:
     currency_symbol: "$"
     price_increase_date: "01/08/2025"
 
-# Purchase links (VERIFIED URLs from requirements)
+# Purchase links (VERIFIED URLs)
 purchase_links:
   complete_system: "https://360tft.com/l/CompleteCoachingMasterySystem"
+  game_model: "https://360tft.com/l/360TFTGM"
   sessions_328: "https://360tft.com/l/TrainingSessionsForAllAges"
   coaches_compass: "https://360tft.com/l/TheCoachCompass"
-  game_model: "https://360tft.com/l/360TFTGM"
   uefa_c: "https://360tft.com/l/svnymr"
   tgfp: "https://360tft.com/l/tgfp"
   cheatsheet_vault: "https://360tft.com/l/CoachingCheatsheetVault"
@@ -194,15 +188,3 @@ seo:
   type: Organization
   name: "360TFT"
   logo: "/assets/images/logo-360tft.jpg"
-  
-# Guarantee text (reusable)
-guarantee:
-  standard: "30-day money-back guarantee"
-  description: "If you don't see dramatic improvement in your coaching, we'll refund every penny. No questions asked."
-  
-# Common CTA text
-cta:
-  primary: "Get Instant Access Now"
-  secondary: "Learn More"
-  academy: "Join Academy Now"
-  diagnostic: "Take Free Diagnostic"
