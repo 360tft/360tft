@@ -9,7 +9,6 @@ author:
   name: "Kevin Middleton"
   email: "kevin@360tft.com"
   twitter: "coach_kevin_m"
-  photo: "/assets/images/kevin-middleton-coach.jpg"
 
 # SEO settings
 lang: en-GB
@@ -24,16 +23,16 @@ social:
 
 # Navigation menu
 navigation:
-  - title: "Free Diagnostic"
-    url: "/360tft/coaches-compass"
-  - title: "Emergency Sessions"
-    url: "/360tft/coaches-compass"
-  - title: "Coach's Compass"
-    url: "/coaches-compass"
+  - title: "Home"
+    url: "/"
+  - title: "Complete System"
+    url: "/complete-system"
   - title: "328 Sessions"
     url: "/328-sessions"
+  - title: "Coach's Compass"
+    url: "/coaches-compass"
   - title: "Academy"
-    url: "https://www.skool.com/coachingacademy"
+    url: "/football-coaching-academy"
   - title: "About Kevin"
     url: "/about-kevin-middleton"
 
@@ -42,25 +41,25 @@ footer_links:
   - title: "Training Resources"
     links:
       - title: "328 Training Sessions"
-        url: "/328-football-training-sessions"
-      - title: "360TFT Game Model"
-        url: "/360tft-game-model"
+        url: "/328-sessions"
+      - title: "Complete System"
+        url: "/complete-system"
       - title: "Coach's Compass"
         url: "/coaches-compass"
       - title: "Coaching Cheatsheets"
         url: "/coaching-cheatsheet-vault"
-      - title: "Grassroots Pack"
-        url: "/grassroots-football-pack"
+      - title: "Grassroots Pack" 
+        url: "/tgfp"
   - title: "Community"
     links:
+      - title: "Football Academy"
+        url: "/football-coaching-academy"
       - title: "Free Community"
         url: "https://www.skool.com/360tft-6754"
-      - title: "Coaching Academy"
-        url: "https://www.skool.com/coachingacademy"
-      - title: "Weekly Masterclasses"
-        url: "/academy#masterclasses"
+      - title: "Testimonials"
+        url: "/testimonials"
       - title: "Success Stories"
-        url: "/success-stories"
+        url: "/testimonials"
   - title: "About Kevin"
     links:
       - title: "Biography"
@@ -70,15 +69,13 @@ footer_links:
       - title: "Testimonials"
         url: "/testimonials"
       - title: "Speaking"
-        url: "/speaking"
+        url: "/contact"
   - title: "Support"
     links:
       - title: "Contact Us"
         url: "/contact"
-      - title: "FAQ"
-        url: "/faq"
       - title: "Help Center"
-        url: "/help"
+        url: "/contact"
       - title: "Refund Policy"
         url: "/refund-policy"
 
@@ -125,9 +122,56 @@ site_constants:
   brand_color: "#976bdd"
   accent_color: "#ff5757"
   years_experience: "15+"
-  coaches_mentored: "1200+"
-  players_developed: "1000+"
-  sessions_created: "1000+"
+  coaches_mentored: "1000+"
+  players_developed: "5000+"
+  sessions_created: "328"
+  community_size: "1200+"
+  
+# Product pricing (centralised for easy updates)
+pricing:
+  complete_system:
+    current: "£127"
+    old: "£305"
+    payments: "4 payments of £31.75"
+    currency_symbol: "£"
+  sessions_328:
+    current: "£34.20"
+    old: "£42.00"
+    discount_code: "10"
+    currency_symbol: "£"
+  coaches_compass:
+    current: "FREE"
+    old: ""
+    currency_symbol: ""
+  uefa_c:
+    current: "£20"
+    old: ""
+    currency_symbol: "£"
+  tgfp:
+    current: "£20"
+    old: "£35"
+    currency_symbol: "£"
+  cheatsheet_vault:
+    current: "£10"
+    old: "£15"
+    currency_symbol: "£"
+  academy:
+    current_monthly: "£10"
+    current_yearly: "£80"
+    future_monthly: "£15"
+    future_yearly: "£99"
+    currency_symbol: "£"
+    price_increase_date: "01/08/2025"
+
+# Purchase links (centralised and verified)
+purchase_links:
+  complete_system: "https://360tft.com/l/CompleteCoachingMasterySystem"
+  sessions_328: "https://360tft.com/l/TrainingSessionsForAllAges"
+  coaches_compass: "https://360tft.com/l/TheCoachCompass"
+  uefa_c: "https://360tft.com/l/svnymr"
+  tgfp: "https://360tft.com/l/tgfp"
+  cheatsheet_vault: "https://360tft.com/l/CoachingCheatsheetVault"
+  academy: "https://www.skool.com/coachingacademy"
   
 # Contact information
 contact:
@@ -143,4 +187,16 @@ facebook_pixel: "XXXXXXXXXX"
 seo:
   type: Organization
   name: "360TFT"
-  logo: "/assets/images/logo-360tft.png"
+  logo: "/assets/images/logo-360tft.jpg"
+  
+# Guarantee text (reusable)
+guarantee:
+  standard: "30-day money-back guarantee"
+  description: "If you don't see dramatic improvement in your coaching, we'll refund every penny. No questions asked."
+  
+# Common CTA text
+cta:
+  primary: "Get Instant Access Now"
+  secondary: "Learn More"
+  academy: "Join Academy Now"
+  diagnostic: "Take Free Diagnostic"
