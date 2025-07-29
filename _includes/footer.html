@@ -1,3 +1,6 @@
+<!-- SVG Sprites -->
+{% include svg-sprites.html %}
+
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
@@ -31,7 +34,9 @@
                    target="_blank" 
                    rel="noopener"
                    aria-label="Follow on Twitter">
-                    <span class="social-icon">𝕏</span>
+                    <svg class="social-icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
                 </a>
                 {%- endif -%}
                 
@@ -41,7 +46,9 @@
                    target="_blank" 
                    rel="noopener"
                    aria-label="Subscribe on YouTube">
-                    <span class="social-icon">📺</span>
+                    <svg class="social-icon" aria-hidden="true">
+                        <use xlink:href="#icon-youtube"></use>
+                    </svg>
                 </a>
                 {%- endif -%}
                 
@@ -51,7 +58,9 @@
                    target="_blank" 
                    rel="noopener"
                    aria-label="Connect on LinkedIn">
-                    <span class="social-icon">💼</span>
+                    <svg class="social-icon" aria-hidden="true">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg>
                 </a>
                 {%- endif -%}
                 
@@ -61,7 +70,9 @@
                    target="_blank" 
                    rel="noopener"
                    aria-label="Follow on Instagram">
-                    <span class="social-icon">📷</span>
+                    <svg class="social-icon" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
                 </a>
                 {%- endif -%}
             </div>
@@ -88,5 +99,7 @@
 
 <!-- Back to Top Button -->
 <button id="back-to-top" class="back-to-top" aria-label="Back to top" style="display: none;">
-    <span class="back-to-top-icon">↑</span>
+    <svg class="back-to-top-icon" aria-hidden="true">
+        <use xlink:href="#icon-arrow-up"></use>
+    </svg>
 </button>

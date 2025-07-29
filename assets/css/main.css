@@ -1,57 +1,35 @@
 /* ========================================
-   360TFT Main CSS File
+   360TFT Modular CSS - Main Import File
    ======================================== */
 
-   /* Import component styles */
+/* Base Styles */
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+
+/* Layout */
+@import 'layout/grid.css';
+
+/* Components */
+@import 'components/buttons.css';
+@import 'components/cards.css';
+@import 'components/forms.css';
+@import 'components/header.css';
 @import 'components/images.css';
 @import 'components/authority-section.css';
+@import 'components/testimonials.css';
+@import 'components/game-model-feature.css';
 
-/* CSS Variables for Brand Colors */
-:root {
-    --brand-primary: #976bdd;
-    --brand-secondary: #7c5bc4;
-    --accent-color: #ff5757;
-    --accent-hover: #e64545;
-    --text-primary: #000000;
-    --text-secondary: #333333;
-    --text-muted: #666666;
-    --background-primary: #ffffff;
-    --background-secondary: #f8f9fa;
-    --background-accent: #e8d8d8;
-    --border-color: #e8e8e8;
-    --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
-    --shadow-medium: 0 5px 15px rgba(0,0,0,0.1);
-    --shadow-heavy: 0 15px 30px rgba(151, 107, 221, 0.15);
-    --border-radius: 8px;
-    --border-radius-large: 15px;
-    --transition-fast: 0.3s ease;
-    --container-max-width: 1200px;
-}
+/* Page-specific Styles */
+@import 'homepage-animations.css';
+@import 'homepage-problem-solving.css';
+@import 'product-pages.css';
+@import 'free-product.css';
 
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-primary);
-    background-color: var(--background-primary);
-}
-
-/* Container */
-.container {
-    max-width: var(--container-max-width);
-    margin: 0 auto;
-    padding: 0 20px;
-}
+/* ========================================
+   Additional Styles (remaining from original main.css)
+   These should eventually be moved to appropriate component files
+   ======================================== */
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {

@@ -296,10 +296,11 @@
                 milestones.forEach(milestone => {
                     if (scrollPercent >= milestone && !tracked.includes(milestone)) {
                         tracked.push(milestone);
-                        trackEvent('Time on Page', 'Milestone', `${milestone}s`);
-                }
-            });
-        }, 5000); // Check every 5 seconds
+                        trackEvent('Scroll Depth', 'Milestone', `${milestone}%`);
+                    }
+                });
+            }
+        });
     }
 
     /**
@@ -692,23 +693,6 @@
         initializeLazyLoading();
     });
 
-    // Expose utility functions globally if needed
-    window.TFTUtilities = {
-        trackEvent,
-        openModal,
-        closeModal,
-        debounce,
-        throttle,
-        isValidEmail
-    };
-
-})();('Scroll Depth', 'Milestone', `${milestone}%`);
-                    }
-                });
-            }
-        });
-    }
-
     /**
      * Track time on page
      */
@@ -723,4 +707,20 @@
             milestones.forEach(milestone => {
                 if (timeOnPage >= milestone && !tracked.includes(milestone)) {
                     tracked.push(milestone);
-                    trackEvent
+                    trackEvent('Time on Page', 'Milestone', `${milestone}s`);
+                }
+            });
+        }, 5000); // Check every 5 seconds
+    }
+
+    // Expose utility functions globally if needed
+    window.TFTUtilities = {
+        trackEvent,
+        openModal,
+        closeModal,
+        debounce,
+        throttle,
+        isValidEmail
+    };
+
+})();

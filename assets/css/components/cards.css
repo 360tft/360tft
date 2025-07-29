@@ -1,0 +1,129 @@
+/* ========================================
+   Card Components
+   ======================================== */
+
+.card {
+    background: var(--background-primary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    padding: 2rem;
+    transition: all var(--transition-fast);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.card-header {
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.card-subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.card-content {
+    margin-bottom: 1.5rem;
+}
+
+.card-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+/* Product Card Variants */
+.product-card {
+    position: relative;
+    background: var(--background-primary);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-medium);
+    padding: 2rem;
+    transition: all var(--transition-fast);
+    overflow: hidden;
+}
+
+.product-card.featured {
+    border: 2px solid var(--brand-primary);
+    box-shadow: var(--shadow-heavy);
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-color);
+    color: var(--background-primary);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product-badge.free-badge {
+    background: #28a745;
+}
+
+.product-badge.new-badge {
+    background: var(--brand-primary);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: var(--background-primary);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-medium);
+    padding: 2rem;
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    color: var(--brand-primary);
+    opacity: 0.3;
+}
+
+.testimonial-content {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info strong {
+    display: block;
+    color: var(--text-primary);
+}
+
+.author-info span {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}

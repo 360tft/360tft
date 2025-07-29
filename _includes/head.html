@@ -47,12 +47,16 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
 
-<!-- Preconnect for performance -->
+<!-- Performance optimizations -->
+<meta name="theme-color" content="#976bdd">
+<meta name="color-scheme" content="light dark">
+<link rel="dns-prefetch" href="//360tft.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- CSS -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<!-- CSS with performance optimizations -->
+<link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"></noscript>
 
 <!-- Page-specific CSS -->
 {%- if page.css -%}
