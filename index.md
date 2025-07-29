@@ -20,10 +20,6 @@ og_image: "/assets/images/360tft-social-share.jpg"
 body_class: "homepage"
 css:
   - "/assets/css/pages/homepage.css"
-  - "/assets/css/components/hero.css"
-  - "/assets/css/components/game-model-feature.css"
-  - "/assets/css/components/testimonials.css"
-  - "/assets/css/components/products-grid.css"
 js:
   - "/assets/js/pages/homepage.js"
 ---
@@ -221,6 +217,7 @@ js:
             <div class="product-card featured">
                 <div class="product-badge">MOST POPULAR</div>
                 <div class="product-header">
+                    <div class="product-icon">🏆</div>
                     <h3>Complete Coaching Mastery System</h3>
                     <p class="product-tagline">Everything you need to become the coach players remember forever</p>
                 </div>
@@ -243,9 +240,34 @@ js:
                 <a href="{{ site.purchase_links.complete_system }}" class="product-cta">Get Complete System</a>
             </div>
             
+            <!-- Game Model -->
+            <div class="product-card">
+                <div class="product-badge new-badge">NEW</div>
+                <div class="product-header">
+                    <div class="product-icon">🎮</div>
+                    <h3>The 360TFT Game Model</h3>
+                    <p class="product-tagline">750+ pages systematic approach to player development ages 0-18</p>
+                </div>
+                
+                <div class="product-pricing">
+                    <div class="price-main">{{ site.pricing.game_model.current }}</div>
+                    <div class="price-note">Launch Special - then {{ site.pricing.game_model.regular }}</div>
+                </div>
+                
+                <div class="product-features">
+                    <div class="feature">📚 16-Week Ball Mastery Blocks</div>
+                    <div class="feature">⚔️ Complete 1v1 Training System</div>
+                    <div class="feature">🏟️ Advanced 11v11 Structure</div>
+                    <div class="feature">💬 Complete Coaching Language</div>
+                </div>
+                
+                <a href="{{ site.purchase_links.game_model }}" class="product-cta">Get Game Model</a>
+            </div>
+            
             <!-- 328 Sessions -->
             <div class="product-card">
                 <div class="product-header">
+                    <div class="product-icon">⚽</div>
                     <h3>328 Training Sessions</h3>
                     <p class="product-tagline">Ready-to-use sessions for every age group and skill level</p>
                 </div>
@@ -256,9 +278,10 @@ js:
                 </div>
                 
                 <div class="product-features">
-                    <div class="feature">⚽ Sessions for all ages</div>
-                    <div class="feature">📋 Print-ready formats</div>
+                    <div class="feature">📋 Sessions for all ages</div>
+                    <div class="feature">🖨️ Print-ready formats</div>
                     <div class="feature">🎯 Skill-specific focus</div>
+                    <div class="feature">⏱️ Time-efficient planning</div>
                 </div>
                 
                 <a href="{{ site.purchase_links.sessions_328 }}" class="product-cta">Get 328 Sessions</a>
@@ -268,6 +291,7 @@ js:
             <div class="product-card free">
                 <div class="product-badge free-badge">FREE</div>
                 <div class="product-header">
+                    <div class="product-icon">🧭</div>
                     <h3>Coach's Compass</h3>
                     <p class="product-tagline">5-minute team diagnostic and problem-solving toolkit</p>
                 </div>
@@ -280,6 +304,7 @@ js:
                     <div class="feature">🎯 5-minute assessment</div>
                     <div class="feature">🚨 Emergency session plans</div>
                     <div class="feature">🧠 Mindset reset protocols</div>
+                    <div class="feature">📊 Match analysis templates</div>
                 </div>
                 
                 <a href="{{ site.purchase_links.coaches_compass }}" class="product-cta free-cta">Get Free Compass</a>
@@ -289,6 +314,7 @@ js:
             <div class="product-card academy">
                 <div class="product-badge academy-badge">COMMUNITY</div>
                 <div class="product-header">
+                    <div class="product-icon">🏆</div>
                     <h3>Football Coaching Academy</h3>
                     <p class="product-tagline">Join {{ site.site_constants.community_size }} coaches committed to continuous improvement</p>
                 </div>
@@ -302,9 +328,32 @@ js:
                     <div class="feature">👥 Active coach community</div>
                     <div class="feature">📚 Monthly masterclasses</div>
                     <div class="feature">💬 Direct access to Kevin</div>
+                    <div class="feature">📈 Continuous learning</div>
                 </div>
                 
                 <a href="{{ site.purchase_links.academy }}" class="product-cta">Join Academy</a>
+            </div>
+            
+            <!-- Additional Products Row -->
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-icon">📚</div>
+                    <h3>Coaching Cheatsheet Vault</h3>
+                    <p class="product-tagline">Quick-reference guides for every coaching situation</p>
+                </div>
+                
+                <div class="product-pricing">
+                    <div class="price-main">{{ site.pricing.cheatsheet_vault.current }}</div>
+                    <div class="price-old">{{ site.pricing.cheatsheet_vault.old }}</div>
+                </div>
+                
+                <div class="product-features">
+                    <div class="feature">🗂️ 14 printable cheatsheets</div>
+                    <div class="feature">⚡ Fast decisions</div>
+                    <div class="feature">📖 Clear teaching guides</div>
+                </div>
+                
+                <a href="{{ site.purchase_links.cheatsheet_vault }}" class="product-cta">Get Cheatsheets</a>
             </div>
         </div>
     </div>
