@@ -11,44 +11,38 @@ keywords:
   - Kevin Middleton
   - 360TFT
   - football coaching academy
-  - game model
-  - systematic coaching
 seo_title: "360TFT - Transform Average Players Into Match-Winners | Football Coaching Academy"
 og_title: "360TFT - Transform Average Players Into Match-Winners"
 og_description: "Join 1200+ coaches using proven player development systems. 15+ years of coaching expertise in one place."
 og_image: "/assets/images/360tft-social-share.jpg"
 body_class: "homepage"
-css:
-  - "/assets/css/pages/homepage.css"
-js:
-  - "/assets/js/pages/homepage.js"
 ---
 
 <!-- Hero Section -->
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-badge">🏆 Trusted by {{ site.site_constants.coaches_mentored }} Coaches Worldwide</div>
-            <h1>{{ page.title }}</h1>
+            <div class="hero-badge">🏆 Trusted by 1000+ Coaches Worldwide</div>
+            <h1>Transform Average Players Into Match-Winners</h1>
             <p class="hero-subtitle">With The Proven 360TFT Game Model</p>
-            <p class="hero-description">Join the coaching revolution that's helping youth players develop faster, perform better, and love the game more. {{ site.site_constants.sessions_created }} ready-to-use sessions, expert guidance, and a thriving community of coaches who get results.</p>
+            <p class="hero-description">Join the coaching revolution that's helping youth players develop faster, perform better, and love the game more. 328 ready-to-use sessions, expert guidance, and a thriving community of coaches who get results.</p>
             
             <div class="hero-cta-group">
-                <a href="{{ site.purchase_links.coaches_compass }}" class="hero-cta">Get Free Coach's Compass</a>
-                <a href="{{ site.purchase_links.academy }}" class="hero-cta-secondary">Join The Academy</a>
+                <a href="https://360tft.com/l/TheCoachCompass" class="hero-cta">Get Free Coach's Compass</a>
+                <a href="https://www.skool.com/coachingacademy" class="hero-cta-secondary">Join The Academy</a>
             </div>
             
             <div class="social-proof">
-                <strong>{{ site.site_constants.years_experience }} Years Experience</strong> • 
-                <strong>{{ site.site_constants.players_developed }} Players Coached</strong> • 
-                <strong>{{ site.site_constants.community_size }} Academy Members</strong>
+                <strong>15+ Years Experience</strong> • 
+                <strong>5000+ Players Coached</strong> • 
+                <strong>1200+ Academy Members</strong>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Game Model Feature Section -->
-<section class="game-model-feature" id="game-model">
+<section class="game-model-feature">
     <div class="container">
         <div class="game-model-content">
             <div class="game-model-text">
@@ -90,67 +84,32 @@ js:
                 
                 <div class="game-model-pricing">
                     <div class="price-container">
-                        <span class="price-current">{{ site.pricing.game_model.current }}</span>
-                        <span class="price-regular">(Usually {{ site.pricing.game_model.regular }})</span>
-                        <div class="savings-badge">Save {{ site.pricing.game_model.savings }} - First 100 Coaches Only</div>
+                        <span class="price-current">$20</span>
+                        <span class="price-regular">(Usually $40)</span>
+                        <div class="savings-badge">Save $20 - First 100 Coaches Only</div>
                     </div>
                 </div>
                 
                 <div class="cta-group">
-                    <a href="{{ site.purchase_links.game_model }}" class="cta-primary">Get The Game Model</a>
-                    <a href="{{ '/game-model/' | relative_url }}" class="cta-secondary">Learn More</a>
+                    <a href="https://360tft.com/l/360TFTGM" class="cta-primary">Get The Game Model</a>
+                    <a href="/game-model/" class="cta-secondary">Learn More</a>
                 </div>
             </div>
             
             <div class="game-model-visual">
                 <div class="game-model-preview">
-                    <div class="preview-mockup">
-                        <div class="mockup-header">
-                            <div class="header-controls">
-                                <span class="control red"></span>
-                                <span class="control yellow"></span>
-                                <span class="control green"></span>
-                            </div>
-                            <div class="header-title">360TFT Game Model</div>
+                    <div class="preview-stats">
+                        <div class="stat">
+                            <strong>750+</strong>
+                            <span>Pages</span>
                         </div>
-                        <div class="mockup-content">
-                            <div class="content-section">
-                                <h4>Ball Mastery Block 1</h4>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 85%"></div>
-                                </div>
-                                <p>Sessions 1-16: Foundation Skills</p>
-                            </div>
-                            <div class="content-section">
-                                <h4>1v1 Development</h4>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 65%"></div>
-                                </div>
-                                <p>Attacking & Defensive Principles</p>
-                            </div>
-                            <div class="content-section">
-                                <h4>11v11 Structure</h4>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 45%"></div>
-                                </div>
-                                <p>Team Shape & Movement</p>
-                            </div>
+                        <div class="stat">
+                            <strong>16</strong>
+                            <span>Training Blocks</span>
                         </div>
-                        <div class="preview-overlay">
-                            <div class="preview-stats">
-                                <div class="stat">
-                                    <strong>750+</strong>
-                                    <span>Pages</span>
-                                </div>
-                                <div class="stat">
-                                    <strong>16</strong>
-                                    <span>Training Blocks</span>
-                                </div>
-                                <div class="stat">
-                                    <strong>0-18</strong>
-                                    <span>Age Groups</span>
-                                </div>
-                            </div>
+                        <div class="stat">
+                            <strong>0-18</strong>
+                            <span>Age Groups</span>
                         </div>
                     </div>
                 </div>
@@ -160,36 +119,32 @@ js:
 </section>
 
 <!-- Authority Section -->
-<section class="authority" id="about">
+<section class="authority">
     <div class="container">
         <div class="authority-content">
             <div class="authority-image">
-                <img class="kevin-photo" src="{{ '/assets/images/kevin-middleton-coach.jpg' | relative_url }}" alt="Kevin Middleton - Football Coach">
-                <div class="image-badge">
-                    <span>{{ site.site_constants.years_experience }}</span>
-                    <small>Years Experience</small>
-                </div>
+                <img class="kevin-photo" src="/assets/images/kevin-middleton-coach.jpg" alt="Kevin Middleton - Football Coach">
             </div>
             <div class="authority-text">
                 <h2>Meet Kevin Middleton</h2>
                 <p class="authority-subtitle">The Football Coach Behind 360TFT</p>
-                <p>After {{ site.site_constants.years_experience }} years of coaching at every level, I've cracked the code on what actually develops players. Not the drills that look impressive, but the systematic approach that creates real improvement.</p>
+                <p>After 15+ years of coaching at every level, I've cracked the code on what actually develops players. Not the drills that look impressive, but the systematic approach that creates real improvement.</p>
                 
                 <div class="credentials">
                     <div class="credential-item">
-                        <strong>{{ site.site_constants.players_developed }}+</strong>
+                        <strong>5000+</strong>
                         <span>Players Developed</span>
                     </div>
                     <div class="credential-item">
-                        <strong>{{ site.site_constants.coaches_mentored }}+</strong>
+                        <strong>1000+</strong>
                         <span>Coaches Mentored</span>
                     </div>
                     <div class="credential-item">
-                        <strong>{{ site.site_constants.sessions_created }}</strong>
+                        <strong>328</strong>
                         <span>Sessions Created</span>
                     </div>
                     <div class="credential-item">
-                        <strong>{{ site.site_constants.community_size }}+</strong>
+                        <strong>1200+</strong>
                         <span>Community Members</span>
                     </div>
                 </div>
@@ -198,14 +153,14 @@ js:
                     "Most coaches teach random skills in random order. The 360TFT system teaches the right skills at the right time in the right way. That's why it works."
                 </blockquote>
                 
-                <a href="{{ '/about-kevin-middleton/' | relative_url }}" class="cta-secondary">Learn About Kevin's Journey</a>
+                <a href="/about-kevin-middleton/" class="cta-secondary">Learn About Kevin's Journey</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Products Grid Section -->
-<section class="products" id="products">
+<section class="products">
     <div class="container">
         <div class="products-header">
             <h2>From Individual Training Sessions to Complete Coaching Systems</h2>
@@ -223,9 +178,9 @@ js:
                 </div>
                 
                 <div class="product-pricing">
-                    <div class="price-main">{{ site.pricing.complete_system.current }}</div>
-                    <div class="price-old">{{ site.pricing.complete_system.old }}</div>
-                    <div class="price-payments">Or {{ site.pricing.complete_system.payments }}</div>
+                    <div class="price-main">$127</div>
+                    <div class="price-old">$305</div>
+                    <div class="price-payments">Or 4 payments of $31.75</div>
                 </div>
                 
                 <div class="product-features">
@@ -237,7 +192,7 @@ js:
                     <div class="feature">✅ + 7 More Resources</div>
                 </div>
                 
-                <a href="{{ site.purchase_links.complete_system }}" class="product-cta">Get Complete System</a>
+                <a href="https://360tft.com/l/CompleteCoachingMasterySystem" class="product-cta">Get Complete System</a>
             </div>
             
             <!-- Game Model -->
@@ -250,8 +205,8 @@ js:
                 </div>
                 
                 <div class="product-pricing">
-                    <div class="price-main">{{ site.pricing.game_model.current }}</div>
-                    <div class="price-note">Launch Special - then {{ site.pricing.game_model.regular }}</div>
+                    <div class="price-main">$20</div>
+                    <div class="price-note">Launch Special - then $40</div>
                 </div>
                 
                 <div class="product-features">
@@ -261,7 +216,7 @@ js:
                     <div class="feature">💬 Complete Coaching Language</div>
                 </div>
                 
-                <a href="{{ site.purchase_links.game_model }}" class="product-cta">Get Game Model</a>
+                <a href="https://360tft.com/l/360TFTGM" class="product-cta">Get Game Model</a>
             </div>
             
             <!-- 328 Sessions -->
@@ -273,8 +228,8 @@ js:
                 </div>
                 
                 <div class="product-pricing">
-                    <div class="price-main">{{ site.pricing.sessions_328.current }}</div>
-                    <div class="price-note">Use code '{{ site.pricing.sessions_328.discount_code }}' for discount</div>
+                    <div class="price-main">$34.20</div>
+                    <div class="price-note">Use code '10' for discount</div>
                 </div>
                 
                 <div class="product-features">
@@ -284,7 +239,7 @@ js:
                     <div class="feature">⏱️ Time-efficient planning</div>
                 </div>
                 
-                <a href="{{ site.purchase_links.sessions_328 }}" class="product-cta">Get 328 Sessions</a>
+                <a href="https://360tft.com/l/TrainingSessionsForAllAges" class="product-cta">Get 328 Sessions</a>
             </div>
             
             <!-- Coach's Compass -->
@@ -297,7 +252,7 @@ js:
                 </div>
                 
                 <div class="product-pricing">
-                    <div class="price-main">{{ site.pricing.coaches_compass.current }}</div>
+                    <div class="price-main">FREE</div>
                 </div>
                 
                 <div class="product-features">
@@ -307,7 +262,7 @@ js:
                     <div class="feature">📊 Match analysis templates</div>
                 </div>
                 
-                <a href="{{ site.purchase_links.coaches_compass }}" class="product-cta free-cta">Get Free Compass</a>
+                <a href="https://360tft.com/l/TheCoachCompass" class="product-cta free-cta">Get Free Compass</a>
             </div>
             
             <!-- Football Coaching Academy -->
@@ -316,12 +271,12 @@ js:
                 <div class="product-header">
                     <div class="product-icon">🏆</div>
                     <h3>Football Coaching Academy</h3>
-                    <p class="product-tagline">Join {{ site.site_constants.community_size }} coaches committed to continuous improvement</p>
+                    <p class="product-tagline">Join 1200+ coaches committed to continuous improvement</p>
                 </div>
                 
                 <div class="product-pricing">
-                    <div class="price-main">{{ site.pricing.academy.current_monthly }}/month</div>
-                    <div class="price-note">Price increases to {{ site.pricing.academy.future_monthly }}/month on {{ site.pricing.academy.price_increase_date }}</div>
+                    <div class="price-main">$47/month</div>
+                    <div class="price-note">Price increases to $67/month on 01/08/2025</div>
                 </div>
                 
                 <div class="product-features">
@@ -331,7 +286,7 @@ js:
                     <div class="feature">📈 Continuous learning</div>
                 </div>
                 
-                <a href="{{ site.purchase_links.academy }}" class="product-cta">Join Academy</a>
+                <a href="https://www.skool.com/coachingacademy" class="product-cta">Join Academy</a>
             </div>
             
             <!-- Additional Products Row -->
@@ -343,8 +298,8 @@ js:
                 </div>
                 
                 <div class="product-pricing">
-                    <div class="price-main">{{ site.pricing.cheatsheet_vault.current }}</div>
-                    <div class="price-old">{{ site.pricing.cheatsheet_vault.old }}</div>
+                    <div class="price-main">$10</div>
+                    <div class="price-old">$15</div>
                 </div>
                 
                 <div class="product-features">
@@ -353,14 +308,14 @@ js:
                     <div class="feature">📖 Clear teaching guides</div>
                 </div>
                 
-                <a href="{{ site.purchase_links.cheatsheet_vault }}" class="product-cta">Get Cheatsheets</a>
+                <a href="https://360tft.com/l/CoachingCheatsheetVault" class="product-cta">Get Cheatsheets</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Testimonials Section -->
-<section class="testimonials" id="testimonials">
+<section class="testimonials">
     <div class="container">
         <div class="testimonials-header">
             <h2>What Coaches Are Saying</h2>
@@ -418,18 +373,18 @@ js:
         </div>
         
         <div class="testimonials-cta">
-            <a href="{{ '/testimonials/' | relative_url }}" class="cta-secondary">Read More Success Stories</a>
+            <a href="/testimonials/" class="cta-secondary">Read More Success Stories</a>
         </div>
     </div>
 </section>
 
 <!-- Community Section -->
-<section class="community" id="community">
+<section class="community">
     <div class="container">
         <div class="community-content">
             <div class="community-text">
                 <h2>Join The Coaching Revolution</h2>
-                <p class="community-subtitle">{{ site.site_constants.community_size }} coaches can't be wrong</p>
+                <p class="community-subtitle">1200+ coaches can't be wrong</p>
                 <p>Stop coaching like everyone else. Join the community that's raising the standard with systematic player development, proven methodologies, and continuous improvement.</p>
                 
                 <div class="community-benefits">
@@ -457,15 +412,15 @@ js:
                 </div>
                 
                 <div class="community-cta">
-                    <a href="{{ site.purchase_links.academy }}" class="cta-primary">Join The Academy</a>
-                    <p class="price-warning">Price increases to {{ site.pricing.academy.future_monthly }}/month on {{ site.pricing.academy.price_increase_date }}</p>
+                    <a href="https://www.skool.com/coachingacademy" class="cta-primary">Join The Academy</a>
+                    <p class="price-warning">Price increases to $67/month on 01/08/2025</p>
                 </div>
             </div>
             
             <div class="community-visual">
                 <div class="community-stats">
                     <div class="stat-card">
-                        <div class="stat-number">{{ site.site_constants.community_size }}+</div>
+                        <div class="stat-number">1200+</div>
                         <div class="stat-label">Active Members</div>
                     </div>
                     <div class="stat-card">

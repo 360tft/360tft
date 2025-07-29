@@ -1,31 +1,165 @@
-<header class="site-header">
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="{{ '/' | relative_url }}" class="logo-link">
-                <img src="{{ '/assets/images/360tft-logo.jpg' | relative_url }}" alt="360TFT - Transform Average Players Into Match-Winners" class="logo">
+<!-- Header Navigation -->
+<nav class="header-nav" id="header-nav">
+    <div class="nav-container">
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+            <img class="logo" src="{{ '/assets/images/logo-360tft.jpg' | relative_url }}" alt="{{ site.title }} - Football Coaching Excellence">
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="{{ '/about-kevin-middleton/' | relative_url }}" 
+                   class="nav-link{% if page.url contains '/about-kevin-middleton' %} active{% endif %}">
+                    About Kevin
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/game-model/' | relative_url }}" 
+                   class="nav-link nav-highlight{% if page.url contains '/game-model' %} active{% endif %}">
+                    Game Model
+                    <span class="nav-badge">NEW</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/328-sessions/' | relative_url }}" 
+                   class="nav-link{% if page.url contains '/328-sessions' %} active{% endif %}">
+                    328 Sessions
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/coaches-compass/' | relative_url }}" 
+                   class="nav-link{% if page.url contains '/coaches-compass' %} active{% endif %}">
+                    Coach's Compass
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/football-coaching-academy/' | relative_url }}" 
+                   class="nav-link{% if page.url contains '/football-coaching-academy' %} active{% endif %}">
+                    Academy
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/testimonials/' | relative_url }}" 
+                   class="nav-link{% if page.url contains '/testimonials' %} active{% endif %}">
+                    Success Stories
+                </a>
+            </li>
+        </ul>
+        
+        <!-- CTA Buttons -->
+        <div class="nav-cta-group">
+            <a href="https://360tft.com/l/TheCoachCompass" 
+               class="nav-cta-free"
+               target="_blank" 
+               rel="noopener">
+                Get FREE Compass
             </a>
-            
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="{{ '/about-kevin-middleton/' | relative_url }}">About Kevin</a></li>
-                    <li><a href="{{ '/game-model/' | relative_url }}" class="nav-highlight">Game Model</a></li>
-                    <li><a href="{{ '/328-sessions/' | relative_url }}">328 Sessions</a></li>
-                    <li><a href="{{ '/coaches-compass/' | relative_url }}">Coach's Compass</a></li>
-                    <li><a href="{{ '/football-coaching-academy/' | relative_url }}">Academy</a></li>
-                    <li><a href="{{ '/testimonials/' | relative_url }}">Success Stories</a></li>
-                </ul>
-            </div>
-            
-            <div class="nav-cta-group">
-                <a href="{{ site.purchase_links.coaches_compass }}" class="nav-cta-free">Get FREE Compass</a>
-                <a href="{{ site.purchase_links.academy }}" class="nav-cta-primary">Join Academy</a>
-            </div>
-            
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <a href="https://www.skool.com/coachingacademy" 
+               class="nav-cta-primary" 
+               target="_blank" 
+               rel="noopener">
+                Join Academy
+            </a>
         </div>
-    </nav>
-</header>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img class="mobile-logo" src="{{ '/assets/images/logo-360tft.jpg' | relative_url }}" alt="{{ site.title }}">
+                <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close navigation menu">
+                    <span class="close-icon">&times;</span>
+                </button>
+            </div>
+            
+            <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                    <a href="{{ '/about-kevin-middleton/' | relative_url }}" 
+                       class="mobile-nav-link{% if page.url contains '/about-kevin-middleton' %} active{% endif %}">
+                        About Kevin
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="{{ '/game-model/' | relative_url }}" 
+                       class="mobile-nav-link mobile-nav-highlight{% if page.url contains '/game-model' %} active{% endif %}">
+                        Game Model
+                        <span class="mobile-nav-badge">NEW</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="{{ '/328-sessions/' | relative_url }}" 
+                       class="mobile-nav-link{% if page.url contains '/328-sessions' %} active{% endif %}">
+                        328 Sessions
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="{{ '/coaches-compass/' | relative_url }}" 
+                       class="mobile-nav-link{% if page.url contains '/coaches-compass' %} active{% endif %}">
+                        Coach's Compass
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="{{ '/football-coaching-academy/' | relative_url }}" 
+                       class="mobile-nav-link{% if page.url contains '/football-coaching-academy' %} active{% endif %}">
+                        Academy
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="{{ '/testimonials/' | relative_url }}" 
+                       class="mobile-nav-link{% if page.url contains '/testimonials' %} active{% endif %}">
+                        Success Stories
+                    </a>
+                </li>
+                
+                <!-- Mobile CTA Buttons -->
+                <li class="mobile-nav-item mobile-cta-item">
+                    <a href="https://360tft.com/l/TheCoachCompass" 
+                       class="mobile-nav-cta-free" 
+                       target="_blank" 
+                       rel="noopener">
+                        Get FREE Compass
+                    </a>
+                </li>
+                <li class="mobile-nav-item mobile-cta-item">
+                    <a href="https://www.skool.com/coachingacademy" 
+                       class="mobile-nav-cta" 
+                       target="_blank" 
+                       rel="noopener">
+                        Join Academy
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Breadcrumbs (optional, for non-homepage) -->
+{%- unless page.url == '/' -%}
+{%- if page.show_breadcrumbs != false -%}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="{{ '/' | relative_url }}">Home</a>
+            </li>
+            {%- if page.breadcrumb_parent -%}
+            <li class="breadcrumb-item">
+                <a href="{{ page.breadcrumb_parent.url | relative_url }}">{{ page.breadcrumb_parent.title }}</a>
+            </li>
+            {%- endif -%}
+            <li class="breadcrumb-item active" aria-current="page">
+                {{ page.breadcrumb_title | default: page.title }}
+            </li>
+        </ol>
+    </div>
+</nav>
+{%- endif -%}
+{%- endunless -%}
