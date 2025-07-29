@@ -70,7 +70,7 @@
     "description": "{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}",
     "url": "{{ page.url | absolute_url }}",
     {%- if page.schema_type == 'Organization' or page.schema_type == 'LocalBusiness' -%}
-    "logo": "{{ '/assets/images/logo-360tft.png' | absolute_url }}",
+    "logo": "{{ '/assets/images/logo-360tft.jpg' | absolute_url }}",
     "sameAs": [
         "https://x.com/{{ site.social.twitter }}",
         "https://www.linkedin.com/in/{{ site.social.linkedin }}",
@@ -89,11 +89,55 @@
         "name": "{{ site.title }}",
         "logo": {
             "@type": "ImageObject",
-            "url": "{{ '/assets/images/logo-360tft.png' | absolute_url }}"
+            "url": "{{ '/assets/images/logo-360tft.jpg' | absolute_url }}"
         }
     }
 }
 </script>
+
+<!-- Person Schema for Kevin Middleton (only on About page) -->
+{%- if page.schema_type == 'Person' -%}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "jobTitle": "{{ page.job_title | default: 'Football Coach & Player Development Expert' }}",
+    "description": "Football coach with {{ site.site_constants.years_experience }} years experience, creator of the 360TFT Game Model, mentor to {{ site.site_constants.coaches_mentored }} coaches worldwide",
+    "url": "{{ page.url | absolute_url }}",
+    "image": "{{ '/assets/images/kevin-middleton-coach.jpg' | absolute_url }}",
+    "sameAs": [
+        "https://x.com/{{ site.social.twitter }}",
+        "https://www.linkedin.com/in/{{ site.social.linkedin }}",
+        "https://www.youtube.com/{{ site.social.youtube }}"
+    ],
+    "worksFor": {
+        "@type": "Organization",
+        "name": "{{ site.title }}",
+        "description": "Football coaching education and player development"
+    },
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Football Coaching Experience - Grassroots to Academy Level"
+    },
+    "knowsAbout": [
+        "Football Coaching",
+        "Player Development", 
+        "Youth Football",
+        "Coaching Education",
+        "Sports Psychology",
+        "Technical Training",
+        "Tactical Development"
+    ],
+    "award": [
+        "{{ site.site_constants.coaches_mentored }} Coaches Mentored",
+        "{{ site.site_constants.players_developed }} Players Developed",
+        "Creator of 360TFT Game Model",
+        "{{ site.site_constants.sessions_created }} Training Sessions Designed"
+    ]
+}
+</script>
+{%- endif -%}
 
 <!-- Analytics -->
 {%- if site.google_analytics and jekyll.environment == 'production' -%}
