@@ -1,428 +1,455 @@
 ---
 layout: default
-title: "Stop Guessing What's Wrong With Your Team - Fix It Systematically"
-description: "The only football coaching system that diagnoses your team's exact problems first, then gives you targeted solutions. 15+ years proven with 1000+ coaches worldwide."
-keywords: [football team diagnostic, coaching problems, emergency football sessions, youth football coaching help, team assessment tool, parent football coach, grassroots coaching support]
-seo_title: "Football Team Diagnostic & Problem Solving | 360TFT Coaching Solutions"
-og_title: "Finally - A Football Coaching System That Solves Real Problems"
-og_description: "Stop running random sessions. Diagnose your team's exact weaknesses in 5 minutes, get targeted solutions that work. Used by 1000+ coaches."
-og_image: "/assets/images/360tft-problem-solving-social.jpg"
-body_class: "homepage problem-solving"
-css: ["/assets/css/homepage-problem-solving.css"]
-js: ["/assets/js/homepage-diagnostic.js"]
-schema_type: "Organization"
+title: "Transform Average Players Into Match-Winners"
+description: "Join 1200+ coaches using the 360TFT Game Model. Access 328 ready-to-use training sessions, expert coaching guidance, and proven player development systems from Kevin Middleton."
+keywords: 
+  - football coaching
+  - soccer training sessions
+  - youth football coaching
+  - coaching courses
+  - player development
+  - Kevin Middleton
+  - 360TFT
+  - football coaching academy
+  - game model
+  - systematic coaching
+seo_title: "360TFT - Transform Average Players Into Match-Winners | Football Coaching Academy"
+og_title: "360TFT - Transform Average Players Into Match-Winners"
+og_description: "Join 1200+ coaches using proven player development systems. 15+ years of coaching expertise in one place."
+og_image: "/assets/images/360tft-social-share.jpg"
+body_class: "homepage"
+css:
+  - "/assets/css/pages/homepage.css"
+  - "/assets/css/components/hero.css"
+  - "/assets/css/components/game-model-feature.css"
+  - "/assets/css/components/testimonials.css"
+  - "/assets/css/components/products-grid.css"
+js:
+  - "/assets/js/pages/homepage.js"
 ---
 
-<!-- Problem Identification Hero -->
-<section class="hero problem-hero">
+<!-- Hero Section -->
+<section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="problem-badge">The Only Systematic Coaching Problem Solver</div>
-            <h1>Stop Guessing What's Wrong With Your Team</h1>
-            <p class="hero-subtitle">Fix It Systematically With The Proven 360TFT Coaching Triage Method</p>
-            <p class="hero-description">Most coaches run random sessions hoping something works. We diagnose your team's exact problems first, then give you targeted solutions that actually fix them. Used by {{ site.site_constants.coaches_mentored }} coaches worldwide.</p>
-            
-            <div class="problem-indicators">
-                <div class="problem-item">
-                    <span>Players aren't improving despite endless drills?</span>
-                </div>
-                <div class="problem-item">
-                    <span>Sessions feel chaotic and you're losing confidence?</span>
-                </div>
-                <div class="problem-item">
-                    <span>Don't know what to work on next?</span>
-                </div>
-            </div>
+            <div class="hero-badge">🏆 Trusted by {{ site.site_constants.coaches_mentored }} Coaches Worldwide</div>
+            <h1>{{ page.title }}</h1>
+            <p class="hero-subtitle">With The Proven 360TFT Game Model</p>
+            <p class="hero-description">Join the coaching revolution that's helping youth players develop faster, perform better, and love the game more. {{ site.site_constants.sessions_created }} ready-to-use sessions, expert guidance, and a thriving community of coaches who get results.</p>
             
             <div class="hero-cta-group">
-                <a href="#free-diagnostic" class="hero-cta-secondary">Diagnose My Team's Problems (Free)</a>
-                <a href="#how-it-works" class="hero-cta-secondary">See How It Works</a>
+                <a href="{{ site.purchase_links.coaches_compass }}" class="hero-cta">Get Free Coach's Compass</a>
+                <a href="{{ site.purchase_links.academy }}" class="hero-cta-secondary">Join The Academy</a>
             </div>
             
             <div class="social-proof">
                 <strong>{{ site.site_constants.years_experience }} Years Experience</strong> • 
-                <strong>{{ site.site_constants.coaches_mentored }} Coaches Helped</strong> • 
-                <strong>Professional Player Approved</strong>
+                <strong>{{ site.site_constants.players_developed }} Players Coached</strong> • 
+                <strong>{{ site.site_constants.community_size }} Academy Members</strong>
             </div>
         </div>
     </div>
 </section>
 
-<!-- The Problem With Random Coaching -->
-<section class="problem-section" id="the-problem">
+<!-- Game Model Feature Section -->
+<section class="game-model-feature" id="game-model">
     <div class="container">
-        <div class="section-header">
-            <h2>Why Most Football Coaching Fails</h2>
-            <p>The brutal truth about why your sessions aren't working</p>
-        </div>
-        
-        <div class="problems-grid">
-            <div class="problem-card">
-                <h3>No Diagnosis = Random Solutions</h3>
-                <p>Coaches grab session plans without knowing what their team actually needs. It's like giving medicine without checking symptoms.</p>
+        <div class="game-model-content">
+            <div class="game-model-text">
+                <div class="feature-badge">🎯 NEW LAUNCH SPECIAL</div>
+                <h2>The 360TFT Game Model</h2>
+                <p class="feature-subtitle">750+ Pages of Systematic Player Development (Ages 0-18)</p>
+                <p class="feature-description">Stop guessing what to teach and when. This comprehensive game model gives you the exact roadmap for developing players at every stage, with clear progressions, coaching language, and session structures that work.</p>
+                
+                <div class="game-model-benefits">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">⚽</span>
+                        <div>
+                            <strong>16-Week Ball Mastery Blocks</strong>
+                            <p>Progressive skill development that builds confidence</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🥅</span>
+                        <div>
+                            <strong>Complete 1v1 Training System</strong>
+                            <p>Attack and defend with confidence in any situation</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🎯</span>
+                        <div>
+                            <strong>Advanced 11v11 Structure</strong>
+                            <p>From grassroots to elite level development</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">💬</span>
+                        <div>
+                            <strong>Complete Coaching Language</strong>
+                            <p>Know exactly what to say and when to say it</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-model-pricing">
+                    <div class="price-container">
+                        <span class="price-current">{{ site.pricing.game_model.current }}</span>
+                        <span class="price-regular">(Usually {{ site.pricing.game_model.regular }})</span>
+                        <div class="savings-badge">Save {{ site.pricing.game_model.savings }} - First 100 Coaches Only</div>
+                    </div>
+                </div>
+                
+                <div class="cta-group">
+                    <a href="{{ site.purchase_links.game_model }}" class="cta-primary">Get The Game Model</a>
+                    <a href="{{ '/game-model/' | relative_url }}" class="cta-secondary">Learn More</a>
+                </div>
             </div>
             
-            <div class="problem-card">
-                <h3>Session Plan Roulette</h3>
-                <p>Different drill every week with no progression. Players get confused, coaches get frustrated, improvement stalls.</p>
+            <div class="game-model-visual">
+                <div class="game-model-preview">
+                    <div class="preview-mockup">
+                        <div class="mockup-header">
+                            <div class="header-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <div class="header-title">360TFT Game Model</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="content-section">
+                                <h4>Ball Mastery Block 1</h4>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                                <p>Sessions 1-16: Foundation Skills</p>
+                            </div>
+                            <div class="content-section">
+                                <h4>1v1 Development</h4>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <p>Attacking & Defensive Principles</p>
+                            </div>
+                            <div class="content-section">
+                                <h4>11v11 Structure</h4>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%"></div>
+                                </div>
+                                <p>Team Shape & Movement</p>
+                            </div>
+                        </div>
+                        <div class="preview-overlay">
+                            <div class="preview-stats">
+                                <div class="stat">
+                                    <strong>750+</strong>
+                                    <span>Pages</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>16</strong>
+                                    <span>Training Blocks</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>0-18</strong>
+                                    <span>Age Groups</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="problem-card">
-                <h3>Confidence Killer Cycle</h3>
-                <p>When sessions don't work, coaches blame themselves. Low confidence leads to worse decisions and more problems.</p>
-            </div>
-        </div>
-        
-        <div class="solution-preview">
-            <h3>The 360TFT Solution: Coaching Triage</h3>
-            <p>Like a doctor, we diagnose first, then treat. Know exactly what's wrong, get targeted solutions, build systematically.</p>
         </div>
     </div>
 </section>
 
-<!-- How The System Works -->
-<section class="system-section" id="how-it-works">
-    <div class="container">
-        <div class="section-header">
-            <h2>How 360TFT Coaching Triage Works</h2>
-            <p>The systematic approach that transforms struggling coaches into confident leaders</p>
-        </div>
-        
-        <div class="system-steps">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>5-Minute Team Diagnostic</h3>
-                    <p>Identify your team's exact weaknesses across technical, tactical, physical, and mental areas. No guessing, just facts.</p>
-                    <a href="/360tft/coaches-compass" class="step-cta">Try The Diagnostic Free</a>
-                </div>
-            </div>
-            
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Session Solution Design</h3>
-                    <p>Get session fixes for your team's biggest problems. Designed to work in the real world, not perfect conditions.</p>
-                    <a href="https://360tft.github.io/328-sessions/" class="step-cta">Get The Sessions</a>
-                </div>
-            </div>
-            
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Systematic Development</h3>
-                    <p>Build on success with progressive sessions that develop players systematically. Every session builds on the last.</p>
-                    <a href="#academy" class="step-cta">Join The Academy</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Meet Kevin - The Problem Solver -->
-<section class="authority-section" id="kevin">
+<!-- Authority Section -->
+<section class="authority" id="about">
     <div class="container">
         <div class="authority-content">
-            <div class="kevin-image">
-                <img src="{{ '/assets/images/kevin-middleton-coach.jpg' | relative_url }}" alt="Kevin Middleton - Football Coaching Problem Solver">
-                <div class="kevin-badge">15+ Years Solving Coaching Problems</div>
+            <div class="authority-image">
+                <img class="kevin-photo" src="{{ '/assets/images/kevin-middleton-coach.jpg' | relative_url }}" alt="Kevin Middleton - Football Coach">
+                <div class="image-badge">
+                    <span>{{ site.site_constants.years_experience }}</span>
+                    <small>Years Experience</small>
+                </div>
             </div>
-            <div class="kevin-story">
-                <h2>Meet Kevin Middleton - The Coaching Problem Solver</h2>
-                <p><strong>I used to be the coach running random sessions, hoping something would work.</strong></p>
+            <div class="authority-text">
+                <h2>Meet Kevin Middleton</h2>
+                <p class="authority-subtitle">The Football Coach Behind 360TFT</p>
+                <p>After {{ site.site_constants.years_experience }} years of coaching at every level, I've cracked the code on what actually develops players. Not the drills that look impressive, but the systematic approach that creates real improvement.</p>
                 
-                <p>My first season coaching U12s was humbling. Despite endless energy and what I thought were great sessions, the players weren't improving. Parents were polite but concerned. I was failing the kids who trusted me.</p>
-                
-                <p>That's when I realised: <strong>coaching isn't about knowing more drills, it's about diagnosing problems systematically, then fixing them with targeted solutions.</strong></p>
-                
-                <p>After {{ site.site_constants.years_experience }} years refining this approach across grassroots to professional level (including work with Arbroath FC professionals), I've helped {{ site.site_constants.coaches_mentored }} coaches transform from overwhelmed to confident through the 360TFT Coaching Triage method.</p>
-                
-                <div class="kevin-credentials">
-                    <div class="credential">
-                        <span class="credential-number">{{ site.site_constants.years_experience }}</span>
-                        <span class="credential-text">Years Solving Coaching Problems</span>
+                <div class="credentials">
+                    <div class="credential-item">
+                        <strong>{{ site.site_constants.players_developed }}+</strong>
+                        <span>Players Developed</span>
                     </div>
-                    <div class="credential">
-                        <span class="credential-number">{{ site.site_constants.coaches_mentored }}</span>
-                        <span class="credential-text">Coaches Transformed</span>
+                    <div class="credential-item">
+                        <strong>{{ site.site_constants.coaches_mentored }}+</strong>
+                        <span>Coaches Mentored</span>
                     </div>
-                    <div class="credential">
-                        <span class="credential-number">Professional</span>
-                        <span class="credential-text">Player Approved</span>
+                    <div class="credential-item">
+                        <strong>{{ site.site_constants.sessions_created }}</strong>
+                        <span>Sessions Created</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong>{{ site.site_constants.community_size }}+</strong>
+                        <span>Community Members</span>
                     </div>
                 </div>
+                
+                <blockquote class="kevin-quote">
+                    "Most coaches teach random skills in random order. The 360TFT system teaches the right skills at the right time in the right way. That's why it works."
+                </blockquote>
+                
+                <a href="{{ '/about-kevin-middleton/' | relative_url }}" class="cta-secondary">Learn About Kevin's Journey</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Real Coach Transformations -->
-<section class="testimonials-section" id="proof">
+<!-- Products Grid Section -->
+<section class="products" id="products">
     <div class="container">
-        <div class="section-header">
-            <h2>What Happens When You Solve Problems Systematically</h2>
-            <p>Real coaches, real transformations, real results</p>
+        <div class="products-header">
+            <h2>From Individual Training Sessions to Complete Coaching Systems</h2>
+            <p>Choose what fits your needs and development stage</p>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Complete System -->
+            <div class="product-card featured">
+                <div class="product-badge">MOST POPULAR</div>
+                <div class="product-header">
+                    <h3>Complete Coaching Mastery System</h3>
+                    <p class="product-tagline">Everything you need to become the coach players remember forever</p>
+                </div>
+                
+                <div class="product-pricing">
+                    <div class="price-main">{{ site.pricing.complete_system.current }}</div>
+                    <div class="price-old">{{ site.pricing.complete_system.old }}</div>
+                    <div class="price-payments">Or {{ site.pricing.complete_system.payments }}</div>
+                </div>
+                
+                <div class="product-features">
+                    <div class="feature">✅ 328 Training Sessions</div>
+                    <div class="feature">✅ Complete Game Model</div>
+                    <div class="feature">✅ Team Management Tools</div>
+                    <div class="feature">✅ Coaching Cheatsheets</div>
+                    <div class="feature">✅ UEFA C Guide</div>
+                    <div class="feature">✅ + 7 More Resources</div>
+                </div>
+                
+                <a href="{{ site.purchase_links.complete_system }}" class="product-cta">Get Complete System</a>
+            </div>
+            
+            <!-- 328 Sessions -->
+            <div class="product-card">
+                <div class="product-header">
+                    <h3>328 Training Sessions</h3>
+                    <p class="product-tagline">Ready-to-use sessions for every age group and skill level</p>
+                </div>
+                
+                <div class="product-pricing">
+                    <div class="price-main">{{ site.pricing.sessions_328.current }}</div>
+                    <div class="price-note">Use code '{{ site.pricing.sessions_328.discount_code }}' for discount</div>
+                </div>
+                
+                <div class="product-features">
+                    <div class="feature">⚽ Sessions for all ages</div>
+                    <div class="feature">📋 Print-ready formats</div>
+                    <div class="feature">🎯 Skill-specific focus</div>
+                </div>
+                
+                <a href="{{ site.purchase_links.sessions_328 }}" class="product-cta">Get 328 Sessions</a>
+            </div>
+            
+            <!-- Coach's Compass -->
+            <div class="product-card free">
+                <div class="product-badge free-badge">FREE</div>
+                <div class="product-header">
+                    <h3>Coach's Compass</h3>
+                    <p class="product-tagline">5-minute team diagnostic and problem-solving toolkit</p>
+                </div>
+                
+                <div class="product-pricing">
+                    <div class="price-main">{{ site.pricing.coaches_compass.current }}</div>
+                </div>
+                
+                <div class="product-features">
+                    <div class="feature">🎯 5-minute assessment</div>
+                    <div class="feature">🚨 Emergency session plans</div>
+                    <div class="feature">🧠 Mindset reset protocols</div>
+                </div>
+                
+                <a href="{{ site.purchase_links.coaches_compass }}" class="product-cta free-cta">Get Free Compass</a>
+            </div>
+            
+            <!-- Football Coaching Academy -->
+            <div class="product-card academy">
+                <div class="product-badge academy-badge">COMMUNITY</div>
+                <div class="product-header">
+                    <h3>Football Coaching Academy</h3>
+                    <p class="product-tagline">Join {{ site.site_constants.community_size }} coaches committed to continuous improvement</p>
+                </div>
+                
+                <div class="product-pricing">
+                    <div class="price-main">{{ site.pricing.academy.current_monthly }}/month</div>
+                    <div class="price-note">Price increases to {{ site.pricing.academy.future_monthly }}/month on {{ site.pricing.academy.price_increase_date }}</div>
+                </div>
+                
+                <div class="product-features">
+                    <div class="feature">👥 Active coach community</div>
+                    <div class="feature">📚 Monthly masterclasses</div>
+                    <div class="feature">💬 Direct access to Kevin</div>
+                </div>
+                
+                <a href="{{ site.purchase_links.academy }}" class="product-cta">Join Academy</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="testimonials-header">
+            <h2>What Coaches Are Saying</h2>
+            <p>Real results from coaches using the 360TFT system</p>
         </div>
         
         <div class="testimonials-grid">
-            <div class="testimonial-card professional">
-                <div class="testimonial-header">
-                    <div class="player-info">
-                        <h4>Jay Bird</h4>
-                        <p>Arbroath FC | Salford City</p>
-                        <span class="pro-badge">Professional Player</span>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p><strong>Kevin has transformed my coaching. My players are more confident, make better decisions, and actually enjoy training more. The sessions are practical and immediately applicable.</strong></p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <strong>Sarah Mitchell</strong>
+                        <span>U14 Girls Coach</span>
                     </div>
                 </div>
-                <blockquote>"I enjoyed Kevin's sessions a lot—they were <strong>position specific</strong> which allowed you to improve on areas you needed to and were always of <strong>high quality and intensity</strong>. Since Kev joined Arbroath I've seen an <strong>increase in my confidence on game days</strong>, playing out the back, decision making and positioning. Would definitely recommend."</blockquote>
             </div>
             
-            <div class="testimonial-card professional">
-                <div class="testimonial-header">
-                    <div class="player-info">
-                        <h4>Yasin Ben El-Mhanni</h4>
-                        <p>Ex-Newcastle United</p>
-                        <span class="pro-badge">Professional Player</span>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p><strong>The Game Model changed everything. Instead of random sessions, I now have a clear development pathway. My team improved dramatically in just 8 weeks.</strong></p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <strong>Mark Thompson</strong>
+                        <span>Academy Coach</span>
                     </div>
                 </div>
-                <blockquote>"Kevin Middleton possesses the characteristics of a <strong>top level coach</strong> demonstrating his <strong>attention to detail in every session</strong>. His enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions, <strong>bringing out the best in every individual</strong> and improving their all-round game."</blockquote>
-            </div>
-
-            <div class="testimonial-card professional">
-                <div class="testimonial-header">
-                    <div class="player-info">
-                        <h4>Marcel Oakley</h4>
-                        <p>Birmingham City | Solihull Moors</p>
-                        <span class="pro-badge">Professional Player</span>
-                    </div>
-                </div>
-                <blockquote>"Kevin's sessions are high intensity. The sessions are good, very technical. This is all a player can ask for when they are looking to improve their game.
-"</blockquote>
             </div>
             
-            <div class="testimonial-card youth">
-                <div class="testimonial-header">
-                    <div class="player-info">
-                        <h4>Adam</h4>
-                        <p>Age 14</p>
-                        <span class="youth-badge">Youth Player</span>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p><strong>As a parent coach, I was overwhelmed. Kevin's resources gave me confidence and structure. Now I actually look forward to training sessions.</strong></p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <strong>James Wilson</strong>
+                        <span>Parent Coach, U10s</span>
                     </div>
                 </div>
-                <blockquote>"I trained with Kevin when I was younger and <strong>he is still the coach that has improved my footballing ability the most</strong>. Everything that he taught me, I still try and bring to my games every week. He is highly motivated and doesn't give up on you."</blockquote>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p><strong>I've learned how to pass and tackle better. He is fair and treats us well. Training is more fun now.</strong></p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <strong>Player Feedback</strong>
+                        <span>U12 Team</span>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- Link to Full Testimonials Page -->
+        
         <div class="testimonials-cta">
-            <p class="testimonials-note">These are just a few examples of the transformation coaches and players experience with 360TFT.</p>
-            <a href="https://360tft.github.io/360tft/Testimonials" class="testimonials-link">
-                Read All Testimonials
-                <span class="link-arrow">→</span>
-            </a>
+            <a href="{{ '/testimonials/' | relative_url }}" class="cta-secondary">Read More Success Stories</a>
         </div>
     </div>
 </section>
 
-<!-- Free Diagnostic Tool -->
-<section class="diagnostic-section" id="free-diagnostic">
+<!-- Community Section -->
+<section class="community" id="community">
     <div class="container">
-        <div class="diagnostic-content">
-            <h2>Start Here: The 5-Minute Team Diagnostic</h2>
-            <p class="diagnostic-subtitle">Discover your team's exact problems before you try to fix them</p>
-            
-            <div class="diagnostic-preview">
-                <div class="diagnostic-areas">
-                    <div class="area-item">
-                        <span>Technical Assessment</span>
+        <div class="community-content">
+            <div class="community-text">
+                <h2>Join The Coaching Revolution</h2>
+                <p class="community-subtitle">{{ site.site_constants.community_size }} coaches can't be wrong</p>
+                <p>Stop coaching like everyone else. Join the community that's raising the standard with systematic player development, proven methodologies, and continuous improvement.</p>
+                
+                <div class="community-benefits">
+                    <div class="benefit">
+                        <span class="benefit-icon">💬</span>
+                        <div>
+                            <strong>Daily Discussions</strong>
+                            <p>Get answers to your toughest coaching challenges</p>
+                        </div>
                     </div>
-                    <div class="area-item">
-                        <span>Tactical Understanding</span>
+                    <div class="benefit">
+                        <span class="benefit-icon">📚</span>
+                        <div>
+                            <strong>Monthly Masterclasses</strong>
+                            <p>Deep-dive sessions on advanced coaching topics</p>
+                        </div>
                     </div>
-                    <div class="area-item">
-                        <span>Physical Readiness</span>
-                    </div>
-                    <div class="area-item">
-                        <span>Mental Confidence</span>
+                    <div class="benefit">
+                        <span class="benefit-icon">🎯</span>
+                        <div>
+                            <strong>Direct Access to Kevin</strong>
+                            <p>Get personal feedback on your coaching approach</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="diagnostic-results">
-                    <h3>You'll Get:</h3>
-                    <ul>
-                        <li>Exact problem identification in each area</li>
-                        <li>Priority ranking of what to fix first</li>
-                        <li>Targeted emergency session plans</li>
-                        <li>7-day systematic improvement plan</li>
-                    </ul>
+                <div class="community-cta">
+                    <a href="{{ site.purchase_links.academy }}" class="cta-primary">Join The Academy</a>
+                    <p class="price-warning">Price increases to {{ site.pricing.academy.future_monthly }}/month on {{ site.pricing.academy.price_increase_date }}</p>
                 </div>
             </div>
             
-            <div class="diagnostic-cta">
-                <a href="/360tft/coaches-compass" class="diagnostic-button">
-                    Take The Free Diagnostic Now
-                    <span class="button-subtext">Get instant results + targeted solutions</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Problem-Solving Tools -->
-<section class="tools-section" id="tools">
-    <div class="container">
-        <div class="section-header">
-            <h2>Your Complete Coaching Problem-Solving Toolkit</h2>
-            <p>From emergency fixes to systematic development - we've got every coaching challenge covered</p>
-        </div>
-
-        <div class="tool-card">
-            <div class="tool-badge">Most Popular</div>
-            <h3>Football Coaching Academy</h3>
-            <div class="tool-price">$10/month</div>
-            <p>Ongoing support from Kevin + 1200+ coaches solving problems together.</p>
-            <ul class="tool-features">
-                <li>Regular problem-solving workshops</li>
-                <li>Direct access to Kevin's expertise</li>
-                <li>Community of experienced coaches</li>
-                <li>New solutions added monthly</li>
-            </ul>
-            <a href="https://www.skool.com/coachingacademy" class="tool-cta">Join The Community</a>
-        </div>
-        
-        <div class="tools-grid">
-            <div class="tool-card featured">
-                <h3>The Coach's Compass</h3>
-                <div class="tool-price">$0</div>
-                <p>Your complete coaching problem-solving system. Team diagnostic + emergency sessions + systematic development plans.</p>
-                <ul class="tool-features">
-                    <li>5-minute team diagnostic tool</li>
-                    <li>Emergency session solutions for every problem</li>
-                    <li>7-day systematic improvement sequence</li>
-                    <li>Match-day confidence protocols</li>
-                </ul>
-                <a href="/360tft/coaches-compass" class="tool-cta">Solve Your Coaching Problems</a>
-            </div>
-            
-            <div class="tool-card">
-                <h3>328 Training Sessions</h3>
-                <div class="tool-price">$38</div>
-                <p>Ready-to-use sessions organised by problem type. Never wonder what to run again.</p>
-                <ul class="tool-features">
-                    <li>Sessions categorised by area</li>
-                    <li>Progressive difficulty levels</li>
-                    <li>Full coaching points</li>
-                    <li>500+ pages of ready-to-go session plans that actually work</li>
-                </ul>
-                <a href="/328-sessions" class="tool-cta">Get Session Solutions</a>
-            </div>
-        
-        </div>
-    </div>
-</section>
-
-<!-- Emergency Help Section -->
-<section class="emergency-section" id="emergency">
-    <div class="container">
-        <div class="emergency-content">
-            <h2>Need Help Right Now?</h2>
-            <p>When your session plan fails or your team isn't responding, these emergency resources have your back.</p>
-            
-            <div class="emergency-grid">
-                <div class="emergency-card">
-                    <h3>Session Going Wrong?</h3>
-                    <p>Quick fixes when your planned session isn't working</p>
-                    <a href="/360tft/coaches-compass" class="emergency-link">Get Emergency Sessions</a>
-                </div>
-                
-                <div class="emergency-card">
-                    <h3>Team Low on Confidence?</h3>
-                    <p>Protocols to rebuild player belief and motivation</p>
-                    <a href="/360tft/coaches-compass" class="emergency-link">Reset Team Mindset</a>
-                </div>
-                
-                <div class="emergency-card">
-                    <h3>Don't Know What's Wrong?</h3>
-                    <p>5-minute assessment to identify the real problem</p>
-                    <a href="/360tft/coaches-compass" class="emergency-link">Diagnose The Problem</a>
+            <div class="community-visual">
+                <div class="community-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">{{ site.site_constants.community_size }}+</div>
+                        <div class="stat-label">Active Members</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Session Plans</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Weekly</div>
+                        <div class="stat-label">Live Q&As</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Community Support</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Academy Community Focus -->
-<section class="academy-section" id="academy">
+<!-- Newsletter Section -->
+<section class="newsletter">
     <div class="container">
-        <div class="academy-content">
-            <div class="academy-text">
-                <h2>Join 1200+ Coaches Solving Problems Together</h2>
-                <p>The Football Coaching Academy isn't just another course,  it's a community of coaches helping each other solve real coaching challenges every day.</p>
-                
-                <div class="academy-benefits">
-                    <div class="benefit-item">
-                        <span><strong>Daily Problem Solving:</strong> Get help with specific team challenges</span>
-                    </div>
-                    <div class="benefit-item">
-                        <span><strong>Weekly Workshops:</strong> Kevin tackles common coaching problems live</span>
-                    </div>
-                    <div class="benefit-item">
-                        <span><strong>500+ Solutions:</strong> Searchable library of problem-solving sessions</span>
-                    </div>
-                    <div class="benefit-item">
-                        <span><strong>Peer Support:</strong> Learn from coaches facing similar challenges</span>
-                    </div>
-                </div>
-                
-                <div class="academy-pricing">
-                    <div class="price-current">$10/month</div>
-                    <div class="price-increase">Price rises to $14/month on August 1st</div>
-                </div>
-            </div>
+        <div class="newsletter-content">
+            <h2>Get Weekly Coaching Insights</h2>
+            <p>Join thousands of coaches getting practical tips, session ideas, and player development strategies delivered every week.</p>
             
-            <div class="academy-testimonial">
-                <blockquote>"I am coaching a new age range that I haven’t coached before. The resources from Kevin have been fantastic in supporting our players development but also mine as a coach."</blockquote>
-                <cite>Jason Howe</cite>
-            </div>
-        </div>
-        
-        <div class="academy-cta">
-            <a href="https://www.skool.com/coachingacademy" class="academy-button">
-                Join The Academy Today
-                <span class="button-subtext">Lock in $10/month pricing for life</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Final CTA -->
-<section class="final-cta-section">
-    <div class="container">
-        <div class="final-cta-content">
-            <h2>Stop Guessing. Start Solving.</h2>
-            <p>Your players deserve systematic development, not random hope. Your coaching deserves diagnostic clarity, not endless confusion.</p>
+            <form class="newsletter-form" action="#" method="post">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-cta">Get Free Tips</button>
+            </form>
             
-            <div class="cta-options">
-                <div class="cta-option">
-                    <h3>Start Free</h3>
-                    <p>Diagnose your team's exact problems</p>
-                    <a href="/360tft/coaches-compass" class="cta-btn primary">Take Diagnostic</a>
-                </div>
-                
-                <div class="cta-option">
-                    <h3>Get Solutions</h3>
-                    <p>Complete problem-solving toolkit</p>
-                    <a href="/360tft/coaches-compass" class="cta-btn secondary">Get Coach's Compass</a>
-                </div>
-                
-                <div class="cta-option">
-                    <h3>Join Community</h3>
-                    <p>Ongoing support + new solutions</p>
-                    <a href="https://www.skool.com/coachingacademy" class="cta-btn tertiary">Join Academy</a>
-                </div>
-            </div>
-            
-            <div class="final-guarantee">
-                <p><strong>30-day problem-solving guarantee:</strong> If our diagnostic system doesn't help you identify and fix your team's biggest challenge within 30 days, we'll refund every penny.</p>
-            </div>
+            <p class="newsletter-note">Unsubscribe anytime. We respect your inbox.</p>
         </div>
     </div>
 </section>
