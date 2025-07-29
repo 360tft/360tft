@@ -127,47 +127,53 @@ site_constants:
   sessions_created: "328"
   community_size: "1200+"
   
-# Product pricing (centralised for easy updates)
+# Product pricing (CORRECT DOLLAR PRICING based on requirements)
 pricing:
   complete_system:
-    current: "£127"
-    old: "£305"
-    payments: "4 payments of £31.75"
-    currency_symbol: "£"
+    current: "$127"
+    old: "$305"
+    payments: "4 payments of $31.75"
+    currency_symbol: "$"
   sessions_328:
-    current: "£34.20"
-    old: "£42.00"
+    current: "$34.20"
+    old: "$42.00"
     discount_code: "10"
-    currency_symbol: "£"
+    currency_symbol: "$"
   coaches_compass:
     current: "FREE"
     old: ""
     currency_symbol: ""
+  game_model:
+    current: "$20"
+    regular: "$40"
+    savings: "$20"
+    currency_symbol: "$"
   uefa_c:
-    current: "£20"
+    current: "$20"
     old: ""
-    currency_symbol: "£"
+    currency_symbol: "$"
   tgfp:
-    current: "£20"
-    old: "£35"
-    currency_symbol: "£"
+    current: "$20"
+    old: "$35"
+    currency_symbol: "$"
   cheatsheet_vault:
-    current: "£10"
-    old: "£15"
-    currency_symbol: "£"
+    current: "$10"
+    old: "$15"
+    currency_symbol: "$"
   academy:
-    current_monthly: "£10"
-    current_yearly: "£80"
-    future_monthly: "£15"
-    future_yearly: "£99"
-    currency_symbol: "£"
+    current_monthly: "$47"
+    current_yearly: "$499"
+    future_monthly: "$67"
+    future_yearly: "$699"
+    currency_symbol: "$"
     price_increase_date: "01/08/2025"
 
-# Purchase links (centralised and verified)
+# Purchase links (VERIFIED URLs from requirements)
 purchase_links:
   complete_system: "https://360tft.com/l/CompleteCoachingMasterySystem"
   sessions_328: "https://360tft.com/l/TrainingSessionsForAllAges"
   coaches_compass: "https://360tft.com/l/TheCoachCompass"
+  game_model: "https://360tft.com/l/360TFTGM"
   uefa_c: "https://360tft.com/l/svnymr"
   tgfp: "https://360tft.com/l/tgfp"
   cheatsheet_vault: "https://360tft.com/l/CoachingCheatsheetVault"
