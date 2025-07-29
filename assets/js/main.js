@@ -19,6 +19,9 @@
         initializeBackToTop();
         initializeAnalytics();
         initializeMobileMenu();
+        
+        // Conditionally load page-specific components
+        loadPageSpecificComponents();
     });
 
     /**
@@ -713,6 +716,46 @@
         }, 5000); // Check every 5 seconds
     }
 
+    /**
+     * Conditionally load page-specific JavaScript components
+     */
+    function loadPageSpecificComponents() {
+        const currentPath = window.location.pathname;
+        const body = document.body;
+        
+        // Homepage specific components
+        if (currentPath === '/' || currentPath === '/index.html') {
+            loadScript('homepage-interactions.js');
+            loadScript('homepage-diagnostic.js');
+        }
+        
+        // Testimonials page components
+        if (currentPath.includes('testimonials') || body.classList.contains('testimonials-page')) {
+            loadScript('testimonials.js');
+        }
+        
+        // Load header component if advanced header features are needed
+        if (document.querySelector('.advanced-header-features')) {
+            loadScript('components/header.js');
+        }
+    }
+    
+    /**
+     * Utility function to dynamically load JavaScript files
+     */
+    function loadScript(src) {
+        const script = document.createElement('script');
+        script.src = '/assets/js/' + src;
+        script.async = true;
+        script.onload = function() {
+            trackEvent('Performance', 'Script Loaded', src);
+        };
+        script.onerror = function() {
+            console.warn('Failed to load script:', src);
+        };
+        document.head.appendChild(script);
+    }
+
     // Expose utility functions globally if needed
     window.TFTUtilities = {
         trackEvent,
@@ -720,7 +763,8 @@
         closeModal,
         debounce,
         throttle,
-        isValidEmail
+        isValidEmail,
+        loadScript
     };
 
 })();

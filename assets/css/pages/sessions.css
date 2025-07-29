@@ -1,0 +1,152 @@
+/* ========================================
+   328 Sessions Page Styles
+   ======================================== */
+
+.sessions-hero {
+    background: linear-gradient(135deg, #976bdd 0%, #8a5bd6 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.sessions-hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.problem-story {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.problem-story p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.solution-intro {
+    margin: 3rem 0;
+}
+
+.solution-intro h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.solution-intro h4 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.pricing-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+}
+
+.original-value {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.current-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.price-note {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+/* Age Groups Section */
+.age-groups {
+    padding: 4rem 0;
+    background: var(--background-secondary);
+}
+
+.age-groups h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.age-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.age-group-card {
+    background: var(--background-primary);
+    padding: 2rem;
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-medium);
+    text-align: center;
+    transition: all var(--transition-fast);
+}
+
+.age-group-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.age-group-card h3 {
+    color: var(--brand-primary);
+    margin-bottom: 1rem;
+}
+
+.age-group-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sessions-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .problem-story,
+    .pricing-box {
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .age-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

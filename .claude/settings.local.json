@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "Bash(jekyll build --trace)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }
