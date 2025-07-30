@@ -35,8 +35,8 @@ players_developed: "{{ site.site_constants.players_developed }}"
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Meet {{ site.author.name }}</h1>
-                <p class="hero-subtitle">The Football Coach Behind 360TFT</p>
-                <p class="hero-description">For over {{ site.site_constants.years_experience }} years, I've been obsessed with one question: "How do we develop better footballers faster?"</p>
+                <p class="hero-subtitle">Creator of the 360TFT Player Development Methodology</p>
+                <p class="hero-description">For over {{ site.site_constants.years_experience }} years, I've been systematically answering one question: "How do we develop better footballers faster?" The result is the 360TFT methodology - a proven framework that transforms coaching from random drill collections to systematic player development.</p>
                 
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -137,8 +137,8 @@ players_developed: "{{ site.site_constants.players_developed }}"
     <div class="container">
         <div class="story-content">
             <div class="story-text">
-                <h2>My Coaching Philosophy</h2>
-                <p>After years of coaching different ages and abilities, I developed what I call the 360TFT approach. It's built on three core beliefs that guide everything I do:</p>
+                <h2>The 360TFT Methodology Foundation</h2>
+                <p>After years of coaching different ages and abilities, I systematized what I call the 360TFT methodology. This framework is built on three core principles that transform how coaches develop players:</p>
                 
                 <div class="philosophy-points">
                     <div class="philosophy-item">

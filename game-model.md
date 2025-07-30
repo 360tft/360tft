@@ -45,7 +45,7 @@ launch_price: "$20"
             <div class="hero-badge">{{ page.product_badge }}</div>
             <h1>{{ page.product_name }}</h1>
             <p class="hero-subtitle">{{ page.product_tagline }}</p>
-            <p class="hero-description">You are training tomorrow and still don't know what to coach. You're stuck Googling sessions instead of shaping progress. This is the reality. Coaches waste hours searching for drills. You can spend yours building players.</p>
+            <p class="hero-description">The complete 360TFT methodology framework in action. After 15+ years of systematic player development, this comprehensive guide moves coaches from random drill searching to strategic player development through proven frameworks and progressive training blocks.</p>
             
             <div class="hero-cta-group">
                 <a href="#buy-now" class="hero-cta">Get Game Model Now - {{ page.product_price }}</a>
@@ -65,8 +65,8 @@ launch_price: "$20"
 <section class="problem-section">
     <div class="container">
         <div class="section-header">
-            <h2>The Simple System That Creates Technical Players</h2>
-            <p>Let's be blunt. Most coaches don't need more drills. They need a plan.</p>
+            <h2>The 360TFT Methodology: Systematic Player Development</h2>
+            <p>The fundamental truth: coaches don't need more drills. They need a systematic methodology that develops players consistently and efficiently.</p>
         </div>
         
         <div class="problem-solution">
@@ -106,40 +106,40 @@ launch_price: "$20"
         <div class="content-grid">
             <div class="content-card">
                 <div class="content-icon">⚽</div>
-                <h3>16-Week Ball Mastery Blocks</h3>
-                <p><strong>Ages 0-11</strong></p>
-                <p>Progressive ball mastery development that builds confidence and competence simultaneously. Each week builds on the previous, creating systematic improvement.</p>
+                <h3>Foundation Phase: 16-Week Ball Mastery Blocks</h3>
+                <p><strong>Ages 5-11</strong></p>
+                <p>Progressive ball mastery development through systematic 16-week blocks. Each week builds precisely on the previous, creating measurable technical improvement and game confidence through 360TFT methodology.</p>
                 <ul class="content-features">
-                    <li>Age-appropriate progressions</li>
-                    <li>Fun-based learning approach</li>
-                    <li>Technical skill development</li>
-                    <li>Confidence building exercises</li>
+                    <li>Systematic 16-week technical progressions</li>
+                    <li>Each block builds on previous achievements</li>
+                    <li>Measurable skill development outcomes</li>
+                    <li>Seamless progression to 1v1 development phase</li>
                 </ul>
             </div>
             
             <div class="content-card">
                 <div class="content-icon">🥅</div>
-                <h3>1v1 Training + Tactical Decision-Making</h3>
-                <p><strong>Ages 7-12</strong></p>
-                <p>Develop individual players who can beat opponents and make smart decisions under pressure. Built around real match situations.</p>
+                <h3>Development Phase: 1v1 Mastery + Decision-Making</h3>
+                <p><strong>Ages 9-14</strong></p>
+                <p>Systematic 1v1 development through the 360TFT Moment-Slice-Situation framework. Players learn to read game moments, execute technical skills under pressure, and make effective decisions in real-time match situations.</p>
                 <ul class="content-features">
-                    <li>1v1 attacking and defending</li>
-                    <li>Decision-making under pressure</li>
-                    <li>Match situation training</li>
-                    <li>Progressive difficulty levels</li>
+                    <li>Builds on ball mastery foundation from previous phase</li>
+                    <li>16-week blocks focusing on 1v1 situations</li>
+                    <li>Decision-making development under progressive pressure</li>
+                    <li>Prepares players for advanced tactical understanding</li>
                 </ul>
             </div>
             
             <div class="content-card">
                 <div class="content-icon">🏟️</div>
-                <h3>Advanced 11v11 Structure</h3>
-                <p><strong>Ages 12-18</strong></p>
-                <p>Positional play without complexity. Help players understand their roles and responsibilities in the full game context.</p>
+                <h3>Mastery Phase: Advanced 11v11 Tactical Structure</h3>
+                <p><strong>Ages 13-18</strong></p>
+                <p>Systematic tactical development through 360TFT positional frameworks. Players understand their roles, responsibilities, and decision-making triggers within team structures while maintaining individual creativity and problem-solving ability.</p>
                 <ul class="content-features">
-                    <li>Positional play development</li>
-                    <li>Team tactical understanding</li>
-                    <li>Role-specific training</li>
-                    <li>Match preparation systems</li>
+                    <li>Integrates individual skills from previous phases</li>
+                    <li>16-week tactical development blocks</li>
+                    <li>Role-specific training within team structure</li>
+                    <li>Complete player development from foundation to mastery</li>
                 </ul>
             </div>
             
@@ -158,22 +158,23 @@ launch_price: "$20"
         </div>
         
         <div class="methodology-highlight">
-            <h3>🎯 Built Around Real Match Situations</h3>
-            <p>Every exercise connects to the game through our proven framework:</p>
+            <h3>🎯 The 360TFT Moment-Slice-Situation Framework</h3>
+            <p>Every exercise connects to match performance through the systematic 360TFT training methodology:</p>
             <div class="methodology-steps">
                 <div class="method-step">
                     <strong>Moment</strong><br>
-                    <span>Specific game situations</span>
+                    <span>Identify specific game moments that require skill application</span>
                 </div>
                 <div class="method-step">
                     <strong>Slice</strong><br>
-                    <span>Breaking down complex actions</span>
+                    <span>Break complex actions into teachable skill components</span>
                 </div>
                 <div class="method-step">
                     <strong>Situation</strong><br>
-                    <span>Applying skills in context</span>
+                    <span>Apply developed skills in game-realistic pressure situations</span>
                 </div>
             </div>
+            <p><strong>Result:</strong> Players develop skills that transfer directly to match performance, not just training ground competence.</p>
         </div>
     </div>
 </section>

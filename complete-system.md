@@ -26,9 +26,9 @@ js:
     <div class="container">
         <div class="hero-content">
             <div class="hero-badge">🏆 Most Popular System</div>
-            <h1>Complete Coaching Mastery System</h1>
-            <p class="hero-subtitle">Everything You Need To Become The Coach Players Remember Forever</p>
-            <p class="hero-description">Transform your coaching with the complete 360TFT methodology. 328 ready-to-use sessions, proven player development framework, and lifetime access to the system that's helped {{ site.site_constants.coaches_mentored }} coaches create remarkable players.</p>
+            <h1>Complete 360TFT Methodology System</h1>
+            <p class="hero-subtitle">Master Systematic Player Development Through Proven Frameworks</p>
+            <p class="hero-description">The complete 360TFT methodology in action. Access the systematic player development framework that's transformed {{ site.site_constants.coaches_mentored }} coaches from random drill searching to strategic, progressive player development through proven Moment-Slice-Situation training and 16-week progressive blocks.</p>
             
             <div class="hero-pricing">
                 <div class="pricing-container">
@@ -55,8 +55,8 @@ js:
 <section class="whats-included">
     <div class="container">
         <div class="section-header">
-            <h2>Everything You Get Inside</h2>
-            <p>This isn't just a collection of drills. It's a complete coaching transformation system.</p>
+            <h2>Complete 360TFT Methodology Implementation</h2>
+            <p>This isn't a drill collection. This is the complete 360TFT systematic player development methodology implemented across every coaching resource you need.</p>
         </div>
         
         <div class="included-grid">

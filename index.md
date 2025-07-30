@@ -22,10 +22,10 @@ body_class: "homepage"
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-badge">🏆 Trusted by 1000+ Coaches Worldwide</div>
-            <h1>Transform Average Players Into Match-Winners</h1>
-            <p class="hero-subtitle">With The Proven 360TFT Game Model</p>
-            <p class="hero-description">Join the coaching revolution that's helping youth players develop faster, perform better, and love the game more. 328 ready-to-use sessions, expert guidance, and a thriving community of coaches who get results.</p>
+            <div class="hero-badge">🎯 Creator of the 360TFT Methodology</div>
+            <h1>The Systematic Approach to Player Development</h1>
+            <p class="hero-subtitle">Master the 360TFT Game Model Framework</p>
+            <p class="hero-description">After 15+ years developing players at every level, I've codified the systematic approach that creates consistent improvement. The 360TFT methodology moves beyond random drills to strategic player development through proven frameworks: Moment-Slice-Situation training, progressive 16-week blocks, and game-realistic skill application.</p>
             
             <div class="hero-cta-group">
                 <a href="https://360tft.com/l/TheCoachCompass" class="hero-cta">Get Free Coach's Compass</a>
@@ -33,9 +33,9 @@ body_class: "homepage"
             </div>
             
             <div class="social-proof">
-                <strong>15+ Years Experience</strong> • 
-                <strong>5000+ Players Coached</strong> • 
-                <strong>1200+ Academy Members</strong>
+                <strong>360TFT Methodology Creator</strong> • 
+                <strong>5000+ Players Developed</strong> • 
+                <strong>1200+ Coaches Trained</strong>
             </div>
         </div>
     </div>
@@ -46,10 +46,10 @@ body_class: "homepage"
     <div class="container">
         <div class="game-model-content">
             <div class="game-model-text">
-                <div class="feature-badge">🎯 NEW LAUNCH SPECIAL</div>
+                <div class="feature-badge">🎯 COMPLETE METHODOLOGY FRAMEWORK</div>
                 <h2>The 360TFT Game Model</h2>
                 <p class="feature-subtitle">750+ Pages of Systematic Player Development (Ages 0-18)</p>
-                <p class="feature-description">Stop guessing what to teach and when. This comprehensive game model gives you the exact roadmap for developing players at every stage, with clear progressions, coaching language, and session structures that work.</p>
+                <p class="feature-description">The complete 360TFT methodology in action. This comprehensive framework provides the systematic roadmap for developing players through every stage, with proven progressions, specific coaching language, and game-realistic session structures based on 15+ years of player development expertise.</p>
                 
                 <div class="game-model-benefits">
                     <div class="benefit-item">
@@ -127,8 +127,8 @@ body_class: "homepage"
             </div>
             <div class="authority-text">
                 <h2>Meet Kevin Middleton</h2>
-                <p class="authority-subtitle">The Football Coach Behind 360TFT</p>
-                <p>After 15+ years of coaching at every level, I've cracked the code on what actually develops players. Not the drills that look impressive, but the systematic approach that creates real improvement.</p>
+                <p class="authority-subtitle">Creator of the 360TFT Player Development Methodology</p>
+                <p>After 15+ years of developing players at every level, I've systematized what actually creates consistent improvement. The 360TFT methodology moves beyond random drill collections to a proven framework that develops players through systematic progressions, game-realistic applications, and measurable outcomes.</p>
                 
                 <div class="credentials">
                     <div class="credential-item">
@@ -136,8 +136,8 @@ body_class: "homepage"
                         <span>Players Developed</span>
                     </div>
                     <div class="credential-item">
-                        <strong>1000+</strong>
-                        <span>Coaches Mentored</span>
+                        <strong>1200+</strong>
+                        <span>Coaches Trained</span>
                     </div>
                     <div class="credential-item">
                         <strong>328</strong>
@@ -150,7 +150,7 @@ body_class: "homepage"
                 </div>
                 
                 <blockquote class="kevin-quote">
-                    "Most coaches teach random skills in random order. The 360TFT system teaches the right skills at the right time in the right way. That's why it works."
+                    "The 360TFT methodology transforms coaching from guesswork to systematic player development. Through Moment-Slice-Situation training and progressive 16-week blocks, coaches develop players faster and more efficiently than traditional approaches."
                 </blockquote>
                 
                 <a href="/about-kevin-middleton/" class="cta-secondary">Learn About Kevin's Journey</a>
@@ -163,8 +163,8 @@ body_class: "homepage"
 <section class="products">
     <div class="container">
         <div class="products-header">
-            <h2>From Individual Training Sessions to Complete Coaching Systems</h2>
-            <p>Choose what fits your needs and development stage</p>
+            <h2>360TFT Methodology: Systematic Player Development Solutions</h2>
+            <p>Progressive coaching resources that implement the proven 360TFT framework at every development stage</p>
         </div>
         
         <div class="products-grid">
