@@ -6,22 +6,74 @@
     <div class="container">
         <!-- Main Footer Content -->
         <div class="footer-content">
-            {%- for section in site.footer_links -%}
             <div class="footer-section">
-                <h4 class="footer-section-title">{{ section.title }}</h4>
+                <h4 class="footer-section-title">Resources</h4>
                 <ul class="footer-links">
-                    {%- for link in section.links -%}
                     <li class="footer-link-item">
-                        <a href="{{ link.url | relative_url }}" 
-                           class="footer-link"
-                           {% if link.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>
-                            {{ link.title }}
-                        </a>
+                        <a href="{{ '/game-model/' | relative_url }}" class="footer-link">Game Model</a>
                     </li>
-                    {%- endfor -%}
+                    <li class="footer-link-item">
+                        <a href="{{ '/328-sessions/' | relative_url }}" class="footer-link">328 Sessions</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="{{ '/coaches-compass/' | relative_url }}" class="footer-link">Coach's Compass</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="{{ '/complete-system/' | relative_url }}" class="footer-link">Complete System</a>
+                    </li>
                 </ul>
             </div>
-            {%- endfor -%}
+            
+            <div class="footer-section">
+                <h4 class="footer-section-title">Community</h4>
+                <ul class="footer-links">
+                    <li class="footer-link-item">
+                        <a href="{{ '/football-coaching-academy/' | relative_url }}" class="footer-link">Coaching Academy</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="{{ '/testimonials/' | relative_url }}" class="footer-link">Success Stories</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="https://www.skool.com/coachingacademy" class="footer-link" target="_blank" rel="noopener">Join Academy</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="{{ '/newsletter/' | relative_url }}" class="footer-link">Newsletter</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-section-title">About</h4>
+                <ul class="footer-links">
+                    <li class="footer-link-item">
+                        <a href="{{ '/about-kevin-middleton/' | relative_url }}" class="footer-link">About Kevin</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="{{ '/blog/' | relative_url }}" class="footer-link">Blog</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="mailto:{{ site.contact.email }}" class="footer-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-section-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li class="footer-link-item">
+                        <a href="https://360tft.com/l/TheCoachCompass" class="footer-link" target="_blank" rel="noopener">Get FREE Compass</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="https://360tft.com/l/360TFTGM" class="footer-link" target="_blank" rel="noopener">Get Game Model</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="https://360tft.com/l/TrainingSessionsForAllAges" class="footer-link" target="_blank" rel="noopener">Get 328 Sessions</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="https://360tft.com/l/CompleteCoachingMasterySystem" class="footer-link" target="_blank" rel="noopener">Complete System</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         
         <!-- Footer Bottom -->
