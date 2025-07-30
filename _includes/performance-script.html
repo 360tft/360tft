@@ -1,0 +1,88 @@
+<!-- Critical Performance JavaScript - Inline for speed -->
+<script>
+// Critical path optimization
+(function() {
+    'use strict';
+    
+    // Image lazy loading polyfill for older browsers
+    if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+            img.src = img.dataset.src || img.src;
+        });
+    } else {
+        // Fallback for browsers without native lazy loading
+        const script = document.createElement('script');
+        script.src = '{{ "/assets/js/lazysizes.min.js" | relative_url }}';
+        document.body.appendChild(script);
+    }
+    
+    // Preload critical resources on interaction
+    const preloadOnInteraction = () => {
+        const criticalLinks = [
+            '{{ "/assets/css/main.css" | relative_url }}',
+            '{{ "/assets/js/main.js" | relative_url }}'
+        ];
+        
+        criticalLinks.forEach(href => {
+            const link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = href;
+            document.head.appendChild(link);
+        });
+        
+        // Remove listeners after first interaction
+        ['mousedown', 'touchstart', 'keydown'].forEach(event => {
+            document.removeEventListener(event, preloadOnInteraction, { passive: true });
+        });
+    };
+    
+    // Add interaction listeners
+    ['mousedown', 'touchstart', 'keydown'].forEach(event => {
+        document.addEventListener(event, preloadOnInteraction, { passive: true });
+    });
+    
+    // Web vitals optimization
+    const observePerformance = () => {
+        if ('performance' in window && 'PerformanceObserver' in window) {
+            try {
+                // Largest Contentful Paint
+                new PerformanceObserver((list) => {
+                    const entries = list.getEntries();
+                    const lastEntry = entries[entries.length - 1];
+                    console.log('LCP:', lastEntry.startTime);
+                }).observe({ entryTypes: ['largest-contentful-paint'] });
+                
+                // First Input Delay
+                new PerformanceObserver((list) => {
+                    const entries = list.getEntries();
+                    entries.forEach(entry => {
+                        console.log('FID:', entry.processingStart - entry.startTime);
+                    });
+                }).observe({ entryTypes: ['first-input'] });
+                
+                // Cumulative Layout Shift
+                new PerformanceObserver((list) => {
+                    let clsValue = 0;
+                    const entries = list.getEntries();
+                    entries.forEach(entry => {
+                        if (!entry.hadRecentInput) {
+                            clsValue += entry.value;
+                        }
+                    });
+                    console.log('CLS:', clsValue);
+                }).observe({ entryTypes: ['layout-shift'] });
+            } catch (e) {
+                // Performance observer not supported
+            }
+        }
+    };
+    
+    // Initialize performance monitoring
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', observePerformance);
+    } else {
+        observePerformance();
+    }
+})();
+</script>

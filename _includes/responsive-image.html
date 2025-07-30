@@ -1,0 +1,16 @@
+<!-- Responsive image template for Jekyll optimization -->
+<picture>
+  <source media="(max-width: 480px)" 
+          srcset="{{ site.baseurl }}/assets/images/resized/{{ include.path | replace: site.baseurl, "" | replace: "/assets/images/", "" | replace: ".jpg", "-320.jpg" | replace: ".png", "-320.png" | replace: ".jpeg", "-320.jpeg" }}">
+  <source media="(max-width: 768px)" 
+          srcset="{{ site.baseurl }}/assets/images/resized/{{ include.path | replace: site.baseurl, "" | replace: "/assets/images/", "" | replace: ".jpg", "-480.jpg" | replace: ".png", "-480.png" | replace: ".jpeg", "-480.jpeg" }}">
+  <source media="(max-width: 1024px)" 
+          srcset="{{ site.baseurl }}/assets/images/resized/{{ include.path | replace: site.baseurl, "" | replace: "/assets/images/", "" | replace: ".jpg", "-768.jpg" | replace: ".png", "-768.png" | replace: ".jpeg", "-768.jpeg" }}">
+  <img src="{{ include.path | relative_url }}" 
+       alt="{{ include.alt | default: 'Image' }}" 
+       loading="lazy"
+       decoding="async"
+       width="{{ include.width | default: 'auto' }}"
+       height="{{ include.height | default: 'auto' }}"
+       {%- if include.class %} class="{{ include.class }}"{% endif -%}>
+</picture>

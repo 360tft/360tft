@@ -1,0 +1,34 @@
+<!-- Performance and Security Headers (for use with GitHub Pages or hosting provider) -->
+<!-- These would typically be set at the server level, but documented here for reference -->
+
+<!--
+Recommended HTTP Headers for Jekyll Performance:
+
+Cache-Control: max-age=31536000, immutable (for assets)
+Content-Encoding: gzip, br
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+-->
+
+<!-- Performance optimization via meta tags -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Preload critical resources -->
+{%- if page.hero_image -%}
+<link rel="preload" href="{{ page.hero_image | relative_url }}" as="image">
+{%- endif -%}
+
+<!-- Service Worker registration for caching (optional) -->
+<script>
+if ('serviceWorker' in navigator && '{{ jekyll.environment }}' === 'production') {
+  navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}');
+}
+</script>

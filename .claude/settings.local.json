@@ -4,7 +4,11 @@
       "Bash(find:*)",
       "Bash(cp:*)",
       "Bash(jekyll build --trace)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "WebFetch(domain:360tft.github.io)",
+      "Bash(bundle exec jekyll build:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }
