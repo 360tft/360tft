@@ -1,8 +1,8 @@
 # Site settings
 title: "360TFT - Master The Game"
 description: "Transform average players into match-winners with proven football coaching methodologies. 15+ years experience, 1000+ coaches trained worldwide."
-url: "https://360tft.github.io"
-baseurl: "/360tft"
+url: "https://360tft.co.uk"
+baseurl: ""
 
 # Author information
 author:
