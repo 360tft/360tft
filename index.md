@@ -432,25 +432,26 @@ body_class: "homepage"
                     <p class="price-warning">Price increases to $67/month on 01/08/2025</p>
                 </div>
             </div>
-            
-            <div class="community-visual">
-                <div class="community-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">1200+</div>
-                        <div class="stat-label">Active Members</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Session Plans</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">Weekly</div>
-                        <div class="stat-label">Live Q&As</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Community Support</div>
-                    </div>
+        </div>
+        
+        <!-- Community Stats - Centered Below Content -->
+        <div class="community-stats-wrapper">
+            <div class="community-stats">
+                <div class="stat-card">
+                    <div class="stat-number">1200+</div>
+                    <div class="stat-label">Active Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Session Plans</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Weekly</div>
+                    <div class="stat-label">Live Q&As</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Community Support</div>
                 </div>
             </div>
         </div>

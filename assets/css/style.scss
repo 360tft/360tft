@@ -864,12 +864,59 @@ a:hover {
     margin: 0;
 }
 
-/* Community Stats */
+/* Community Layout */
+.community-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.community-text {
+    margin-bottom: 3rem;
+}
+
+.community-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.benefit-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.community-cta {
+    margin-top: 2rem;
+}
+
+.price-warning {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Community Stats - Centered Below Content */
+.community-stats-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
 .community-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    max-width: 400px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .stat-card {
@@ -1093,6 +1140,11 @@ a:hover {
     
     .credentials {
         grid-template-columns: 1fr;
+    }
+    
+    .community-benefits {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
     
     .community-stats {
