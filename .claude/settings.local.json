@@ -14,7 +14,13 @@
       "Bash(do grep -q \"\\.$class[^-]\" \"C:\\Users\\Kevin Middleton\\Documents\\GitHub\\360tft\\assets\\css\\main.css\")",
       "Bash(echo:*)",
       "Bash(done)",
-      "WebFetch(domain:360tft.co.uk)"
+      "WebFetch(domain:360tft.co.uk)",
+      "Bash(powershell:*)",
+      "Bash(node:*)",
+      "Bash(npm install)",
+      "Bash(rm:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)"
     ],
     "deny": []
   }
