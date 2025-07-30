@@ -50,13 +50,31 @@
 <!-- Performance optimizations -->
 <meta name="theme-color" content="#976bdd">
 <meta name="color-scheme" content="light dark">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- DNS prefetch and preconnect for performance -->
 <link rel="dns-prefetch" href="//360tft.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//connect.facebook.net">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- CSS with performance optimizations -->
-<link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"></noscript>
+<!-- Resource hints for critical resources -->
+<link rel="preload" href="{{ '/assets/js/main.js' | relative_url }}" as="script">
+<link rel="modulepreload" href="{{ '/assets/js/main.js' | relative_url }}">
+
+<!-- CSS - Direct loading for better compatibility -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<!-- Include performance headers -->
+{% include performance-headers.html %}
+
+<!-- Critical performance script -->
+{% include performance-script.html %}
 
 <!-- Page-specific CSS -->
 {%- if page.css -%}
