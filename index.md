@@ -28,14 +28,14 @@ body_class: "homepage"
             <p class="hero-description">After 15+ years developing players at every level, I've codified the systematic approach that creates consistent improvement. The 360TFT methodology moves beyond random drills to strategic player development through proven frameworks: Moment-Slice-Situation training, progressive 16-week blocks, and game-realistic skill application.</p>
             
             <div class="hero-cta-group">
-                <a href="https://360tft.com/l/TheCoachCompass" class="hero-cta">Get Free Coach's Compass</a>
+                <a href="https://360tft.com/l/TheCoachCompass" class="hero-cta-secondary">Get Free Coach's Compass</a>
                 <a href="https://www.skool.com/coachingacademy" class="hero-cta-secondary">Join The Academy</a>
             </div>
             
             <div class="social-proof">
                 <strong>360TFT Methodology Creator</strong> • 
-                <strong>5000+ Players Developed</strong> • 
-                <strong>1200+ Coaches Trained</strong>
+                <strong>1000+ Players Coached</strong> • 
+                <strong>1200+ Coaches Helped</strong>
             </div>
         </div>
     </div>
@@ -55,38 +55,38 @@ body_class: "homepage"
                     <div class="benefit-item">
                         <span class="benefit-icon">⚽</span>
                         <div>
-                            <strong>16-Week Ball Mastery Blocks</strong>
+                            <strong>16-Week Training Blocks</strong>
                             <p>Progressive skill development that builds confidence</p>
                         </div>
                     </div>
                     <div class="benefit-item">
                         <span class="benefit-icon">🥅</span>
                         <div>
-                            <strong>Complete 1v1 Training System</strong>
-                            <p>Attack and defend with confidence in any situation</p>
+                            <strong>Every Development Age and Stage</strong>
+                            <p>From 1v1 to 11v11</p>
                         </div>
                     </div>
                     <div class="benefit-item">
                         <span class="benefit-icon">🎯</span>
                         <div>
-                            <strong>Advanced 11v11 Structure</strong>
-                            <p>From grassroots to elite level development</p>
+                            <strong>Complete Coaching Language & Prompts</strong>
+                            <p>Say goodbye to awkward silences and uncertain instructions</p>
                         </div>
                     </div>
                     <div class="benefit-item">
                         <span class="benefit-icon">💬</span>
                         <div>
-                            <strong>Complete Coaching Language</strong>
-                            <p>Know exactly what to say and when to say it</p>
+                            <strong>Moment → Slice → Situation Framework</strong>
+                            <p>The secret to linking training to the real game</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="game-model-pricing">
                     <div class="price-container">
-                        <span class="price-current">$20</span>
-                        <span class="price-regular">(Usually $40)</span>
-                        <div class="savings-badge">Save $20 - First 100 Coaches Only</div>
+                        <span class="price-current">$40</span>
+                        <span class="price-regular">(Usually $80)</span>
+                        <div class="savings-badge">Save $40 - First 100 Coaches Only</div>
                     </div>
                 </div>
                 
@@ -105,7 +105,7 @@ body_class: "homepage"
                         </div>
                         <div class="stat">
                             <strong>16</strong>
-                            <span>Training Blocks</span>
+                            <span>Week Training Blocks</span>
                         </div>
                         <div class="stat">
                             <strong>0-18</strong>
@@ -132,20 +132,20 @@ body_class: "homepage"
                 
                 <div class="credentials">
                     <div class="credential-item">
-                        <strong>5000+</strong>
-                        <span>Players Developed</span>
+                        <strong>1000+</strong>
+                        <span>Players Coached</span>
                     </div>
                     <div class="credential-item">
                         <strong>1200+</strong>
-                        <span>Coaches Trained</span>
+                        <span>Coaches Helped</span>
                     </div>
                     <div class="credential-item">
-                        <strong>328</strong>
-                        <span>Sessions Created</span>
+                        <strong>800+</strong>
+                        <span>Session Plans Created</span>
                     </div>
                     <div class="credential-item">
                         <strong>1200+</strong>
-                        <span>Community Members</span>
+                        <span>Coaching Community Members</span>
                     </div>
                 </div>
                 
@@ -205,8 +205,8 @@ body_class: "homepage"
                 </div>
                 
                 <div class="product-pricing">
-                    <div class="price-main">$20</div>
-                    <div class="price-note">Launch Special - then $40</div>
+                    <div class="price-main">$40</div>
+                    <div class="price-note">Launch Special - then $80</div>
                 </div>
                 
                 <div class="product-features">
@@ -275,14 +275,14 @@ body_class: "homepage"
                 </div>
                 
                 <div class="product-pricing">
-                    <div class="price-main">$47/month</div>
-                    <div class="price-note">Price increases to $67/month on 01/08/2025</div>
+                    <div class="price-main">$10/month</div>
+                    <div class="price-note">Price increases to $14/month on 01/08/2025</div>
                 </div>
                 
                 <div class="product-features">
                     <div class="feature">👥 Active coach community</div>
                     <div class="feature">📚 Monthly masterclasses</div>
-                    <div class="feature">💬 Direct access to Kevin</div>
+                    <div class="feature">💬 Direct access to UEFA qualified Coaches</div>
                     <div class="feature">📈 Continuous learning</div>
                 </div>
                 
