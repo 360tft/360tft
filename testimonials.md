@@ -22,7 +22,7 @@ schema_type: "WebPage"
     <div class="container">
         <div class="hero-content">
             <h1>What Players & Coaches Are Saying</h1>
-            <p class="hero-subtitle">When you're building something that works, people notice. Here's what happens when players experience training that actually makes them better — not just busier.</p>
+            <p class="hero-subtitle">When you're building something that works, people notice. Here's what happens when players experience systematic development using the 360TFT methodology — not just random drill collections.</p>
         </div>
     </div>
 </section>
@@ -187,11 +187,12 @@ schema_type: "WebPage"
 <!-- CTA Section -->
 <section class="cta-section">
     <div class="container">
-        <h2>Ready to Transform Your Game?</h2>
-        <p>These aren't just nice words — they're the result of training that actually works. Join the community that's raising the standard.</p>
+        <h2>Ready to Transform Your Coaching?</h2>
+        <p>These aren't just nice words — they're the result of systematic development using proven 360TFT methodologies. Join {{ site.site_constants.coaches_mentored }} coaches worldwide who've transformed their approach.</p>
         <div class="cta-buttons">
-            <a href="https://www.skool.com/360tft-6754" class="cta-button">Join Our Community</a>
-            <a href="https://kev1wired.gumroad.com/" class="cta-button secondary-button">Browse Training Resources</a>
+            <a href="{{ site.purchase_links.academy }}" class="cta-button">Join Football Coaching Academy</a>
+            <a href="{{ site.purchase_links.complete_system }}" class="cta-button secondary-button">Get Complete System</a>
+            <a href="https://www.skool.com/360tft-6754" class="cta-button">Join Free Community</a>
         </div>
     </div>
 </section>
