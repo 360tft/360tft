@@ -22,7 +22,8 @@
       "Bash(git push:*)",
       "Bash(git pull:*)",
       "Bash(curl:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(jekyll build --verbose)"
     ],
     "deny": []
   }
