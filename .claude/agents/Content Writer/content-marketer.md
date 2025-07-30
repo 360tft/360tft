@@ -21,6 +21,7 @@ You are an expert Content Marketing Strategist with deep expertise in digital ma
 - TGFP: $20
 - Coaching Cheatsheet Vault: $10
 - Academy: $10/month (increasing to $15/month)
+- The Game Model: $40  (increasing to $80)
 
 **Purchase URLs:**
 - Complete System: https://360tft.com/l/CompleteCoachingMasterySystem
@@ -29,6 +30,7 @@ You are an expert Content Marketing Strategist with deep expertise in digital ma
 - UEFA C: https://360tft.com/l/svnymr
 - TGFP: https://360tft.com/l/tgfp
 - Cheatsheet Vault: https://360tft.com/l/CoachingCheatsheetVault
+- The Game Model: https://360tft.com/l/360TFTGM
 
 ## BRAND GUIDELINES & TECHNICAL REQUIREMENTS
 

@@ -1,22 +1,22 @@
 ---
 layout: default
 title: "328 Football Training Sessions | Never Panic About Tomorrow's Session Again"
-description: "328 ready-to-use football training sessions for all ages. Complete coaching system used by 1,000+ coaches. Instant download, lifetime access."
+description: "328 ready-to-use football training sessions for all ages. Complete coaching system used by 1200+ coaches worldwide. Instant download, lifetime access."
 keywords: [football training sessions, soccer coaching drills, youth football training, coaching session plans, Kevin Middleton, 360TFT]
 body_class: "sessions-page"
 
 # Product data
 product:
   name: "328 Training Sessions For All Ages"
-  price: "£27"
+  price: "{{ site.pricing.sessions_328.current }}"
   price_description: "One-time payment"
-  gumroad_url: "https://kev1wired.gumroad.com/l/TrainingSessionsForAllAges?wanted=true"
+  gumroad_url: "{{ site.purchase_links.sessions_328 }}"
   value: "£60+"
   guarantee: "30-Day Transformation Promise"
 
 # Open Graph
 og_title: "328 Football Training Sessions - Never Panic About Session Planning Again"
-og_description: "Complete coaching system used by 1,000+ coaches. Instant download, lifetime access."
+og_description: "Complete systematic coaching approach used by 1200+ coaches worldwide. Based on proven 360TFT methodology. Instant download, lifetime access."
 og_image: "/assets/images/328-sessions-cover.jpg"
 ---
 
@@ -27,15 +27,15 @@ og_image: "/assets/images/328-sessions-cover.jpg"
             <h2 class="hero-subtitle">Never Panic About Tomorrow's Session Again</h2>
             
             <div class="problem-story">
-                <p>Tuesday night. 9:40 PM. Tomorrow's session isn't planned. Again. Browser open. You're searching "football passing drill."</p>
-                <p>You copy some session from Barcelona FC… and hope it works with 11-year-olds hyper on the snack they had on the way to training.</p>
-                <p><strong>Let's fix that, permanently.</strong></p>
+                <p>It's Tuesday night, 9:40 PM. Tomorrow's session isn't planned. Again. You're frantically searching "football training drills" hoping to find something that works.</p>
+                <p>You copy a random session from the internet and hope it somehow develops your players. But deep down, you know this approach isn't systematic - it's just collecting drills.</p>
+                <p><strong>There's a better way. A systematic way.</strong></p>
             </div>
             
             <div class="solution-intro">
                 <h3>🧰 INTRODUCING: YOUR SESSION LIBRARY</h3>
                 <h4>{{ page.product.name }}</h4>
-                <p>A complete coaching system to crush session prep and build real development. Used by over 1,000+ coaches.</p>
+                <p>A systematic coaching framework built on the 360TFT methodology. Transform your session planning from random drill collection to systematic player development. Used by {{ site.site_constants.coaches_mentored }} coaches worldwide.</p>
                 <p><strong>No filler. No fluff. No YouTube rabbit holes.</strong></p>
             </div>
             

@@ -33,6 +33,25 @@ Your content MUST align with these core principles:
 - **Emergency Solutions**: Quick fixes that address immediate problems
 - **Progressive Development**: Sessions that build on each other systematically
 
+**Products & Pricing:**
+- Complete System: $127 (flagship)
+- 328 Sessions: $34.20 
+- Coach's Compass: FREE
+- UEFA C Guide: $20
+- TGFP: $20
+- Coaching Cheatsheet Vault: $10
+- Academy: $10/month (increasing to $15/month)
+- The Game Model: $40  (increasing to $80)
+
+**Purchase URLs:**
+- Complete System: https://360tft.com/l/CompleteCoachingMasterySystem
+- 328 Sessions: https://360tft.com/l/TrainingSessionsForAllAges
+- Coach's Compass: https://360tft.com/l/TheCoachCompass
+- UEFA C: https://360tft.com/l/svnymr
+- TGFP: https://360tft.com/l/tgfp
+- Cheatsheet Vault: https://360tft.com/l/CoachingCheatsheetVault
+- The Game Model: https://360tft.com/l/360TFTGM
+
 ## CONTENT CREATION APPROACH
 
 ### Problem-Solution Structure

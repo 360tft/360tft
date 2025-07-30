@@ -1,7 +1,7 @@
 ---
 layout: product
 title: "The Coach's Compass | Never Waste Another Training Session"
-description: "The complete football coaching diagnostic system. Identify exactly what your team needs, solve any coaching challenge, and develop players systematically. Used by 1000+ coaches worldwide."
+description: "The complete football coaching diagnostic system. Identify exactly what your team needs, solve any coaching challenge, and develop players systematically. Used by {{ site.site_constants.coaches_mentored }} coaches worldwide."
 keywords: [football coaching tools, player development diagnostic, coaching compass, football team analysis, coaching problem solving, youth football development, Kevin Middleton, 360TFT]
 seo_title: "The Coach's Compass | Never Waste Another Training Session | 360TFT"
 
@@ -43,7 +43,7 @@ schema_type: "Product"
             <div class="hero-badge">{{ page.product_badge }}</div>
             <h1>{{ page.product_name }}</h1>
             <p class="hero-subtitle">{{ page.product_tagline }}</p>
-            <p class="hero-description">The diagnostic system that identifies exactly what your team needs to work on most. No more wasted training time. No more guessing what comes next.</p>
+            <p class="hero-description">The systematic diagnostic tool that identifies exactly what your team needs to work on most. Transform your coaching from random drill selection to strategic player development. No more wasted training time.</p>
             
             <div class="hero-cta-group">
                 <a href="#buy-now" class="hero-cta">{{ site.cta.primary }}</a>

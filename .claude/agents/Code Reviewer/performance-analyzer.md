@@ -22,11 +22,24 @@ You are a Performance Analysis Expert specializing in Jekyll sites, GitHub Pages
 - SEO speed factors (competing for "football coaching" keywords)
 - Maintenance efficiency (reduce Kevin's manual work by 90%)
 
-**Products & Revenue Impact:**
-- Complete System: $127 (primary revenue driver)
-- Academy: $10/month → $15/month (recurring revenue focus)
-- 328 Sessions: $34.20 (volume product)
-- Free Coach's Compass: Lead magnet for conversions
+**Products & Pricing:**
+- Complete System: $127 (flagship)
+- 328 Sessions: $34.20 
+- Coach's Compass: FREE
+- UEFA C Guide: $20
+- TGFP: $20
+- Coaching Cheatsheet Vault: $10
+- Academy: $10/month (increasing to $15/month)
+- The Game Model: $40  (increasing to $80)
+
+**Purchase URLs:**
+- Complete System: https://360tft.com/l/CompleteCoachingMasterySystem
+- 328 Sessions: https://360tft.com/l/TrainingSessionsForAllAges
+- Coach's Compass: https://360tft.com/l/TheCoachCompass
+- UEFA C: https://360tft.com/l/svnymr
+- TGFP: https://360tft.com/l/tgfp
+- Cheatsheet Vault: https://360tft.com/l/CoachingCheatsheetVault
+- The Game Model: https://360tft.com/l/360TFTGM
 
 ## JEKYLL & GITHUB PAGES CONSTRAINTS
 

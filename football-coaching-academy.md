@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Football Coaching Academy | Join 1200+ Elite Coaches Worldwide"
-description: "Join the exclusive Football Coaching Academy for just $10/month. Monthly masterclasses with Kevin Middleton, elite coaching network, cutting-edge resources, and direct mentorship. Transform your coaching career."
+title: "Football Coaching Academy | Join {{ site.site_constants.community_size }} Elite Coaches Worldwide"
+description: "Join the exclusive Football Coaching Academy for just {{ site.pricing.academy.current_monthly }}. Monthly masterclasses with Kevin Middleton, elite coaching network, cutting-edge resources, and direct mentorship. Transform your coaching career."
 keywords: [football coaching academy, coaching education, football coach training, coaching certification, coaching mentorship, Kevin Middleton academy, 360TFT academy, coaching community]
-seo_title: "Football Coaching Academy | Join 1200+ Elite Coaches | $10/month | 360TFT"
+seo_title: "Football Coaching Academy | Join {{ site.site_constants.community_size }} Elite Coaches | {{ site.pricing.academy.current_monthly }} | 360TFT"
 
 # Open Graph
-og_title: "Football Coaching Academy - Join 1200+ Elite Coaches Worldwide"
-og_description: "Exclusive coaching education community for just $10/month. Monthly masterclasses, direct mentorship, and advanced resources for serious coaches."
+og_title: "Football Coaching Academy - Join {{ site.site_constants.community_size }} Elite Coaches Worldwide"
+og_description: "Exclusive coaching education community for just {{ site.pricing.academy.current_monthly }}. Monthly masterclasses, direct mentorship, and advanced resources for serious coaches."
 og_image: "/assets/images/academy-preview.jpg"
 
 # Twitter
@@ -23,13 +23,13 @@ schema_type: "Product"
 
 # Product Information
 product_name: "Football Coaching Academy"
-product_price: "$10/month"
-original_price: "$15/month"
-annual_price: "$80/year"
+product_price: "{{ site.pricing.academy.current_monthly }}"
+original_price: "{{ site.pricing.academy.future_monthly }}"
+annual_price: "{{ site.pricing.academy.current_yearly }}"
 annual_savings: "Save 33%"
-purchase_url: "https://www.skool.com/coachingacademy"
+purchase_url: "{{ site.purchase_links.academy }}"
 guarantee: "Cancel Anytime"
-member_count: "1200+"
+member_count: "{{ site.site_constants.community_size }}"
 member_limit: "Limited to 500 new members"
 ---
 
@@ -776,7 +776,7 @@ member_limit: "Limited to 500 new members"
                 <div class="current-price">{{ page.product_price }}</div>
             </div>
             <div class="price-note">Or {{ page.annual_price }}/year ({{ page.annual_savings }})</div>
-            <div class="rising-price-warning">⏰ Price rising to $15 on August 1st, 2025</div>
+            <div class="rising-price-warning">⏰ Price rising to {{ site.pricing.academy.future_monthly }} on {{ site.pricing.academy.price_increase_date }}</div>
         </div>
         
         <div class="hero-cta">
