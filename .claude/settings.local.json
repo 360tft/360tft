@@ -21,7 +21,8 @@
       "Bash(rm:*)",
       "Bash(git push:*)",
       "Bash(git pull:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }
