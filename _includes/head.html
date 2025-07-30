@@ -28,7 +28,7 @@
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title }}">
 <meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-<meta property="og:image" content="{{ page.og_image | default: '/assets/images/360tft-social-share.jpg' | absolute_url }}">
+<meta property="og:image" content="{{ page.og_image | default: '/assets/images/kevin-middleton-coach.jpg' | absolute_url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
 <!-- Twitter -->
@@ -36,7 +36,7 @@
 <meta property="twitter:url" content="{{ page.url | absolute_url }}">
 <meta property="twitter:title" content="{{ page.twitter_title | default: page.title | default: site.title }}">
 <meta property="twitter:description" content="{{ page.twitter_description | default: page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-<meta property="twitter:image" content="{{ page.twitter_image | default: page.og_image | default: '/assets/images/360tft-social-share.jpg' | absolute_url }}">
+<meta property="twitter:image" content="{{ page.twitter_image | default: page.og_image | default: '/assets/images/kevin-middleton-coach.jpg' | absolute_url }}">
 {%- if site.social.twitter -%}
 <meta property="twitter:site" content="@{{ site.social.twitter }}">
 <meta property="twitter:creator" content="@{{ site.social.twitter }}">
