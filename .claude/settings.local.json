@@ -24,7 +24,8 @@
       "Bash(curl:*)",
       "Bash(git commit:*)",
       "Bash(jekyll build --verbose)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": []
   }
