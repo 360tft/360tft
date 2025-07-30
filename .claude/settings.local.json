@@ -8,7 +8,8 @@
       "Bash(mkdir:*)",
       "WebFetch(domain:360tft.github.io)",
       "Bash(bundle exec jekyll build:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }
