@@ -21,191 +21,29 @@ social:
   linkedin: "kevinmiddleton360"
   instagram: "360tft"
 
-# Navigation menu (UPDATED TO INCLUDE GAME MODEL)
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "About Kevin"
-    url: "/about-kevin-middleton/"
-  - title: "Game Model"
-    url: "/game-model/"
-  - title: "328 Sessions"
-    url: "/328-sessions/"
-  - title: "Coach's Compass"
-    url: "/coaches-compass/"
-  - title: "Academy"
-    url: "/football-coaching-academy/"
-  - title: "Success Stories"
-    url: "/testimonials/"
-
-# Footer links
-footer_links:
-  - title: "Training Resources"
-    links:
-      - title: "328 Training Sessions"
-        url: "/328-sessions/"
-      - title: "360TFT Game Model"
-        url: "/game-model/"
-      - title: "Coach's Compass"
-        url: "/coaches-compass/"
-      - title: "Coaching Cheatsheets"
-        url: "/coaching-cheatsheet-vault/"
-      - title: "Grassroots Pack"
-        url: "/tgfp/"
-  - title: "Community"
-    links:
-      - title: "Football Coaching Academy"
-        url: "/football-coaching-academy/"
-      - title: "Success Stories"
-        url: "/testimonials/"
-      - title: "Contact"
-        url: "/contact/"
-  - title: "About Kevin"
-    links:
-      - title: "Biography"
-        url: "/about-kevin-middleton/"
-      - title: "Coaching Philosophy"
-        url: "/about-kevin-middleton/#philosophy"
-  - title: "Support"
-    links:
-      - title: "Contact Us"
-        url: "/contact/"
-      - title: "Help Center"
-        url: "/help/"
-
-# Build settings
+# Build settings (GitHub Pages compatible)
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-# Performance optimizations
-incremental: true
-future: false
-unpublished: false
-safe: false
-
-# SASS configuration for CSS optimization
+# SASS configuration
 sass:
   sass_dir: _sass
   style: compressed
-  sourcemap: false
 
-# Compression settings
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
-
-# Plugins (optimized for performance and SEO)
+# Plugins (GitHub Pages whitelist only)
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-minifier
-  - jekyll-compress-images
-  - jekyll-responsive-image
-  - jekyll-paginate-v2
-  - jekyll-gzip
-  - jekyll-archives
 
-# Image optimization settings
-responsive_image:
-  template: _includes/responsive-image.html
-  sizes:
-    - width: 320
-    - width: 480
-    - width: 768
-    - width: 1024
-    - width: 1200
-  strip: true
-  quality: 85
-  output_path_format: assets/images/resized/%{dirname}/%{basename}-%{width}.%{extension}
-
-# Jekyll compress images
-compress_images:
-  images_path: "assets/images/**/*.{gif,png,jpg,jpeg,svg}"
-
-# Minification settings
-jekyll-minifier:
-  preserve_php: true
-  remove_spaces_inside_tags: true
-  remove_multi_spaces: true
-  remove_comments: true
-  remove_intertag_spaces: true
-  remove_quotes: false
-  compress_css: true
-  compress_javascript: true
-  compress_json: true
-  simple_doctype: false
-  remove_script_attributes: false
-  remove_style_attributes: false
-  remove_link_attributes: false
-  remove_form_attributes: false
-  remove_input_attributes: false
-  remove_javascript_protocol: false
-  remove_http_protocol: false
-  remove_https_protocol: false
-  preserve_line_breaks: false
-
-# Archives configuration for better content organization
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
-
-# Pagination settings
-pagination:
-  enabled: true
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-
-# Exclude files from build (performance optimization)
+# Exclude files from build
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-  - package.json
-  - package-lock.json
-  - gulpfile.js
-  - webpack.config.js
-  - .sass-cache
-  - .jekyll-cache
-  - .git
-  - .gitignore
-  - "*.tmp"
-  - "*.backup"
-
-# Collections for blog posts (if needed later)
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title/
-
-# Default front matter
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
 
 # Site constants for reuse
 site_constants:
@@ -274,48 +112,3 @@ contact:
   email: "support@360tft.com"
   academy_email: "academy@360tft.com"
   phone: "+44 (0) 123 456 7890"
-  
-# Analytics (add your tracking IDs)
-google_analytics: "G-XXXXXXXXXX"
-facebook_pixel: "XXXXXXXXXX"
-
-# SEO Enhanced Configuration
-seo:
-  type: Organization
-  name: "360TFT"
-  logo: "/assets/images/logo-360tft.jpg"
-
-# Feed configuration (enhanced)
-feed:
-  posts_limit: 20
-  excerpt_only: false
-
-# Sitemap configuration (enhanced)
-sitemap:
-  file: "/sitemap.xml"
-  exclude:
-    - "/404.html"
-    - "/search.html"
-    - "/admin/"
-
-# Performance monitoring
-liquid:
-  error_mode: warn
-  strict_filters: false
-  strict_variables: false
-
-# Jekyll performance optimizations
-keep_files: [".git", ".svn"]
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# Additional build optimizations
-strict_front_matter: true
-show_drafts: false
-limit_posts: 0
-lsi: false
-excerpt_separator: "\n\n"
-incremental: true
-
-# Cache settings for faster builds
-cache_dir: .jekyll-cache
