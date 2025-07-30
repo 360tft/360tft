@@ -706,31 +706,70 @@ a:hover {
     box-shadow: $shadow-light;
 }
 
-.testimonial-author {
+.testimonial-header {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.player-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: $shadow-medium;
+}
+
+.testimonial-author {
+    flex: 1;
 }
 
 .author-info strong {
     display: block;
     color: $brand-primary;
     margin-bottom: 0.2rem;
+    font-size: 1.1rem;
 }
 
 .author-info span {
     font-size: 0.9rem;
     color: $text-muted;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.pro-badge {
+    display: inline-block;
+    background: $brand-primary;
+    color: $background-primary;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.youth-badge {
+    display: inline-block;
+    background: $accent-color;
+    color: $background-primary;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .testimonial-content {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 }
 
 .testimonial-content p {
     font-size: 1rem;
     line-height: 1.6;
     margin: 0;
+    font-style: italic;
 }
 
 /* Footer */

@@ -92,7 +92,7 @@ body_class: "homepage"
                 
                 <div class="cta-group">
                     <a href="https://360tft.com/l/360TFTGM" class="cta-primary">Get The Game Model</a>
-                    <a href="/game-model/" class="cta-secondary">Learn More</a>
+                    <a href="/game-model/" class="cta-primary">Learn More</a>
                 </div>
             </div>
             
@@ -212,7 +212,7 @@ body_class: "homepage"
                 <div class="product-features">
                     <div class="feature">📚 16-Week Ball Mastery Blocks</div>
                     <div class="feature">⚔️ Complete 1v1 Training System</div>
-                    <div class="feature">🏟️ Advanced 11v11 Structure</div>
+                    <div class="feature">🏟️ To Advanced 11v11 Structure</div>
                     <div class="feature">💬 Complete Coaching Language</div>
                 </div>
                 
@@ -282,7 +282,7 @@ body_class: "homepage"
                 <div class="product-features">
                     <div class="feature">👥 Active coach community</div>
                     <div class="feature">📚 Monthly masterclasses</div>
-                    <div class="feature">💬 Direct access to UEFA qualified Coaches</div>
+                    <div class="feature">💬 Access to UEFA qualified Coaches</div>
                     <div class="feature">📈 Continuous learning</div>
                 </div>
                 
@@ -318,56 +318,72 @@ body_class: "homepage"
 <section class="testimonials">
     <div class="container">
         <div class="testimonials-header">
-            <h2>What Coaches Are Saying</h2>
-            <p>Real results from coaches using the 360TFT system</p>
+            <h2>What Professional Players Are Saying</h2>
+            <p>Real testimonials from players Kevin has coached at professional level</p>
         </div>
         
         <div class="testimonials-grid">
             <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <p><strong>Kevin has transformed my coaching. My players are more confident, make better decisions, and actually enjoy training more. The sessions are practical and immediately applicable.</strong></p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-info">
-                        <strong>Sarah Mitchell</strong>
-                        <span>U14 Girls Coach</span>
+                <div class="testimonial-header">
+                    <img src="/assets/images/images.jpeg" alt="Marcel Oakley" class="player-image">
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Marcel Oakley</strong>
+                            <span>Birmingham City | Solihull Moors</span>
+                            <div class="pro-badge">Professional</div>
+                        </div>
                     </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>Kevin's sessions are <strong>high intensity</strong>. The sessions are good, <strong>very technical</strong>. This is all a player can ask for when they are looking to improve their game.</p>
                 </div>
             </div>
             
             <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <p><strong>The Game Model changed everything. Instead of random sessions, I now have a clear development pathway. My team improved dramatically in just 8 weeks.</strong></p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-info">
-                        <strong>Mark Thompson</strong>
-                        <span>Academy Coach</span>
+                <div class="testimonial-header">
+                    <img src="/assets/images/27-jay-bird.png" alt="Jay Bird" class="player-image">
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Jay Bird</strong>
+                            <span>Arbroath FC | Salford City</span>
+                            <div class="pro-badge">Professional</div>
+                        </div>
                     </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>I enjoyed Kevin's sessions a lot — they were <strong>position specific</strong> which allowed you to improve on areas you needed to and were always of <strong>high quality and intensity</strong>. <strong>Since Kev joined Arbroath I've seen an increase in my confidence on game days</strong>.</p>
                 </div>
             </div>
             
             <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <p><strong>As a parent coach, I was overwhelmed. Kevin's resources gave me confidence and structure. Now I actually look forward to training sessions.</strong></p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-info">
-                        <strong>James Wilson</strong>
-                        <span>Parent Coach, U10s</span>
+                <div class="testimonial-header">
+                    <img src="/assets/images/skysports-yasin-ben-el-mhanni-newcastle_4201701-e1677739066883.jpg" alt="Yasin Ben El-Mhanni" class="player-image">
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Yasin Ben El-Mhanni</strong>
+                            <span>Ex-Newcastle United</span>
+                            <div class="pro-badge">Professional</div>
+                        </div>
                     </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>Kevin Middleton possesses the characteristics of a <strong>top level coach</strong> demonstrating his <strong>attention to detail in every session</strong>. His enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions, <strong>bringing out the best in every individual</strong>.</p>
                 </div>
             </div>
             
             <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <p><strong>I've learned how to pass and tackle better. He is fair and treats us well. Training is more fun now.</strong></p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-info">
-                        <strong>Player Feedback</strong>
-                        <span>U12 Team</span>
+                <div class="testimonial-header">
+                    <img src="/assets/images/download-e1677738998213.jpeg" alt="Bobby Linn" class="player-image">
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Bobby Linn</strong>
+                            <span>Arbroath FC</span>
+                            <div class="pro-badge">Professional</div>
+                        </div>
                     </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>Kevin's sessions have <strong>inspired me to get into the coaching side of football</strong>. Teaching the basics with kids of all ages, <strong>his communication skills are exemplary</strong>. He made the sessions enjoyable for all.</p>
                 </div>
             </div>
         </div>
