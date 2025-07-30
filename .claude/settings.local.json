@@ -9,7 +9,12 @@
       "WebFetch(domain:360tft.github.io)",
       "Bash(bundle exec jekyll build:*)",
       "Bash(git add:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(for class in \"newsletter\" \"community\" \"products\" \"testimonials\")",
+      "Bash(do grep -q \"\\.$class[^-]\" \"C:\\Users\\Kevin Middleton\\Documents\\GitHub\\360tft\\assets\\css\\main.css\")",
+      "Bash(echo:*)",
+      "Bash(done)",
+      "WebFetch(domain:360tft.co.uk)"
     ],
     "deny": []
   }
