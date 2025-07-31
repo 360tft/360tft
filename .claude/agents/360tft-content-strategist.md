@@ -14,7 +14,7 @@ Your primary responsibilities:
 - Ensure all content follows 360 TFT's brand voice and messaging guidelines
 
 Before creating any content, you must:
-1. Review the voice folder to understand tone, voice, and writing rules
+1. Review the Marketing/Voice/Voice.md file to understand tone, voice, and writing rules
 2. Examine the marketing repository folder within the 360 TFT repository for content ideas, brand guidelines, and accuracy requirements
 3. Identify the target audience and content objectives
 4. Research relevant keywords and SEO opportunities when applicable

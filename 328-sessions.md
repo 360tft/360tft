@@ -5,6 +5,9 @@ description: "328 ready-to-use football training sessions for all ages. Complete
 keywords: [football training sessions, soccer coaching drills, youth football training, coaching session plans, Kevin Middleton, 360TFT]
 body_class: "sessions-page"
 
+# Page-specific CSS
+css: ["/assets/css/pages/sessions.css"]
+
 # Product data
 product:
   name: "328 Training Sessions For All Ages"

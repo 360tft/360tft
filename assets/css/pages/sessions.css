@@ -1,6 +1,28 @@
 /* ========================================
-   328 Sessions Page Styles
+   328 Sessions Page Styles - COMPLETE
    ======================================== */
+
+/* CSS Variables for consistency */
+:root {
+    --brand-primary: #976bdd;
+    --brand-secondary: #7c5bc4;
+    --accent-color: #ff5757;
+    --accent-hover: #e64545;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --text-muted: #666666;
+    --background-primary: #ffffff;
+    --background-secondary: #f8f9fa;
+    --background-light: #f8f9fa;
+    --border-color: #e8e8e8;
+    --border-light: #e0e0e0;
+    --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-medium: 0 5px 15px rgba(0,0,0,0.1);
+    --shadow-heavy: 0 15px 30px rgba(151, 107, 221, 0.15);
+    --border-radius: 8px;
+    --border-radius-large: 15px;
+    --transition-fast: 0.3s ease;
+}
 
 .sessions-hero {
     background: linear-gradient(135deg, #976bdd 0%, #8a5bd6 100%);
@@ -148,5 +170,232 @@
     .age-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+}
+
+/* ========================================
+   MISSING CSS CLASSES - CRITICAL FIXES
+   ======================================== */
+
+/* Price Info */
+.price-info {
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* Age Items (replacing age-group-card) */
+.age-item {
+    background: var(--background-primary);
+    padding: 2rem;
+    border-radius: var(--border-radius-large);
+    text-align: center;
+    box-shadow: var(--shadow-light);
+    transition: all var(--transition-fast);
+    border: 2px solid var(--border-light);
+}
+
+.age-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+    border-color: var(--brand-primary);
+}
+
+.age-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.age-item h3 {
+    color: var(--brand-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.age-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Bonus Content Section */
+.bonus-content {
+    padding: 4rem 0;
+    background: var(--background-secondary);
+}
+
+.bonus-content h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.bonus-item {
+    background: var(--background-primary);
+    padding: 2rem;
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-light);
+    text-align: center;
+    transition: all var(--transition-fast);
+    border: 2px solid var(--border-light);
+}
+
+.bonus-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--brand-primary);
+}
+
+.bonus-item h3 {
+    color: var(--brand-primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.bonus-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Final CTA Section */
+.final-cta {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+    color: var(--background-primary);
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.final-cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.final-value {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.final-pricing {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-large);
+    backdrop-filter: blur(10px);
+}
+
+.final-price {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--background-primary);
+}
+
+.final-description {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.final-cta-button {
+    background: var(--accent-color);
+    color: var(--background-primary);
+    padding: 1.5rem 3rem;
+    border-radius: var(--border-radius-large);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all var(--transition-fast);
+    display: inline-block;
+    box-shadow: 0 8px 25px rgba(255, 87, 87, 0.3);
+}
+
+.final-cta-button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(255, 87, 87, 0.5);
+    color: var(--background-primary);
+    text-decoration: none;
+}
+
+.final-guarantee {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+}
+
+/* Enhanced Responsive Design for New Sections */
+@media (max-width: 768px) {
+    .bonus-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .final-price {
+        font-size: 2.5rem;
+    }
+    
+    .final-cta-button {
+        padding: 1.25rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .final-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .final-value {
+        font-size: 1.1rem;
+    }
+    
+    .age-item {
+        padding: 1.5rem;
+    }
+    
+    .age-icon {
+        font-size: 2.5rem;
+    }
+    
+    .bonus-item {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .final-pricing {
+        padding: 1.5rem;
+    }
+    
+    .final-price {
+        font-size: 2rem;
+    }
+    
+    .final-cta-content {
+        padding: 0 1rem;
+    }
+    
+    .final-cta h2 {
+        font-size: 1.8rem;
     }
 }
