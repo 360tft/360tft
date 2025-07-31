@@ -1552,6 +1552,130 @@ a:hover {
     margin-top: 2rem;
 }
 
+/* About Kevin Testimonials */
+.testimonials-section {
+    padding: 5rem 0;
+    background: $background-secondary;
+}
+
+.testimonial {
+    background: $background-primary;
+    padding: 2rem;
+    border-radius: $border-radius-large;
+    box-shadow: $shadow-light;
+    margin-bottom: 2rem;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: $text-primary;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: $brand-primary;
+    margin-bottom: 0.3rem;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: $text-muted;
+    margin-bottom: 0.2rem;
+}
+
+.testimonial-context {
+    font-size: 0.85rem;
+    color: $text-muted;
+    font-style: italic;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, $brand-primary 0%, $brand-secondary 100%);
+    color: $background-primary;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-block;
+    background: $background-primary;
+    color: $brand-primary;
+    padding: 1rem 2rem;
+    border-radius: $border-radius;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all $transition-fast;
+    border: 2px solid $background-primary;
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: $background-primary;
+    border-color: $background-primary;
+    transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: $background-primary;
+    border-color: $background-primary;
+}
+
+.cta-button.secondary:hover {
+    background: $background-primary;
+    color: $brand-primary;
+}
+
+.diagnostic-cta {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: $border-radius;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diagnostic-cta h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.diagnostic-link {
+    color: $background-primary;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.diagnostic-link:hover {
+    opacity: 0.9;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .grid-2, .grid-3 {
@@ -1659,6 +1783,11 @@ a:hover {
     
     .hobbies-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
