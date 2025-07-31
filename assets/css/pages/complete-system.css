@@ -1,0 +1,179 @@
+/* Complete System Page Specific Styles */
+
+/* CSS Variables for consistency */
+:root {
+    --brand-primary: #976bdd;
+    --brand-secondary: #7c5bc4;
+    --accent-color: #ff5757;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --text-muted: #666666;
+    --background-white: #ffffff;
+    --background-light: #f8f9fa;
+    --border-light: #e0e0e0;
+}
+
+/* Complete System Hero */
+.complete-system-hero {
+    background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+    color: var(--text-light);
+    padding: 120px 0 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* System Components */
+.system-components {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.component-card {
+    background: var(--background-white);
+    border: 2px solid var(--brand-primary);
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.component-card:hover {
+    box-shadow: 0 15px 30px rgba(151, 107, 221, 0.15);
+    transform: translateY(-3px);
+}
+
+.component-card h3 {
+    color: var(--brand-primary);
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.component-card p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.component-features {
+    list-style: none;
+    padding: 0;
+}
+
+.component-features li {
+    padding: 8px 0;
+    color: var(--text-muted);
+    position: relative;
+    padding-left: 25px;
+}
+
+.component-features li::before {
+    content: '✓';
+    color: var(--brand-primary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: var(--background-white);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(151, 107, 221, 0.15);
+}
+
+.testimonial-content {
+    margin-bottom: 25px;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    font-size: 1.1em;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.testimonial-author strong {
+    color: var(--brand-primary);
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.testimonial-author span {
+    color: var(--text-muted);
+    font-size: 0.95em;
+}
+
+/* Timeline */
+.timeline {
+    margin: 40px 0;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.timeline-item {
+    text-align: center;
+    background: var(--background-white);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.timeline-number {
+    background: var(--accent-color);
+    color: var(--text-light);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 auto 15px auto;
+}
+
+.timeline-item p {
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .system-components,
+    .testimonials-grid,
+    .timeline-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .complete-system-hero {
+        padding: 100px 0 60px 0;
+    }
+    
+    .component-card,
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+}

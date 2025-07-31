@@ -188,21 +188,21 @@ launch_price: "$20"
         
         <div class="testimonials-grid">
             <div class="testimonial">
-                <p class="testimonial-text">"This gave me the clarity I needed. Players developed faster, and so did I."</p>
-                <div class="testimonial-author">Jason Howe</div>
-                <div class="testimonial-role">Grassroots Coach</div>
+                <p class="testimonial-text">"Kevin's sessions are high intensity, quality sessions that I have definitely benefited from and improved my game. The sessions are always very beneficial for game days."</p>
+                <div class="testimonial-author">Jess Norey</div>
+                <div class="testimonial-role">Professional Player, Arbroath FC | East Fife</div>
             </div>
             
             <div class="testimonial">
-                <p class="testimonial-text">"I've used 360TFT sessions with players at every level. Easy to follow and directly linked to the game."</p>
-                <div class="testimonial-author">Andrew Creegan</div>
-                <div class="testimonial-role">Academy Coach</div>
+                <p class="testimonial-text">"Kevin's sessions are great, high intensity, and very well explained, which makes them really easy to follow. They're quality sessions that I have definitely benefited from and improved my game."</p>
+                <div class="testimonial-author">Skye Allan</div>
+                <div class="testimonial-role">Female Footballer, AFCW</div>
             </div>
             
             <div class="testimonial">
-                <p class="testimonial-text">"The systematic approach transformed my coaching. No more panic before sessions - I have a clear plan that works."</p>
-                <div class="testimonial-author">Sarah Mitchell</div>
-                <div class="testimonial-role">Youth Coach</div>
+                <p class="testimonial-text">"I trained with Kevin when I was younger and he is still the coach that has improved my footballing ability the most. Everything that he taught me, I still try and bring to my games every week. He is highly motivated and doesn't give up on you when you are having a bad game."</p>
+                <div class="testimonial-author">Adam</div>
+                <div class="testimonial-role">Youth Player, Age 14</div>
             </div>
         </div>
     </div>

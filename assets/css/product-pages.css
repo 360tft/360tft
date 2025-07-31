@@ -1,5 +1,18 @@
 /* Product Pages Shared Styles */
 
+/* CSS Variables for compatibility */
+:root {
+    --brand-primary: #976bdd;
+    --brand-secondary: #7c5bc4;
+    --accent-color: #ff5757;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --text-muted: #666666;
+    --background-white: #ffffff;
+    --background-light: #f8f9fa;
+    --border-light: #e0e0e0;
+}
+
 /* Product Hero Section */
 .product-hero {
     background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));

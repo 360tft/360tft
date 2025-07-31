@@ -124,16 +124,16 @@ og_image: "/assets/images/328-sessions-cover.jpg"
         
         <div class="testimonials-grid">
             <div class="testimonial">
-                <p>"These sessions have transformed my coaching. No more last-minute panic on Sunday nights!"</p>
-                <cite>— Sarah M., Youth Coach</cite>
+                <p>"Kevin's sessions are high intensity, quality sessions that I have definitely benefited from and improved my game. The sessions are always very beneficial for game days."</p>
+                <cite>— Jess Norey, Professional Player, Arbroath FC | East Fife</cite>
             </div>
             <div class="testimonial">
-                <p>"Finally, a systematic approach to session planning. My players' development has accelerated massively."</p>
-                <cite>— James T., Academy Coach</cite>
+                <p>"Kevin's sessions are great, high intensity, and very well explained, which makes them really easy to follow. They're quality sessions that I have definitely benefited from and improved my game."</p>
+                <cite>— Skye Allan, Female Footballer, AFCW</cite>
             </div>
             <div class="testimonial">
-                <p>"Worth every penny. I've saved hours of planning time and my sessions are so much better."</p>
-                <cite>— Maria L., School Coach</cite>
+                <p>"I trained with Kevin when I was younger and he is still the coach that has improved my footballing ability the most. Everything that he taught me, I still try and bring to my games every week."</p>
+                <cite>— Adam, Youth Player, Age 14</cite>
             </div>
         </div>
     </div>

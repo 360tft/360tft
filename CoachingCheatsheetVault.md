@@ -392,21 +392,21 @@ guarantee: "30-Day Money Back Guarantee"
         
         <div class="testimonials">
             <div class="testimonial">
-                <p class="testimonial-text">"I keep these cheatsheets on my phone and printed in my coaching bag. They've saved me countless times when I needed a quick solution. The formation guide alone is worth the price."</p>
-                <div class="testimonial-author">Mark Stevens</div>
-                <div class="testimonial-role">U16 Coach, Sheffield United Community Foundation</div>
+                <p class="testimonial-text">When I played with Arbroath FC, Kevin would invite me along to his sessions, which has inspired me to get into the coaching side of football. Teaching the basics with kids of all ages, his communication skills are exemplary. He made the sessions enjoyable for all. Kevin is very approachable and happy to share his knowledge with anyone who asks.</p>
+                <div class="testimonial-author">Bobby Linn</div>
+                <div class="testimonial-role">Professional Player, Arbroath FC</div>
             </div>
             
             <div class="testimonial">
-                <p class="testimonial-text">"The parent communication templates changed everything. I went from dreading difficult conversations to handling them with confidence. Every grassroots coach needs these."</p>
-                <div class="testimonial-author">Rachel Thompson</div>
-                <div class="testimonial-role">U12 Manager, Brooklands FC</div>
+                <p class="testimonial-text">Kevin's sessions are high intensity. The sessions are good, very technical. This is all a player can ask for when they are looking to improve their game.</p>
+                <div class="testimonial-author">Marcel Oakley</div>
+                <div class="testimonial-role">Professional Player, Birmingham City | Solihull Moors</div>
             </div>
             
             <div class="testimonial">
-                <p class="testimonial-text">"These aren't just quick fixes - they're proper coaching solutions. The small-sided games section has revolutionised my training sessions. Players are more engaged than ever."</p>
-                <div class="testimonial-author">David Cole</div>
-                <div class="testimonial-role">Academy Coach, Rotherham United</div>
+                <p class="testimonial-text">I had the privilege of doing extra training sessions with Kevin during my time with Arbroath FC. The precision striker drills were challenging, but match realistic. This is all a player can ask for when they are looking to improve their game. The sessions are good, very technical, and high intensity.</p>
+                <div class="testimonial-author">Michael Bakare</div>
+                <div class="testimonial-role">Professional Player, Arbroath FC | Glacis United</div>
             </div>
         </div>
         

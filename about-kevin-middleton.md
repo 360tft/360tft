@@ -48,7 +48,7 @@ players_developed: "{{ site.site_constants.players_developed }}"
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">{{ site.site_constants.players_developed }}</span>
-                        <span class="stat-label">Players Coaches</span>
+                        <span class="stat-label">Players Coached</span>
                     </div>
                 </div>
             </div>

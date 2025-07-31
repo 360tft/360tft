@@ -873,21 +873,21 @@ instant_download: "Instant Download"
     
     <div class="testimonials-grid">
         <div class="testimonial">
-            <p class="testimonial-text">I went from dreading match days to actually enjoying them. Finally understanding why we use different formations for different age groups gave me so much confidence.</p>
-            <div class="testimonial-author">Mark Stevens</div>
-            <div class="testimonial-context">Parent Coach, U10 Team</div>
+            <p class="testimonial-text">I trained with Kevin when I was younger and he is still the coach that has improved my footballing ability the most. Everything that he taught me, I still try and bring to my games every week. He is highly motivated and doesn't give up on you when you are having a bad game.</p>
+            <div class="testimonial-author">Adam</div>
+            <div class="testimonial-context">Youth Player, Age 14</div>
         </div>
         
         <div class="testimonial">
-            <p class="testimonial-text">The formation guides are brilliant. Simple explanations that actually make sense. I wish I'd had this when I started coaching my daughter's team three years ago.</p>
-            <div class="testimonial-author">Sarah Johnson</div>
-            <div class="testimonial-context">Volunteer Coach, U12 Girls</div>
+            <p class="testimonial-text">Kev is a brilliant coach because he does fitness with us and helps us by going for runs with us. I've learned how to pass and tackle better. He is fair and treats us well.</p>
+            <div class="testimonial-author">Kase</div>
+            <div class="testimonial-context">Youth Player, Age 10</div>
         </div>
         
         <div class="testimonial">
-            <p class="testimonial-text">Kevin explains everything in plain English. No fancy jargon, just practical advice that works. The matchday organisation templates saved me so much stress.</p>
-            <div class="testimonial-author">David Williams</div>
-            <div class="testimonial-context">Grassroots Coach, U9 Mixed Team</div>
+            <p class="testimonial-text">Kevin's sessions are great, high intensity, and very well explained, which makes them really easy to follow. Kevin's sessions are always very beneficial for game days. They're quality sessions that I have definitely benefited from and improved my game.</p>
+            <div class="testimonial-author">Skye Allan</div>
+            <div class="testimonial-context">Female Footballer, AFCW</div>
         </div>
     </div>
 </section>

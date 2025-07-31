@@ -942,45 +942,45 @@ member_limit: "Limited to 500 new members"
     
     <div class="stories-grid">
         <div class="story-card">
-            <p class="story-text">The Academy didn't just improve my coaching - it transformed my career. Within 6 months, I went from grassroots volunteer to academy coach. The network connections alone were worth the membership.</p>
-            <div class="story-author">Sarah Mitchell</div>
-            <div class="story-role">Academy Coach, Wolverhampton Wanderers</div>
-            <div class="story-result">🚀 Result: Promoted to professional academy role</div>
+            <p class="story-text">Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game — strengthening their weaknesses as well as their strengths.</p>
+            <div class="story-author">Yasin Ben El-Mhanni</div>
+            <div class="story-role">Professional Player, Ex-Newcastle United</div>
+            <div class="story-result">🚀 Result: Professional development at highest level</div>
         </div>
         
         <div class="story-card">
-            <p class="story-text">Kevin's monthly masterclasses are like having a personal mentor. The advanced tactics and psychology content has given me a massive edge. My players' decision-making improved dramatically.</p>
-            <div class="story-author">David Chen</div>
-            <div class="story-role">U18 Head Coach, Manchester City Academy</div>
-            <div class="story-result">🧠 Result: Team won regional championship</div>
+            <p class="story-text">I enjoyed Kevin's sessions a lot — they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</p>
+            <div class="story-author">Jay Bird</div>
+            <div class="story-role">Professional Player, Arbroath FC | Salford City</div>
+            <div class="story-result">🧠 Result: Improved game confidence and positioning</div>
         </div>
         
         <div class="story-card">
-            <p class="story-text">The community aspect is incredible. I've collaborated with coaches from Real Madrid, Bayern Munich, and Ajax. The knowledge sharing and friendships I've built are priceless.</p>
-            <div class="story-author">Elena Rodriguez</div>
-            <div class="story-role">Youth Development Director</div>
-            <div class="story-result">🌐 Result: International coaching exchanges established</div>
+            <p class="story-text">When I played with Arbroath FC, Kevin would invite me along to his sessions, which has inspired me to get into the coaching side of football. Teaching the basics with kids of all ages, his communication skills are exemplary. He made the sessions enjoyable for all. Kevin is very approachable and happy to share his knowledge with anyone who asks.</p>
+            <div class="story-author">Bobby Linn</div>
+            <div class="story-role">Professional Player, Arbroath FC</div>
+            <div class="story-result">🌐 Result: Inspired to pursue coaching career</div>
         </div>
         
         <div class="story-card">
-            <p class="story-text">As a former professional player transitioning to coaching, the Academy fast-tracked my development by years. The personalized guidance and resources are unmatched anywhere.</p>
-            <div class="story-author">Jake Morrison</div>
-            <div class="story-role">Former Professional Player</div>
-            <div class="story-result">🚀 Result: Head Coach at League Two Club</div>
+            <p class="story-text">Kevin's sessions are high intensity. The sessions are good, very technical. This is all a player can ask for when they are looking to improve their game.</p>
+            <div class="story-author">Marcel Oakley</div>
+            <div class="story-role">Professional Player, Birmingham City | Solihull Moors</div>
+            <div class="story-result">🚀 Result: Technical improvement at professional level</div>
         </div>
         
         <div class="story-card">
-            <p class="story-text">The exclusive research and tactical analysis gives me insights I can't get anywhere else. My players' decision-making has improved dramatically since implementing the Academy methodologies.</p>
-            <div class="story-author">Emma Thompson</div>
-            <div class="story-role">Academy Coach, Leicester City</div>
-            <div class="story-result">🧠 Result: 45% improvement in tactical awareness scores</div>
+            <p class="story-text">I had the privilege of doing extra training sessions with Kevin during my time with Arbroath FC. The precision striker drills were challenging, but match realistic. This is all a player can ask for when they are looking to improve their game. The sessions are good, very technical, and high intensity.</p>
+            <div class="story-author">Michael Bakare</div>
+            <div class="story-role">Professional Player, Arbroath FC | Glacis United</div>
+            <div class="story-result">🧠 Result: Enhanced striker precision and technique</div>
         </div>
         
         <div class="story-card">
-            <p class="story-text">The Academy community opened doors I never knew existed. The job opportunities shared within the network led directly to my current role at one of England's top academies.</p>
-            <div class="story-author">Michael Roberts</div>
-            <div class="story-role">Head of Player Development</div>
-            <div class="story-result">💼 Result: Dream job at Premier League academy</div>
+            <p class="story-text">If you are looking for a 1-2-1 session, Kev's your man! Kevin demonstrates attention to detail in every session, enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions bringing out the best in every individual, strengthening their weaknesses as well as their strengths.</p>
+            <div class="story-author">Dan Fosu</div>
+            <div class="story-role">Professional Player, Arbroath FC</div>
+            <div class="story-result">💼 Result: Individual skill development and improvement</div>
         </div>
     </div>
 </section>

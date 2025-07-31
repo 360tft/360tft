@@ -339,31 +339,31 @@ js:
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    <p><strong>The 360TFT system completely changed how I approach player development. My U14 team went from struggling to compete to winning their division. The sessions are brilliant and the progression is perfect.</strong></p>
+                    <p><strong>If you are looking for a 1-2-1 session, Kev's your man! Kevin demonstrates attention to detail in every session, enthusiasm paired with knowledge allows him to deliver enjoyable and beneficial sessions bringing out the best in every individual, strengthening their weaknesses as well as their strengths.</strong></p>
                 </div>
                 <div class="testimonial-author">
-                    <strong>Mike Thompson</strong>
-                    <span>Youth Coach, Manchester</span>
+                    <strong>Dan Fosu</strong>
+                    <span>Professional Player, Arbroath FC</span>
                 </div>
             </div>
             
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    <p><strong>As a parent coach, I was completely lost. Kevin's system gave me the confidence and knowledge to actually help these kids improve. The parents have noticed the difference!</strong></p>
+                    <p><strong>I enjoyed Kevin's sessions a lot — they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</strong></p>
                 </div>
                 <div class="testimonial-author">
-                    <strong>Sarah Collins</strong>
-                    <span>Grassroots Coach, Birmingham</span>
+                    <strong>Jay Bird</strong>
+                    <span>Professional Player, Arbroath FC | Salford City</span>
                 </div>
             </div>
             
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    <p><strong>I've been coaching for 10 years but was stuck in old habits. The Complete Mastery System opened my eyes to modern player development. My sessions are now purposeful and progressive.</strong></p>
+                    <p><strong>Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game — strengthening their weaknesses as well as their strengths.</strong></p>
                 </div>
                 <div class="testimonial-author">
-                    <strong>James Mitchell</strong>
-                    <span>Academy Coach, Leeds</span>
+                    <strong>Yasin Ben El-Mhanni</strong>
+                    <span>Professional Player, Ex-Newcastle United</span>
                 </div>
             </div>
         </div>

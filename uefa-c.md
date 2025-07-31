@@ -858,21 +858,21 @@ resource_count: "10 Distinct Resources"
     
     <div class="testimonials-grid">
         <div class="testimonial">
-            <p class="testimonial-text">Kevin's guidance was invaluable for my UEFA C assessment. The practical tips and real coursework examples gave me confidence I wouldn't have had otherwise. Passed first time!</p>
-            <div class="testimonial-author">Mark Stevens</div>
-            <div class="testimonial-context">Grassroots Coach, UEFA C Licensed</div>
+            <p class="testimonial-text">Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game — strengthening their weaknesses as well as their strengths.</p>
+            <div class="testimonial-author">Yasin Ben El-Mhanni</div>
+            <div class="testimonial-context">Professional Player, Ex-Newcastle United</div>
         </div>
         
         <div class="testimonial">
-            <p class="testimonial-text">The practical assessment preparation section was a game-changer. Knowing what assessors were really looking for took all the guesswork out of the process.</p>
-            <div class="testimonial-author">Sarah Johnson</div>
-            <div class="testimonial-context">Youth Coach, UEFA C Licensed</div>
+            <p class="testimonial-text">I enjoyed Kevin's sessions a lot — they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</p>
+            <div class="testimonial-author">Jay Bird</div>
+            <div class="testimonial-context">Professional Player, Arbroath FC | Salford City</div>
         </div>
         
         <div class="testimonial">
-            <p class="testimonial-text">Having Kevin's actual coursework to reference was incredibly helpful. It showed me exactly how to structure my assignments and what level of detail was expected.</p>
-            <div class="testimonial-author">David Williams</div>
-            <div class="testimonial-context">Academy Coach, UEFA C Licensed</div>
+            <p class="testimonial-text">Kevin's sessions are high intensity, quality sessions that I have definitely benefited from and improved my game. The sessions are always very beneficial for game days.</p>
+            <div class="testimonial-author">Jess Norey</div>
+            <div class="testimonial-context">Professional Player, Arbroath FC | East Fife</div>
         </div>
     </div>
 </section>
