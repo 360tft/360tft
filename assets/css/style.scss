@@ -1370,6 +1370,188 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+/* Journey Highlights */
+.journey-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.highlight-item {
+    padding: 2rem;
+    background: $background-primary;
+    border-radius: $border-radius;
+    box-shadow: $shadow-light;
+    text-align: center;
+}
+
+.highlight-item h4 {
+    color: $brand-primary;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Philosophy Points */
+.philosophy-points {
+    margin: 3rem 0;
+}
+
+.philosophy-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: $background-secondary;
+    border-radius: $border-radius;
+}
+
+.philosophy-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.philosophy-content h3 {
+    color: $brand-primary;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.philosophy-content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 5rem 0;
+    background: $background-secondary;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: $brand-primary;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: $text-muted;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background: $background-primary;
+    padding: 2.5rem 2rem;
+    border-radius: $border-radius-large;
+    text-align: center;
+    box-shadow: $shadow-medium;
+    transition: transform $transition-fast;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-heavy;
+}
+
+.achievement-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $brand-primary;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.achievement-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $text-primary;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-description {
+    font-size: 0.9rem;
+    color: $text-muted;
+    line-height: 1.5;
+}
+
+/* Personal Interests */
+.personal-interests {
+    padding: 5rem 0;
+    background: $background-primary;
+}
+
+.interests-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.interests-text h3 {
+    color: $brand-primary;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.interests-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.hobby-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: $background-secondary;
+    border-radius: $border-radius;
+    box-shadow: $shadow-light;
+}
+
+.hobby-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.hobby-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.interests-connection {
+    font-style: italic;
+    background: $brand-primary;
+    color: $background-primary;
+    padding: 1.5rem;
+    border-radius: $border-radius;
+    text-align: center;
+    margin-top: 2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .grid-2, .grid-3 {
@@ -1460,6 +1642,24 @@ a:hover {
     .coaching-principles {
         grid-template-columns: 1fr;
     }
+    
+    .journey-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .philosophy-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1486,5 +1686,9 @@ a:hover {
     
     .stat-item {
         padding: 1rem;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
     }
 }
