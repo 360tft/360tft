@@ -36,7 +36,7 @@ players_developed: "{{ site.site_constants.players_developed }}"
             <div class="hero-text">
                 <h1>Meet {{ site.author.name }}</h1>
                 <p class="hero-subtitle">Creator of the 360TFT Player Development Methodology</p>
-                <p class="hero-description">For over {{ site.site_constants.years_experience }} years, I've been systematically answering one question: "How do we develop better footballers faster?" The result is the 360TFT methodology - a proven framework that transforms coaching from random drill collections to systematic player development.</p>
+                <p class="hero-description">For over {{ site.site_constants.years_experience }} years, I've been systematically answering one question: "How do we keep young footballers in the game, lifelong?" The result is the 360TFT methodology.  A proven framework that transforms coaching from random drill collections to systematic player development.  An age and stage football education for every single young player.</p>
                 
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -45,11 +45,11 @@ players_developed: "{{ site.site_constants.players_developed }}"
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">{{ site.site_constants.coaches_mentored }}</span>
-                        <span class="stat-label">Coaches Mentored</span>
+                        <span class="stat-label">Coaches Educated</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">{{ site.site_constants.players_developed }}</span>
-                        <span class="stat-label">Players Developed</span>
+                        <span class="stat-label">Players Coaches</span>
                     </div>
                 </div>
             </div>
