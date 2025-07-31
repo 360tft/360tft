@@ -1,6 +1,6 @@
-# Twitter Thread: Building Play from the Back
+# Twitter/X Thread: Building Play from the Back
 
-## Twitter Thread Content:
+## Thread Topic: "Teaching Players to Play Out from the Back"
 
 ---
 
@@ -11,7 +11,9 @@
 
 But I've discovered this approach limits their development... 👇
 
-**Tweet 2**
+---
+
+**Tweet 2 (Problem Setup)**
 The challenge with always clearing:
 
 • Players never learn to play under pressure
@@ -19,135 +21,136 @@ The challenge with always clearing:
 • It becomes a reactive approach rather than proactive
 • Players don't develop confidence with the ball in tight spaces
 
-There might be a better way to approach this.
+I wanted to help players become more comfortable with the ball.
 
-**Tweet 3**
-The reality: Teams that can only clear the ball become:
+---
 
-• Anxious when receiving possession
-• Limited in tactical options
-• Dependent on opponent mistakes
-• Unable to control match tempo
+**Tweet 3 (The Reality)**
+What I noticed:
 
-Meanwhile, build-up teams dictate play.
+• Players became anxious when they received the ball in their own half
+• We had limited options for starting attacks
+• We relied on opponents making mistakes rather than creating our own chances
+• Other teams that could play out often controlled the pace of matches
 
-**Tweet 4**
-The 360TFT Build-Up System (3 phases):
+I wanted to help my players develop these skills too.
 
-**Phase 1**: Foundation without pressure
-- Technical accuracy first
-- Basic positioning
-- Communication patterns
-- Scanning habits
+---
 
-Build competence before adding challenge.
+**Tweet 4 (Solution Introduction)**
+What I've found helps develop build-up play:
 
-**Tweet 5**
-**Phase 2**: Progressive pressure introduction
+• Start with technical accuracy without any pressure
+• Work on positioning and movement patterns
+• Develop communication between players
+• Help players scan and see their options
 
-Week 1: Passive pressure (shadow only)
-Week 2: Light pressure (intercept, no tackling)  
-Week 3: Active pressure (numerical advantage)
+Build confidence through competence first.
+
+---
+
+**Tweet 5 (Adding Pressure Gradually)**
+Then gradually introduce pressure:
+
+Week 1: Passive pressure (defenders just shadow)
+Week 2: Light pressure (can intercept, no tackling)  
+Week 3: Active pressure (but with numerical advantage for attackers)
 Week 4: Match-realistic pressure
 
-Confidence builds alongside competence.
+This helps players stay composed when opponents arrive.
 
-**Tweet 6**
-**Phase 3**: Decision-making framework
+---
 
-🟢 Green Zone (penalty area): Simple passes only
-🟡 Amber Zone (own half): Calculated risks
-🔴 Red Zone (opposition half): Creative freedom
+**Tweet 6 (Decision-Making Framework)**
+I like using zones to help with decision-making:
 
-Clear guidelines, intelligent application.
+🟢 Green Zone (penalty area): Simple, safe passes only
+🟡 Amber Zone (own half): Take calculated risks
+🔴 Red Zone (opposition half): Be creative and take chances
 
-**Tweet 7**
-Position-specific build-up roles:
+This gives players clear guidelines about when to be safe vs adventurous.
 
-**Goalkeeper**: Distribution variety and accuracy
-**Centre-backs**: Splitting angles, progressive passing
-**Fullbacks**: Width creation, overlapping runs
-**Midfielders**: Support movement, pressure relief
+---
 
-Everyone has a system role.
+**Tweet 7 (Age Considerations)**
+Different ages need different approaches:
 
-**Tweet 8**
-Common build-up mistakes coaches make:
+Younger players (U10-12): Focus on basic passing without pressure first
+Middle ages (U13-15): Add pressure gradually, work on roles and positioning
+Older players (U16+): Complex patterns and quick decision-making
 
-❌ Adding pressure before technique exists
-❌ No clear decision-making framework
-❌ Expecting immediate match transfer  
-❌ Reverting to "clear it" under pressure
+Match complexity to their development stage.
 
-Systematic development prevents these.
+---
 
-**Tweet 9**
-Age-appropriate progression:
+**Tweet 8 (Common Mistakes)**
+What I've learned to avoid:
 
-**6-10 years**: Basic passing under no pressure
-**11-14 years**: Pressure introduction + role understanding
-**15+ years**: Complex patterns + tactical flexibility
+• Adding pressure before players have basic technical skills
+• Not giving players clear guidelines about when to take risks
+• Expecting them to transfer skills to matches immediately
+• Going back to "just clear it" when things get challenging
 
-Development matches capacity.
+Patience with the process really helps.
 
-**Tweet 10**
-Real coach results:
+---
 
-"Players stopped panicking when they got the ball in defensive areas. The build-up system gave them confidence and structure." - Sarah, Leeds
+**Tweet 9 (Implementation Tips)**
+Practical ways to work on this:
 
-"Transformed our hoofball team into possession players in 6 weeks." - Mark, Cardiff
+• Start with simple passing in pairs/threes
+• Use small-sided games with specific objectives
+• Practice scenarios they'll face in matches
+• Celebrate good decision-making, not just successful passes
 
-**Tweet 11**
-Training focus shift:
+Make it relevant to match situations.
 
-From: Isolated technical work
-To: Technical work under progressive pressure
+---
 
-From: "Clear it" instructions  
-To: Systematic build-up options
+**Tweet 10 (Results)**
+Coaches who work on this often notice:
 
-From: Panic decisions
-To: Framework-based choices
+"Players stopped panicking when they got the ball in defensive areas because they knew what to do"
 
-**Tweet 12**
-The psychological transformation:
+"Our team started creating more chances from our own build-up play"
 
-Players learn possession is opportunity, not danger.
+It takes time, but the results are worth it.
 
-Confidence grows through systematic success.
+---
 
-Decision-making improves with clear frameworks.
+**Tweet 11 (Call to Action)**
+If you'd like to try this approach:
 
-Match performance reflects training preparation.
+This week, try one activity where players practice playing out from the back:
+• Start without pressure
+• Focus on simple, accurate passing
+• Add light pressure once they're comfortable
+• Celebrate good decision-making
 
-**Tweet 13**
-Assessment indicators:
+---
 
-✅ Willingness to receive in defensive areas
-✅ First touch quality under pressure
-✅ Decision-making appropriateness
-✅ Communication during build-up
-✅ Recovery after failed attempts
+**Tweet 12 (Resource Offer)**
+If you're interested in exploring this further:
 
-Track progress systematically.
+Our Football Coaching Academy includes:
+• Progressive build-up training sessions
+• Decision-making frameworks for different zones
+• Age-appropriate pressure progressions
+• A community of coaches sharing experiences
 
-**Tweet 14**
-The choice every coach faces:
+£10/month: https://www.skool.com/coachingacademy
 
-Continue teaching "clear it" panic mentality that surrenders possession...
+---
 
-Or develop systematic build-up that transforms defensive possession into tactical advantage.
+**Tweet 13 (Final CTA)**
+What's your experience with building play from the back?
 
-Which builds stronger teams?
+Do your players feel comfortable playing out, or is this something you'd like to help them develop?
 
-**Tweet 15 (CTA)**
-Ready to transform defensive possession into tactical control?
+I'd love to hear about your approaches and any challenges you've faced.
 
-The [Football Coaching Academy](https://www.skool.com/coachingacademy) provides complete build-up systems for every age group.
+---
 
-Progressive sessions, decision frameworks, and 1,000+ coaches implementing systematic approaches.
-
-Transform panic into possession mastery.
 
 ---
 
