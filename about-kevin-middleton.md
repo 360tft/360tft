@@ -17,7 +17,6 @@ twitter_description: "The man behind 360TFT. 15+ years coaching experience, crea
 twitter_image: "/assets/images/kevin-middleton-coach.jpg"
 
 # Page-specific settings
-css: ["/assets/css/about-kevin.css"]
 js: ["/assets/js/story-navigation.js"]
 body_class: "about-page"
 schema_type: "Person"
