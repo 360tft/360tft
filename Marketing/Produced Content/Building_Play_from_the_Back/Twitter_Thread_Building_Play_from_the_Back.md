@@ -1,29 +1,25 @@
 # Twitter Thread: Building Play from the Back
 
-## Thread Hook Options:
-1. "Just clear it!" - the two words destroying youth football development 🧵
-2. Why teams that can only hoof the ball never control matches (thread) ⚽
-3. The build-up system that transforms hoofball teams into possession masters 🧵
-4. From panic clearances to systematic possession (a coaching thread) ⚽
-
 ## Twitter Thread Content:
 
 ---
 
 **Tweet 1 (Hook)**
-"Just clear it!" - the two words destroying youth football development 🧵
+🧵 THREAD: What I've learned about building play from the back with young players
 
-After 15+ years developing 1,000+ players, I've identified why this instruction creates weak teams and how systematic build-up transforms defensive possession into tactical advantage.
+"Just clear it!" used to be my default instruction when players were under pressure.
+
+But I've discovered this approach limits their development... 👇
 
 **Tweet 2**
-The problem with "clear it" mentality:
+The challenge with always clearing:
 
-❌ Surrenders possession immediately
-❌ Creates reactive, not proactive teams  
-❌ Limits player technical development
-❌ Makes teams predictable and easy to defend
+• Players never learn to play under pressure
+• The team loses possession immediately
+• It becomes a reactive approach rather than proactive
+• Players don't develop confidence with the ball in tight spaces
 
-We're teaching defenders that possession is dangerous.
+There might be a better way to approach this.
 
 **Tweet 3**
 The reality: Teams that can only clear the ball become:

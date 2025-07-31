@@ -27,7 +27,10 @@
       "Bash(mv:*)",
       "WebFetch(domain:github.com)",
       "Bash(npm i:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(nslookup:*)"
     ],
     "deny": []
   }

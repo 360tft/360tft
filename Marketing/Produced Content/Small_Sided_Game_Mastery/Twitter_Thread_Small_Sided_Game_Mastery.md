@@ -14,142 +14,136 @@ Here's how I think about selecting the right format for different objectives... 
 ---
 
 **Tweet 2 (Problem Setup)**
-❌ THE PROBLEM: Format selection based on player count
+I used to choose formats based purely on numbers:
 
-Common logic:
-• 14 players = 7v7
-• 10 players = 5v5  
-• 8 players = 4v4
+• 14 players arrived = 7v7
+• 10 players showed up = 5v5  
+• 8 players came = 4v4
 
-This treats games as time-fillers rather than development tools.
+But I started noticing different formats create very different learning experiences for players.
 
 ---
 
 **Tweet 3 (The Reality)**
-🎯 FORMAT-OBJECTIVE RELATIONSHIP:
+What I've observed:
 
-3v3 = Maximum touches, basic decisions
-5v5 = Tactical complexity, moderate touches
-7v7 = Advanced tactics, fewer touches
-9v9 = Match realism, minimal individual touches
+3v3 = Lots of ball contact, simpler decisions
+5v5 = Balanced touches and tactical choices
+7v7 = More complex tactics, fewer individual touches
+9v9 = Closer to match conditions
 
-Choosing wrong format = wasted development opportunity.
+Each format teaches different things.
 
 ---
 
 **Tweet 4 (Solution Introduction)**
-✅ THE 360TFT SOLUTION: Objective-led format selection
+Now I try to start with what I want players to work on:
 
-Start with development goal, work backwards to optimal format:
-
-💹 Technical focus → 2v2/3v3 for max touches
-🧠 Tactical focus → 6v6-8v8 for complexity
-💪 Physical focus → 4v4/5v5 for work-rate balance
+For technical development → smaller numbers (2v2/3v3) mean more touches
+For tactical understanding → larger formats (6v6-8v8) create more complex decisions
+For fitness and intensity → mid-range numbers (4v4/5v5) provide good balance
 
 ---
 
 **Tweet 5 (Rule Modifications)**
-🔧 STEP 2: Strategic rule modifications
+Sometimes I'll adjust rules to encourage specific behaviors:
 
-Standard rules don't always serve development:
+• Two-touch limit helps players think faster
+• Goals from wide areas encourages width
+• Extra points for consecutive passes rewards teamwork
+• Must use both feet develops weaker side
 
-• Two-touch max for quick passing
-• Goals only from wide areas for width
-• Bonus points for consecutive passes
-• No backpasses for forward thinking
+Small changes can guide learning.
 
 ---
 
 **Tweet 6 (Progressive Complexity)**
-📈 STEP 3: Progressive complexity
+I like to build complexity gradually:
 
-Week 1: Basic format, simple rules
-Week 2: Add tactical constraints  
-Week 3: Increase complexity
-Week 4: Match application
+Week 1: Learn the basic format and rules
+Week 2: Add one tactical element  
+Week 3: Increase challenge or space
+Week 4: Let them play with everything they've learned
 
-Systematic development, not random games.
+This gives players time to adapt and improve.
 
 ---
 
 **Tweet 7 (Age Applications)**
-👶 AGE-APPROPRIATE APPLICATIONS:
+Different ages handle different complexities:
 
-U8-10: 3v3-4v4 max, simple rules, 8-12 min
-U11-14: 5v5-7v7 with position constraints
-U15+: 8v8-9v9 with match complexity
+U8-10: 3v3 or 4v4 works well, keep rules simple, shorter games
+U11-14: 5v5 to 7v7 with some tactical elements
+U15+: Can handle larger formats and more complex rules
 
-Format must match developmental capability.
+Match the challenge to where they are developmentally.
 
 ---
 
 **Tweet 8 (Common Mistakes)**
-🚫 AVOID THESE MISTAKES:
+What I've learned to watch for:
 
-• Choosing format based on available players
-• Same rules throughout session
-• Ignoring space dimensions
-• Running games until fatigue
+• Just picking based on who shows up
+• Never changing rules or format during session
+• Using spaces that are too big or too small
+• Running games too long and losing quality
 
-Purposeful design beats random selection every time.
+Taking time to think about format choice really helps.
 
 ---
 
 **Tweet 9 (Academy Insight)**
-🏆 WHAT ACADEMIES KNOW:
+What I've noticed from working with different programs:
 
-Professional academies design games around development objectives, not player numbers.
+The most effective coaches think carefully about format selection.
 
-They understand format-objective relationships and use games as sophisticated development tools.
+They see small-sided games as learning opportunities, not just ways to keep players busy.
 
-Not time-fillers.
+This intentional approach makes a real difference.
 
 ---
 
 **Tweet 10 (Implementation)**
-🔄 THIS WEEK'S TRANSFORMATION:
+If you'd like to try this approach:
 
-Before next session:
-1. Identify primary development objective
-2. Select format that serves this objective
-3. Modify rules for accelerated learning
-4. Adjust rotation as needed
+Before your next session:
+1. Think about what you want players to work on
+2. Choose a format that supports that objective
+3. Consider if any rule changes would help
+4. Be ready to adjust if needed during the session
 
 ---
 
 **Tweet 11 (Results)**
-📈 COACHES REPORT:
+Coaches who try this often notice:
 
-"Player development accelerated dramatically when I stopped choosing formats by numbers" - Sarah
+"My players started improving faster when I matched formats to what we were working on"
 
-"Match performance improved because training games actually prepared players" - Mark
+"The games felt more purposeful and players stayed more engaged"
 
-1,000+ coaches using systematic game design.
+It's a simple shift that can make training more effective.
 
 ---
 
 **Tweet 12 (Resource Offer)**
-🎮 WANT THE COMPLETE SYSTEM?
+If you're interested in exploring this further:
 
-The Football Coaching Academy provides:
-• Progressive game libraries by objective
-• Format selection guidelines
-• Rule modification templates
-• 1,000+ coach community
+Our Football Coaching Academy includes:
+• Game libraries organized by development objective
+• Format selection guidance for different ages
+• Rule modification ideas
+• A community of coaches sharing experiences
 
 £10/month: https://www.skool.com/coachingacademy
 
 ---
 
 **Tweet 13 (Final CTA)**
-How do you currently choose small-sided game formats?
+How do you approach choosing formats for small-sided games?
 
-A) Based on available players
-B) Based on development objectives
+Do you have a system you use, or is it something you'd like to think about more systematically?
 
-Reply with your biggest small-sided game challenge - I'll share the specific solution.
-
-RT to help coaches design purposeful games 🔄
+I'd love to hear about your experiences with different formats and what works for your players.
 
 ---
 
