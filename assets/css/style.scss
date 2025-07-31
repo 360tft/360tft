@@ -1676,6 +1676,378 @@ a:hover {
     opacity: 0.9;
 }
 
+/* Game Model Product Page Styles */
+.game-model-hero {
+    background: linear-gradient(135deg, $brand-primary 0%, $brand-secondary 100%);
+    color: $background-primary;
+    padding: 5rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-model-hero .hero-badge {
+    background: $accent-color;
+    color: $background-primary;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.pricing-preview {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: $border-radius;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.launch-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $background-primary;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.regular-price {
+    font-size: 1.2rem;
+    opacity: 0.7;
+    text-decoration: line-through;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.price-description {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Problem Section */
+.problem-section {
+    padding: 5rem 0;
+    background: $background-secondary;
+}
+
+.problem-solution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.problem-side, .solution-side {
+    padding: 2rem;
+    border-radius: $border-radius-large;
+}
+
+.problem-side {
+    background: #fee;
+    border-left: 4px solid $accent-color;
+}
+
+.solution-side {
+    background: #efe;
+    border-left: 4px solid #4caf50;
+}
+
+.problem-list, .solution-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.problem-list li, .solution-list li {
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.problem-list li {
+    color: #d32f2f;
+}
+
+.solution-list li {
+    color: #2e7d32;
+}
+
+/* What's Inside Section */
+.whats-inside {
+    padding: 5rem 0;
+    background: $background-primary;
+}
+
+.included-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.included-item {
+    background: $background-primary;
+    border: 2px solid $brand-primary;
+    border-radius: $border-radius-large;
+    padding: 2rem;
+    transition: all $transition-fast;
+}
+
+.included-item:hover {
+    box-shadow: $shadow-heavy;
+    transform: translateY(-3px);
+}
+
+.included-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.included-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, $brand-primary 0%, $brand-secondary 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    color: $background-primary;
+}
+
+.included-item h3 {
+    color: $brand-primary;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.included-item p {
+    color: $text-primary;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.included-features {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.included-features li {
+    padding: 0.5rem 0;
+    color: $text-muted;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.included-features li::before {
+    content: '✓';
+    color: $brand-primary;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+
+/* Sticky CTA */
+.sticky-cta {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: $accent-color;
+    color: $background-primary;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: $shadow-medium;
+    z-index: 999;
+    transition: all $transition-fast;
+}
+
+.sticky-cta:hover {
+    background: $accent-hover;
+    transform: scale(1.1);
+    color: $background-primary;
+}
+
+/* Transform Timeline */
+.transform-timeline {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, $brand-primary 0%, $brand-secondary 100%);
+    color: $background-primary;
+    text-align: center;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.timeline-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem 1.5rem;
+    border-radius: $border-radius-large;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.timeline-number {
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+    color: $background-primary;
+}
+
+.timeline-item p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Product Final CTA */
+.product-final-cta {
+    padding: 5rem 0;
+    background: $text-secondary;
+    color: $background-primary;
+    text-align: center;
+}
+
+.urgency-badge {
+    background: $accent-color;
+    color: $background-primary;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.final-pricing {
+    margin: 3rem 0;
+}
+
+.final-price-current {
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: $brand-primary;
+    margin: 1.5rem 0;
+}
+
+.final-cta-button {
+    background: $accent-color;
+    color: $background-primary;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    border-radius: $border-radius;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all $transition-fast;
+    display: inline-block;
+    margin: 2rem 0;
+    box-shadow: $shadow-medium;
+}
+
+.final-cta-button:hover {
+    background: $accent-hover;
+    transform: translateY(-3px);
+    box-shadow: $shadow-heavy;
+    color: $background-primary;
+}
+
+.guarantee-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: $border-radius-large;
+    margin: 3rem auto;
+    max-width: 600px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Product Testimonials */
+.product-testimonials {
+    padding: 5rem 0;
+    background: $background-secondary;
+}
+
+.product-testimonials .testimonial-card::before {
+    content: '"';
+    font-size: 5rem;
+    color: $brand-primary;
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    opacity: 0.3;
+    line-height: 1;
+}
+
+/* Product FAQ */
+.product-faqs {
+    padding: 5rem 0;
+    background: $background-primary;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
+    overflow: hidden;
+}
+
+.faq-question {
+    background: $background-secondary;
+    padding: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: $brand-primary;
+    position: relative;
+    transition: all $transition-fast;
+}
+
+.faq-question:hover {
+    background: #e8d8d8;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    transition: transform $transition-fast;
+}
+
+.faq-item.active .faq-question::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all $transition-fast;
+    color: $text-primary;
+    line-height: 1.6;
+}
+
+.faq-answer.active {
+    padding: 1.5rem;
+    max-height: 500px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .grid-2, .grid-3 {
@@ -1818,6 +2190,556 @@ a:hover {
     }
     
     .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================
+   PRODUCT PAGES COMPREHENSIVE STYLES
+   ===================================================== */
+
+/* Updated Product Hero with proper SASS variables */
+.product-hero {
+    background: linear-gradient(135deg, $brand-primary, $brand-secondary);
+    color: $background-primary;
+    padding: 120px 0 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="20,30 40,10 60,30 40,50" fill="rgba(255,255,255,0.1)"/><polygon points="70,60 90,40 90,80 70,80" fill="rgba(255,255,255,0.08)"/></svg>') repeat;
+    animation: product-float 25s infinite linear;
+}
+
+@keyframes product-float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    100% { transform: translateY(-100px) rotate(360deg); }
+}
+
+.product-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product-badge {
+    background: $accent-color;
+    color: $background-primary;
+    padding: 12px 25px;
+    border-radius: 25px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 16px;
+    animation: badge-pulse 3s infinite;
+}
+
+.product-title {
+    font-size: 4.2em;
+    margin-bottom: 25px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.product-subtitle {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    opacity: 0.95;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.product-description {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.product-cta-group {
+    margin: 40px 0;
+}
+
+.product-cta-primary {
+    background: $accent-color;
+    color: $background-primary;
+    padding: 22px 55px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.4em;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.product-cta-primary:hover {
+    background: #e64545;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.product-cta-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: $background-primary;
+    padding: 22px 55px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.4em;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+}
+
+.product-cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* What's Included Section */
+.product-included {
+    padding: 80px 0;
+    background: $background-secondary;
+}
+
+.included-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.included-item {
+    background: $background-primary;
+    border: 2px solid $brand-primary;
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.included-item:hover {
+    box-shadow: 0 15px 30px rgba(151, 107, 221, 0.15);
+    transform: translateY(-3px);
+}
+
+.included-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.included-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, $brand-primary, $brand-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 1.5em;
+    color: $background-primary;
+}
+
+.included-item h3 {
+    color: $brand-primary;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.included-item p {
+    color: $text-primary;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.included-features {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.included-features li {
+    padding: 8px 0;
+    color: $text-secondary;
+    position: relative;
+    padding-left: 25px;
+}
+
+.included-features li::before {
+    content: '✓';
+    color: $brand-primary;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+/* Product Testimonials */
+.product-testimonials {
+    padding: 80px 0;
+    background: $background-light;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: $background-primary;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(151, 107, 221, 0.15);
+}
+
+.testimonial-card::before {
+    content: '"';
+    font-size: 5em;
+    color: $brand-primary;
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    color: $text-primary;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: $brand-primary;
+    font-size: 1.1em;
+}
+
+.testimonial-role {
+    color: $text-secondary;
+    font-size: 0.95em;
+    margin-top: 5px;
+}
+
+/* Game Model Pricing Styles */
+.pricing {
+    padding: 80px 0;
+    background: $background-light;
+    text-align: center;
+}
+
+.pricing-subtitle {
+    font-size: 1.3em;
+    color: $text-secondary;
+    margin-bottom: 50px;
+}
+
+.pricing-card {
+    background: $background-primary;
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.launch-special {
+    background: linear-gradient(135deg, $brand-primary, $brand-secondary);
+    color: $background-primary;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.price-comparison {
+    margin: 20px 0;
+}
+
+.regular-price-strike {
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.launch-price-big {
+    font-size: 3em;
+    font-weight: bold;
+    display: block;
+}
+
+.savings {
+    background: $accent-color;
+    color: $background-primary;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.what-you-get h4 {
+    color: $brand-primary;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+.pricing-features {
+    list-style: none;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.pricing-features li {
+    padding: 12px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid $border-color;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.cta-purchase {
+    background: $accent-color;
+    color: $background-primary;
+    padding: 25px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.4em;
+    display: inline-block;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 87, 87, 0.3);
+}
+
+.cta-purchase:hover {
+    background: #e64545;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 87, 87, 0.5);
+}
+
+.payment-security {
+    color: $text-secondary;
+    font-size: 0.95em;
+    margin-top: 20px;
+}
+
+.guarantee-highlight {
+    background: $background-light;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 50px;
+    border: 2px solid #4caf50;
+}
+
+.guarantee-highlight h3 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* Upgrade Offer Section */
+.upgrade-offer {
+    padding: 80px 0;
+    background: $text-primary;
+    color: $background-primary;
+    text-align: center;
+}
+
+.upgrade-subtitle {
+    font-size: 1.5em;
+    color: $accent-color;
+    margin-bottom: 30px;
+}
+
+.upgrade-details {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.upgrade-math {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.upgrade-item {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.upgrade-total {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: $brand-primary;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.upgrade-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.upgrade-feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.upgrade-guarantee {
+    font-size: 0.95em;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+.upgrade-cta {
+    background: $brand-primary;
+    color: $background-primary;
+    padding: 25px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: inline-block;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(151, 107, 221, 0.3);
+}
+
+.upgrade-cta:hover {
+    background: $brand-secondary;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(151, 107, 221, 0.5);
+}
+
+/* Final CTA Section */
+.final-cta {
+    padding: 80px 0;
+    background: $background-secondary;
+    text-align: center;
+}
+
+.final-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.benefit-item {
+    text-align: center;
+}
+
+.benefit-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: $brand-primary;
+}
+
+.benefit-item h4 {
+    color: $brand-primary;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.benefit-item p {
+    color: $text-secondary;
+    line-height: 1.5;
+}
+
+.final-cta-button {
+    background: $accent-color;
+    color: $background-primary;
+    padding: 25px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.4em;
+    display: inline-block;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 87, 87, 0.3);
+}
+
+.final-cta-button:hover {
+    background: #e64545;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 87, 87, 0.5);
+}
+
+.final-guarantee {
+    color: $text-secondary;
+    font-size: 0.95em;
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness for Product Pages */
+@media (max-width: 768px) {
+    .product-title {
+        font-size: 2.8em;
+    }
+
+    .product-cta-primary,
+    .product-cta-secondary {
+        display: block;
+        margin: 20px auto;
+        max-width: 300px;
+    }
+
+    .included-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-hero {
+        padding: 100px 0 60px 0;
+    }
+
+    .included-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .included-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .final-benefits {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .upgrade-features {
         grid-template-columns: 1fr;
     }
 }
