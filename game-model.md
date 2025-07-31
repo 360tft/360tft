@@ -27,6 +27,8 @@ css: ["/assets/css/game-model-complete.css"]
 js: ["/assets/js/product-tracking.js", "/assets/js/game-model-countdown.js"]
 body_class: "game-model-page"
 
+# Force rebuild - CSS should load game-model-complete.css
+
 # Product data
 product_type: "coaching_system"
 buy_url: "https://360tft.com/l/360TFTGM"

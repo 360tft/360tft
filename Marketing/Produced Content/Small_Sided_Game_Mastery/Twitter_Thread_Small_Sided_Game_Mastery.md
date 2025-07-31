@@ -1,15 +1,15 @@
 # Twitter/X Thread: Small-Sided Game Mastery
 
-## Thread Topic: "Why Your 7v7 Games Aren't Developing Players (The Format Selection Fix)"
+## Thread Topic: "Choosing Small-Sided Game Formats That Help Players Learn"
 
 ---
 
 **Tweet 1 (Hook)**
-🧵 THREAD: Why your 7v7 games aren't developing players
+🧵 THREAD: Something I've learned about small-sided games over the years
 
-After using small-sided games with 1,000+ players, most coaches choose formats based on available numbers rather than development objectives.
+The format you choose makes a huge difference to what players actually learn and experience.
 
-This wastes training time and limits learning... 👇
+Here's how I think about selecting the right format for different objectives... 👇
 
 ---
 
