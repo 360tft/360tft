@@ -1,0 +1,21 @@
+{
+  "blog_post_structure": {
+    "introduction": "Hook + Problem identification",
+    "main_content": "3-5 practical sections with examples",
+    "conclusion": "Action steps + 360TFT integration",
+    "word_count_target": 2500,
+    "value_equation_minimum": 35
+  },
+  "email_structure": {
+    "subject_line": "Curiosity + Benefit",
+    "opening": "Personal connection + Problem",
+    "main_teaching": "1-2 key concepts with examples",
+    "call_to_action": "360TFT academy integration",
+    "word_count_target": 1000
+  },
+  "social_media": {
+    "twitter_thread": "10 tweets maximum",
+    "instagram_carousel": "7 slides maximum",
+    "linkedin_post": "Professional tone + coaching insights"
+  }
+}

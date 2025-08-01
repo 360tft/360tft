@@ -1,0 +1,18 @@
+{
+  "content_creation_days": {
+    "sunday": "Weekly planning and topic selection",
+    "monday": "Blog post creation and review",
+    "tuesday": "Email newsletter development",
+    "wednesday": "Social media content creation",
+    "thursday": "Short-form content and threads",
+    "friday": "Cheatsheet and visual content",
+    "saturday": "Quality control and scheduling"
+  },
+  "quality_check_points": [
+    "Voice consistency validation",
+    "British English compliance",
+    "Value equation scoring",
+    "Technical accuracy review",
+    "Brand alignment check"
+  ]
+}

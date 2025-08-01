@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
       "Bash(find:*)",
@@ -34,9 +35,11 @@
       "Bash(jekyll build)",
       "Bash(git rev-parse:*)",
       "Bash(jekyll build --safe)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(py --version)",
+      "Bash(py initialize_automation.py)",
+      "Bash(py:*)"
     ],
     "deny": []
-  },
-  "$schema": "https://json.schemastore.org/claude-code-settings.json"
+  }
 }

@@ -1,0 +1,22 @@
+{
+  "british_english_requirements": {
+    "spelling": "colour, favourite, realise, etc.",
+    "terminology": "football (not soccer), pitch (not field)",
+    "tone": "Professional but accessible"
+  },
+  "voice_consistency": {
+    "experience_reference": "15+ years coaching experience",
+    "authority_indicators": "1,000+ players trained, 1,200+ coaches educated",
+    "prohibited_elements": [
+      "em dashes",
+      "fabricated stories",
+      "non-British spelling"
+    ]
+  },
+  "value_equation_components": {
+    "dream_outcome": "Coaching success and player development",
+    "perceived_likelihood": "Proven methods and testimonials",
+    "time_delay": "Quick implementation",
+    "effort_sacrifice": "Minimal complexity, maximum impact"
+  }
+}
