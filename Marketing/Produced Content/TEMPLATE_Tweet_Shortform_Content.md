@@ -164,6 +164,38 @@ Comment why 👇
 
 ---
 
+## VALUE EQUATION EVALUATION (MANDATORY)
+
+Before publishing, score each component (1-10):
+
+### Dream Outcome (/10):
+Does this content clearly show the specific transformation coaches want?
+- [ ] Specific player improvement mentioned
+- [ ] Emotional resonance with coaching frustrations
+- [ ] Beyond surface-level "better sessions"
+
+### Perceived Likelihood (/10):
+Does this content build belief that success is achievable?
+- [ ] Proof elements included (community size, results, testimonials)
+- [ ] Specific examples or case studies
+- [ ] Authority/credibility indicators
+
+### Time Delay (/10):
+Does this content promise immediate application?
+- [ ] Can be implemented in next session
+- [ ] Quick wins identified
+- [ ] Immediate value delivery
+
+### Effort & Sacrifice (/10):
+Does this content appear simple to implement?
+- [ ] Minimal time investment required
+- [ ] Clear, simple instructions
+- [ ] Reduces complexity vs adds it
+
+**Target Score: 35+/40 - Do not publish below this threshold**
+
+---
+
 ## Notes for Content Creation:
 1. Always maintain authentic, helpful tone
 2. Focus on actionable insights over theory
@@ -172,3 +204,4 @@ Comment why 👇
 5. Link to resources only when adds value
 6. Test different formats and track performance
 7. Adapt based on platform-specific engagement
+8. **MANDATORY: Complete Value Equation evaluation before publishing**
