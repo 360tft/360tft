@@ -16,7 +16,7 @@ twitter_description: "10 distinct resources including real coursework, practical
 twitter_image: "/assets/images/uefa-c-licence-guide.jpg"
 
 # Page-specific settings
-css: ["/assets/css/product-pages.css"]
+# CSS is now handled by main.scss
 js: ["/assets/js/product-interactions.js"]
 body_class: "product-page uefa-c-page"
 schema_type: "Product"

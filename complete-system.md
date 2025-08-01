@@ -16,7 +16,7 @@ og_description: "Everything you need to become the coach players remember foreve
 og_image: "/assets/images/complete-system-preview.jpg"
 body_class: "complete-system-page"
 css:
-  - "/assets/css/pages/complete-system.css"
+  # CSS is now handled by main.scss
 js:
   - "/assets/js/pages/complete-system.js"
 ---

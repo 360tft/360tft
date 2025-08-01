@@ -23,7 +23,7 @@ twitter_description: "The complete systematic approach to player development. 75
 twitter_image: "/assets/images/game-model-preview.jpg"
 
 # Page-specific CSS/JS
-css: ["assets/css/main.css", "assets/css/game-model-complete.css", "assets/css/game-model-specific.css"]
+# CSS is now handled by main.scss
 js: ["assets/js/product-tracking.js", "assets/js/game-model-countdown.js"]
 body_class: "game-model-page"
 

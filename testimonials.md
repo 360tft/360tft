@@ -11,7 +11,7 @@ og_description: "Real testimonials from professional players including Birmingha
 og_image: "/assets/images/testimonials-og.jpg"
 
 # Page specific - EXTERNAL FILES ONLY
-css: ["/assets/css/pages/testimonials.css"]
+# CSS is now handled by main.scss
 js: ["/assets/js/pages/testimonials.js"]
 body_class: "testimonials-page"
 schema_type: "WebPage"

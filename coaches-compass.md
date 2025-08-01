@@ -23,7 +23,7 @@ twitter_description: "The diagnostic system that identifies exactly what your te
 twitter_image: "/assets/images/coaches-compass-preview.jpg"
 
 # Page-specific CSS/JS
-css: ["/assets/css/product-pages.css", "/assets/css/compass-specific.css"]
+# CSS is now handled by main.scss
 js: ["/assets/js/product-tracking.js", "/assets/js/compass-demo.js"]
 body_class: "compass-page"
 

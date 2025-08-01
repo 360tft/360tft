@@ -16,7 +16,7 @@ twitter_description: "Exclusive coaching education community for just $10/month.
 twitter_image: "/assets/images/academy-preview.jpg"
 
 # Page-specific settings
-css: ["/assets/css/product-pages.css", "/assets/css/academy-specific.css"]
+# CSS is now handled by main.scss
 js: ["/assets/js/product-interactions.js", "/assets/js/academy-tracking.js"]
 body_class: "academy-page"
 schema_type: "Product"

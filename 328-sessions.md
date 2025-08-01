@@ -6,7 +6,7 @@ keywords: [football training sessions, soccer coaching drills, youth football tr
 body_class: "sessions-page"
 
 # Page-specific CSS
-css: ["/assets/css/pages/sessions.css"]
+# CSS is now handled by main.scss
 
 # Product data
 product:

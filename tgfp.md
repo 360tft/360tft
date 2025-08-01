@@ -16,7 +16,7 @@ twitter_description: "Learn the tactical differences between 7v7, 9v9, and 11v11
 twitter_image: "/assets/images/grassroots-football-pack.jpg"
 
 # Page-specific settings
-css: ["/assets/css/product-pages.css"]
+# CSS is now handled by main.scss
 js: ["/assets/js/product-interactions.js"]
 body_class: "product-page grassroots-page"
 schema_type: "Product"
