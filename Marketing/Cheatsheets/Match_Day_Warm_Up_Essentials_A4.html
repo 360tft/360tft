@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Day Warm-Up Essentials - 360TFT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* A4 size setup for PDF printing */
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.4;
+            font-size: 11px;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        /* Compact header */
+        .header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .header .subtitle {
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+        
+        .header .author {
+            font-size: 11px;
+        }
+        
+        /* Phase headers */
+        .phase-headers {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            border: 1px solid #976bdd;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .phase-header {
+            text-align: center;
+            color: #976bdd;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        
+        /* Compact intro */
+        .intro {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .intro strong {
+            color: #976bdd;
+        }
+        
+        /* Exercise grid - 4 columns */
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .exercise-card {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .exercise-header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 6px;
+            text-align: center;
+        }
+        
+        .exercise-title {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .exercise-subtitle {
+            font-size: 8px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+        
+        .exercise-content {
+            padding: 8px;
+        }
+        
+        .field-diagram {
+            width: 100%;
+            height: 50px;
+            background: #f0f8f0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            margin: 5px 0;
+            position: relative;
+        }
+        
+        /* Simplified field elements */
+        .player {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #ff5757;
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+        
+        .player.moving { background: #976bdd; }
+        .player.keeper { background: #28a745; }
+        
+        .cone {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #ffc107;
+            border-radius: 50%;
+        }
+        
+        .movement-arrow {
+            position: absolute;
+            width: 2px;
+            background: #976bdd;
+            transform-origin: bottom;
+        }
+        
+        .goal {
+            position: absolute;
+            width: 12px;
+            height: 6px;
+            background: #000;
+            border-radius: 1px;
+        }
+        
+        .exercise-description {
+            font-size: 9px;
+            line-height: 1.3;
+            color: #333333;
+        }
+        
+        /* Timing section */
+        .timing-section {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .timing-title {
+            font-size: 14px;
+            color: #976bdd;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        
+        .timing-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+        
+        .timing-phase {
+            background: white;
+            padding: 8px;
+            border-left: 3px solid #976bdd;
+            text-align: center;
+        }
+        
+        .timing-phase .duration {
+            font-size: 16px;
+            font-weight: bold;
+            color: #976bdd;
+            margin-bottom: 3px;
+        }
+        
+        .timing-phase .phase-name {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .timing-phase .description {
+            font-size: 8px;
+            line-height: 1.2;
+        }
+        
+        /* Tips section */
+        .tips-section {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .tips-title {
+            font-size: 14px;
+            color: #976bdd;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .tip {
+            background: white;
+            padding: 6px;
+            border-left: 3px solid #976bdd;
+            font-size: 9px;
+            line-height: 1.3;
+        }
+        
+        .tip strong {
+            display: block;
+            margin-bottom: 2px;
+            font-size: 9px;
+        }
+        
+        /* Compact footer */
+        .footer {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .footer p {
+            margin-bottom: 5px;
+        }
+        
+        .footer .small {
+            font-size: 8px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        /* Print optimization */
+        @media print {
+            body {
+                margin: 0;
+            }
+            .page {
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Compact Header -->
+        <div class="header">
+            <h1>MATCH DAY WARM-UP ESSENTIALS</h1>
+            <div class="subtitle">PREPARE BODIES AND MINDS FOR PEAK PERFORMANCE</div>
+            <div class="author">BY KEVIN MIDDLETON ⚽ 360TFT</div>
+        </div>
+
+        <!-- Phase Progression -->
+        <div class="phase-headers">
+            <div class="phase-header">PHASE 1<br>ACTIVATION</div>
+            <div class="phase-header">PHASE 2<br>MOBILITY</div>
+            <div class="phase-header">PHASE 3<br>TECHNICAL</div>
+            <div class="phase-header">PHASE 4<br>MATCH PREP</div>
+        </div>
+
+        <!-- Brief Introduction -->
+        <div class="intro">
+            <strong>Great warm-ups prepare players physically and mentally.</strong> This systematic approach activates 
+            muscles, improves mobility, sharpens technical skills, and builds match readiness. 20 minutes that can 
+            determine the first 20 minutes of your game.
+        </div>
+
+        <!-- Timing Overview -->
+        <div class="timing-section">
+            <div class="timing-title">20-MINUTE WARM-UP STRUCTURE</div>
+            <div class="timing-grid">
+                <div class="timing-phase">
+                    <div class="duration">5 MIN</div>
+                    <div class="phase-name">ACTIVATION</div>
+                    <div class="description">Light movement, muscle activation, heart rate increase</div>
+                </div>
+                <div class="timing-phase">
+                    <div class="duration">5 MIN</div>
+                    <div class="phase-name">MOBILITY</div>
+                    <div class="description">Dynamic stretching, joint preparation, movement quality</div>
+                </div>
+                <div class="timing-phase">
+                    <div class="duration">7 MIN</div>
+                    <div class="phase-name">TECHNICAL</div>
+                    <div class="description">Ball work, passing, first touch, match actions</div>
+                </div>
+                <div class="timing-phase">
+                    <div class="duration">3 MIN</div>
+                    <div class="phase-name">MATCH PREP</div>
+                    <div class="description">High intensity, game situations, mental preparation</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8 Key Exercises -->
+        <div class="exercise-grid">
+            <!-- Exercise 1 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">LIGHT JOGGING</div>
+                    <div class="exercise-subtitle">ACTIVATION</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player moving" style="top: 15px; left: 15%;"></div>
+                        <div class="player moving" style="top: 25px; left: 35%;"></div>
+                        <div class="player moving" style="top: 30px; left: 55%;"></div>
+                        <div class="movement-arrow" style="top: 20px; left: 20%; height: 20px; transform: rotate(30deg);"></div>
+                        <div class="movement-arrow" style="top: 30px; left: 40%; height: 15px; transform: rotate(-20deg);"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Easy-paced running to increase core temperature. Include changes of direction and backward jogging.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">DYNAMIC STRETCHING</div>
+                    <div class="exercise-subtitle">MOBILITY</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 15px; left: 20%;"></div>
+                        <div class="player" style="top: 30px; left: 30%;"></div>
+                        <div class="player" style="top: 20px; left: 50%;"></div>
+                        <div class="movement-arrow" style="top: 20px; left: 25%; height: 12px; transform: rotate(90deg);"></div>
+                        <div class="movement-arrow" style="top: 35px; left: 35%; height: 12px; transform: rotate(-90deg);"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Leg swings, arm circles, hip circles, walking lunges. Prepare joints for full range of motion.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">MOVEMENT PATTERNS</div>
+                    <div class="exercise-subtitle">COORDINATION</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="cone" style="top: 10px; left: 15%;"></div>
+                        <div class="cone" style="top: 35px; left: 25%;"></div>
+                        <div class="cone" style="top: 20px; left: 45%;"></div>
+                        <div class="player moving" style="top: 12px; left: 20%;"></div>
+                        <div class="movement-arrow" style="top: 15px; left: 20%; height: 15px; transform: rotate(60deg);"></div>
+                    </div>
+                    <p class="exercise-description">
+                        High knees, butt kicks, side shuffles, carioca. Build coordination and movement quality.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">BALL MASTERY</div>
+                    <div class="exercise-subtitle">TECHNICAL</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 20px; left: 25%;"></div>
+                        <div class="player" style="top: 15px; left: 45%;"></div>
+                        <div class="player" style="top: 30px; left: 65%;"></div>
+                        <div class="cone" style="top: 22px; left: 27%;"></div>
+                        <div class="cone" style="top: 17px; left: 47%;"></div>
+                        <div class="cone" style="top: 32px; left: 67%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Individual touches, juggling, foundation moves. Get comfortable feeling of ball on foot.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 5 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">PASSING PAIRS</div>
+                    <div class="exercise-subtitle">TECHNICAL</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 15px; left: 20%;"></div>
+                        <div class="player" style="top: 30px; right: 20%;"></div>
+                        <div class="movement-arrow" style="top: 20px; left: 25%; height: 20px; transform: rotate(15deg);"></div>
+                        <div class="movement-arrow" style="top: 35px; right: 25%; height: 20px; transform: rotate(195deg);"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Short passes, increasing distance and pace. Include first-time passes and different surfaces.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 6 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">SHOOTING PRACTICE</div>
+                    <div class="exercise-subtitle">FINISHING</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="goal" style="top: 22px; right: 10%;"></div>
+                        <div class="player keeper" style="top: 20px; right: 12%;"></div>
+                        <div class="player" style="top: 25px; left: 30%;"></div>
+                        <div class="movement-arrow" style="top: 30px; left: 35%; height: 15px; transform: rotate(25deg);"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Low-intensity shooting to get feel for goal. Build confidence and sharpen finishing touch.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 7 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">SMALL SIDED GAMES</div>
+                    <div class="exercise-subtitle">MATCH PREP</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 12px; left: 20%;"></div>
+                        <div class="player" style="top: 25px; left: 15%;"></div>
+                        <div class="player" style="top: 35px; left: 25%;"></div>
+                        <div class="player moving" style="top: 12px; right: 20%;"></div>
+                        <div class="player moving" style="top: 25px; right: 15%;"></div>
+                        <div class="player moving" style="top: 35px; right: 25%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        3v3 or 4v4 games at moderate intensity. Include match actions like pressing and quick passing.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 8 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">HIGH INTENSITY SPRINTS</div>
+                    <div class="exercise-subtitle">MATCH READY</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="cone" style="top: 20px; left: 15%;"></div>
+                        <div class="cone" style="top: 25px; right: 15%;"></div>
+                        <div class="player moving" style="top: 22px; left: 20%;"></div>
+                        <div class="movement-arrow" style="top: 27px; left: 25%; height: 25px; transform: rotate(10deg);"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Short, sharp sprints to activate fast-twitch muscles. Prepare body for match intensity.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coaching Points -->
+        <div class="tips-section">
+            <div class="tips-title">COACHING POINTS</div>
+            <div class="tips-grid">
+                <div class="tip">
+                    <strong>Progressive Intensity</strong>
+                    Start at 40% intensity, build to 85% by end. Never go 100% in warm-up - save peak for match.
+                </div>
+                <div class="tip">
+                    <strong>Individual Needs</strong>
+                    Some players need more activation, others more technical work. Allow slight variations.
+                </div>
+                <div class="tip">
+                    <strong>Weather Adaptation</strong>
+                    Cold conditions: longer activation phase. Hot conditions: more hydration breaks, shade when possible.
+                </div>
+                <div class="tip">
+                    <strong>Mental Preparation</strong>
+                    Use warm-up to build confidence. Positive touches, successful actions, encouraging words.
+                </div>
+                <div class="tip">
+                    <strong>Injury Prevention</strong>
+                    Never skip mobility phase. Address any stiffness or discomfort before it becomes a problem.
+                </div>
+                <div class="tip">
+                    <strong>Team Bonding</strong>
+                    Use as opportunity to connect team. Pair exercises, group activities, shared focus.
+                </div>
+            </div>
+        </div>
+
+        <!-- Compact Footer -->
+        <div class="footer">
+            <p><strong>A great warm-up sets the foundation for great performance. Prepare well, play well.</strong></p>
+            <p>For complete match day preparation resources and session plans, visit 360TFT.com</p>
+            <div class="small">© Kevin Middleton / 360TFT - Not for reproduction without permission</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Rondo Variations for Game-Like Possession - 360TFT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* A4 size setup for PDF printing */
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.4;
+            font-size: 11px;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        /* Compact header */
+        .header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .header .subtitle {
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+        
+        .header .author {
+            font-size: 11px;
+        }
+        
+        /* Week progression */
+        .week-headers {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            border: 1px solid #976bdd;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .week-header {
+            text-align: center;
+            color: #976bdd;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        
+        /* Compact intro */
+        .intro {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .intro strong {
+            color: #976bdd;
+        }
+        
+        /* Exercise grid - 4 columns */
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .exercise-card {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .exercise-header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 6px;
+            text-align: center;
+        }
+        
+        .exercise-title {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .exercise-subtitle {
+            font-size: 8px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+        
+        .exercise-content {
+            padding: 8px;
+        }
+        
+        .field-diagram {
+            width: 100%;
+            height: 50px;
+            background: #f0f8f0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            margin: 5px 0;
+            position: relative;
+        }
+        
+        /* Simplified field elements */
+        .player {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #ff5757;
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+        
+        .player.blue { background: #7c5bc4; }
+        .player.defender { background: #333; }
+        .player.neutral { background: #28a745; }
+        
+        .square {
+            position: absolute;
+            border: 2px solid #976bdd;
+            background: transparent;
+        }
+        
+        .goal-zone {
+            position: absolute;
+            background: rgba(255, 193, 7, 0.3);
+            border: 1px dashed #ffc107;
+        }
+        
+        .exercise-description {
+            font-size: 9px;
+            line-height: 1.3;
+            color: #333333;
+        }
+        
+        /* Compact tips section */
+        .tips-section {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .tips-title {
+            font-size: 14px;
+            color: #976bdd;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .tip {
+            background: white;
+            padding: 6px;
+            border-left: 3px solid #976bdd;
+            font-size: 9px;
+            line-height: 1.3;
+        }
+        
+        .tip strong {
+            display: block;
+            margin-bottom: 2px;
+            font-size: 9px;
+        }
+        
+        /* Compact footer */
+        .footer {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .footer p {
+            margin-bottom: 5px;
+        }
+        
+        .footer .small {
+            font-size: 8px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        /* Print optimization */
+        @media print {
+            body {
+                margin: 0;
+            }
+            .page {
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Compact Header -->
+        <div class="header">
+            <h1>8 RONDO VARIATIONS</h1>
+            <div class="subtitle">FOR GAME-LIKE POSSESSION PLAY</div>
+            <div class="author">BY KEVIN MIDDLETON ⚽ 360TFT</div>
+        </div>
+
+        <!-- Week Progression -->
+        <div class="week-headers">
+            <div class="week-header">WEEK 1<br>SHAPE & SUPPORT</div>
+            <div class="week-header">WEEK 2<br>QUICK DECISIONS</div>
+            <div class="week-header">WEEK 3<br>DIRECTIONAL PLAY</div>
+        </div>
+
+        <!-- Brief Introduction -->
+        <div class="intro">
+            <strong>Rondos build possession intelligence.</strong> Each variation below creates specific game habits - 
+            recognizing angles, playing under pressure, and making quick decisions. When designed with purpose, 
+            rondos teach players to keep the ball AND create attacking opportunities.
+        </div>
+
+        <!-- 8 Exercises in Compact Grid -->
+        <div class="exercise-grid">
+            <!-- Exercise 1 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">4v2 SQUARE</div>
+                    <div class="exercise-subtitle">SHAPE & ANGLES</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="square" style="top: 10px; left: 15px; width: 30px; height: 30px;"></div>
+                        <div class="player" style="top: 8px; left: 13px;"></div>
+                        <div class="player" style="top: 8px; left: 42px;"></div>
+                        <div class="player" style="top: 37px; left: 13px;"></div>
+                        <div class="player" style="top: 37px; left: 42px;"></div>
+                        <div class="player defender" style="top: 20px; left: 25px;"></div>
+                        <div class="player defender" style="top: 25px; left: 35px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Four possession players on corners, two defenders inside. Builds diamond shape and teaches support off angles.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">3v1 BOUNCE</div>
+                    <div class="exercise-subtitle">3RD PLAYER RUNS</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 15px; left: 15px;"></div>
+                        <div class="player" style="top: 30px; left: 40px;"></div>
+                        <div class="player" style="top: 10px; left: 45px;"></div>
+                        <div class="player defender" style="top: 22px; left: 30px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Triangle formation with one defender. Focus on third-player movement, timing of support runs, and combination play.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">DIRECTIONAL RONDO</div>
+                    <div class="exercise-subtitle">PENETRATION</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="goal-zone" style="top: 5px; left: 10px; width: 15px; height: 40px;"></div>
+                        <div class="goal-zone" style="top: 5px; right: 10px; width: 15px; height: 40px;"></div>
+                        <div class="player" style="top: 15px; left: 35%;"></div>
+                        <div class="player" style="top: 25px; left: 30%;"></div>
+                        <div class="player" style="top: 35px; left: 40%;"></div>
+                        <div class="player defender" style="top: 20px; left: 45%;"></div>
+                        <div class="player defender" style="top: 30px; left: 50%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        End zones add direction to possession. Forces penetrating passes, switching play, and forward thinking.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">4 GOAL RONDO</div>
+                    <div class="exercise-subtitle">SCANNING & SWITCHING</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="goal-zone" style="top: 5px; left: 45%; width: 10px; height: 5px;"></div>
+                        <div class="goal-zone" style="bottom: 5px; left: 45%; width: 10px; height: 5px;"></div>
+                        <div class="goal-zone" style="top: 20px; left: 5px; width: 5px; height: 10px;"></div>
+                        <div class="goal-zone" style="top: 20px; right: 5px; width: 5px; height: 10px;"></div>
+                        <div class="player" style="top: 18px; left: 25%;"></div>
+                        <div class="player" style="top: 28px; left: 35%;"></div>
+                        <div class="player blue" style="top: 18px; right: 25%;"></div>
+                        <div class="player blue" style="top: 28px; right: 35%;"></div>
+                        <div class="player defender" style="top: 22px; left: 48%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Four mini goals around area. Encourages constant scanning, recognizing space, and switching point of attack.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 5 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">OVERLOAD RONDO</div>
+                    <div class="exercise-subtitle">MOVEMENT & BALANCE</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 10px; left: 15%;"></div>
+                        <div class="player" style="top: 20px; left: 25%;"></div>
+                        <div class="player" style="top: 30px; left: 15%;"></div>
+                        <div class="player" style="top: 35px; left: 35%;"></div>
+                        <div class="player" style="top: 25px; left: 45%;"></div>
+                        <div class="player blue" style="top: 15px; right: 20%;"></div>
+                        <div class="player blue" style="top: 25px; right: 15%;"></div>
+                        <div class="player blue" style="top: 35px; right: 25%;"></div>
+                        <div class="player defender" style="top: 18px; left: 55%;"></div>
+                        <div class="player defender" style="top: 32px; left: 60%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Uneven numbers (5v3 or 6v4). Teaches exploiting overloads, creating space through movement, and team balance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 6 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">1-2 RONDO</div>
+                    <div class="exercise-subtitle">GIVE & GO</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 15px; left: 20%;"></div>
+                        <div class="player" style="top: 30px; left: 35%;"></div>
+                        <div class="player" style="top: 20px; left: 50%;"></div>
+                        <div class="player" style="top: 10px; right: 25%;"></div>
+                        <div class="player defender" style="top: 25px; left: 40%;"></div>
+                        <div class="player defender" style="top: 18px; right: 35%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Must play 1-2 combinations to keep possession. Forces wall passes, timing of runs, and quick support play.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 7 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">2 TOUCH RONDO</div>
+                    <div class="exercise-subtitle">QUICK DECISIONS</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 12px; left: 20%;"></div>
+                        <div class="player" style="top: 25px; left: 15%;"></div>
+                        <div class="player" style="top: 35px; left: 25%;"></div>
+                        <div class="player" style="top: 30px; left: 45%;"></div>
+                        <div class="player" style="top: 15px; right: 25%;"></div>
+                        <div class="player defender" style="top: 20px; left: 35%;"></div>
+                        <div class="player defender" style="top: 30px; right: 35%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Maximum two touches per player. Reduces thinking time, encourages pre-scanning, and improves first touch quality.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 8 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">3 TEAM ROTATION</div>
+                    <div class="exercise-subtitle">TRANSITIONS</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 10px; left: 20%;"></div>
+                        <div class="player" style="top: 25px; left: 15%;"></div>
+                        <div class="player" style="top: 35px; left: 25%;"></div>
+                        <div class="player blue" style="top: 15px; left: 45%;"></div>
+                        <div class="player blue" style="top: 30px; left: 50%;"></div>
+                        <div class="player blue" style="top: 20px; right: 20%;"></div>
+                        <div class="player neutral" style="top: 12px; right: 35%;"></div>
+                        <div class="player neutral" style="top: 32px; right: 30%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Three teams rotate roles when possession lost. Teaches transition moments, dynamic movement, and role switching.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coaching Points -->
+        <div class="tips-section">
+            <div class="tips-title">COACHING POINTS</div>
+            <div class="tips-grid">
+                <div class="tip">
+                    <strong>Support Angles</strong>
+                    "Where can you receive from next?" Focus on creating passing options off different angles, not just straight lines.
+                </div>
+                <div class="tip">
+                    <strong>Scanning Habits</strong>
+                    "What did you see before receiving?" Encourage constant looking to build game awareness and quick decisions.
+                </div>
+                <div class="tip">
+                    <strong>First Touch Purpose</strong>
+                    "Touch away from pressure." Every first touch should create time and space, not just control the ball.
+                </div>
+                <div class="tip">
+                    <strong>Movement Timing</strong>
+                    "Move when the pass is played." Teach players to time support runs with the moment of pass execution.
+                </div>
+                <div class="tip">
+                    <strong>Pressure Recognition</strong>
+                    "Who's got time, who's under pressure?" Help players identify when to play quickly versus when to hold.
+                </div>
+                <div class="tip">
+                    <strong>Game Connection</strong>
+                    Point out rondo moments in matches. "Remember the 4v2 shape?" Connect training to game situations.
+                </div>
+            </div>
+        </div>
+
+        <!-- Compact Footer -->
+        <div class="footer">
+            <p><strong>Great rondos create players who keep the ball and create opportunities.</strong></p>
+            <p>For complete rondo session plans with progressions, visit 360TFT.com</p>
+            <div class="small">© Kevin Middleton / 360TFT - Not for reproduction without permission</div>
+        </div>
+    </div>
+</body>
+</html>

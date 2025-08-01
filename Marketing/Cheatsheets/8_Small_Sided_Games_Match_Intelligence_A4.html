@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Small Sided Games That Develop Match Intelligence - 360TFT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* A4 size setup for PDF printing */
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.4;
+            font-size: 11px;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        /* Compact header */
+        .header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .header .subtitle {
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+        
+        .header .author {
+            font-size: 11px;
+        }
+        
+        /* Week progression */
+        .week-headers {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            border: 1px solid #976bdd;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .week-header {
+            text-align: center;
+            color: #976bdd;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        
+        /* Compact intro */
+        .intro {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .intro strong {
+            color: #976bdd;
+        }
+        
+        /* Exercise grid - 4 columns */
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .exercise-card {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .exercise-header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 6px;
+            text-align: center;
+        }
+        
+        .exercise-title {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .exercise-subtitle {
+            font-size: 8px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+        
+        .exercise-content {
+            padding: 8px;
+        }
+        
+        .field-diagram {
+            width: 100%;
+            height: 50px;
+            background: #f0f8f0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            margin: 5px 0;
+            position: relative;
+        }
+        
+        /* Simplified field elements */
+        .player {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #ff5757;
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+        
+        .player.blue { background: #7c5bc4; }
+        .player.yellow { background: #ffc107; }
+        .player.neutral { background: #28a745; }
+        
+        .goal {
+            position: absolute;
+            width: 12px;
+            height: 6px;
+            background: #000;
+            border-radius: 1px;
+        }
+        
+        .exercise-description {
+            font-size: 9px;
+            line-height: 1.3;
+            color: #333333;
+        }
+        
+        /* Compact tips section */
+        .tips-section {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .tips-title {
+            font-size: 14px;
+            color: #976bdd;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .tip {
+            background: white;
+            padding: 6px;
+            border-left: 3px solid #976bdd;
+            font-size: 9px;
+            line-height: 1.3;
+        }
+        
+        .tip strong {
+            display: block;
+            margin-bottom: 2px;
+            font-size: 9px;
+        }
+        
+        /* Compact footer */
+        .footer {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .footer p {
+            margin-bottom: 5px;
+        }
+        
+        .footer .small {
+            font-size: 8px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        /* Print optimization */
+        @media print {
+            body {
+                margin: 0;
+            }
+            .page {
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Compact Header -->
+        <div class="header">
+            <h1>8 SMALL SIDED GAMES</h1>
+            <div class="subtitle">THAT DEVELOP MATCH INTELLIGENCE</div>
+            <div class="author">BY KEVIN MIDDLETON ⚽ 360TFT</div>
+        </div>
+
+        <!-- Week Progression -->
+        <div class="week-headers">
+            <div class="week-header">WEEK 1<br>BASIC CONCEPTS</div>
+            <div class="week-header">WEEK 2<br>TACTICAL AWARENESS</div>
+            <div class="week-header">WEEK 3<br>GAME APPLICATION</div>
+        </div>
+
+        <!-- Brief Introduction -->
+        <div class="intro">
+            <strong>Small sided games create match intelligence.</strong> Each format below teaches specific decision-making 
+            skills that transfer directly to 11v11. More touches, more decisions, more learning. When coached properly, 
+            these games build players who think faster and play smarter.
+        </div>
+
+        <!-- 8 Exercises in Compact Grid -->
+        <div class="exercise-grid">
+            <!-- Exercise 1 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">1v1 TO GOAL</div>
+                    <div class="exercise-subtitle">FINISHING & DEFENDING</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="goal" style="top: 22px; left: 5px;"></div>
+                        <div class="goal" style="top: 22px; right: 5px;"></div>
+                        <div class="player" style="top: 20px; left: 25px;"></div>
+                        <div class="player blue" style="top: 20px; right: 25px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Direct 1v1 with goals at each end. Develops finishing under pressure and 1v1 defending. High intensity, maximum touches.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">2v2+2 NEUTRAL</div>
+                    <div class="exercise-subtitle">SUPPORT PLAY</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 15px; left: 15px;"></div>
+                        <div class="player" style="top: 30px; left: 25px;"></div>
+                        <div class="player blue" style="top: 15px; right: 15px;"></div>
+                        <div class="player blue" style="top: 30px; right: 25px;"></div>
+                        <div class="player neutral" style="top: 5px; left: 50%;"></div>
+                        <div class="player neutral" style="bottom: 5px; left: 50%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Two teams with neutral players at each end. Focus on angle of support, combination play, and using the extra player effectively.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">3v3+1 JOKER</div>
+                    <div class="exercise-subtitle">PRESSING & OVERLOADS</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 10px; left: 15px;"></div>
+                        <div class="player" style="top: 25px; left: 10px;"></div>
+                        <div class="player" style="top: 35px; left: 20px;"></div>
+                        <div class="player blue" style="top: 10px; right: 15px;"></div>
+                        <div class="player blue" style="top: 25px; right: 10px;"></div>
+                        <div class="player blue" style="top: 35px; right: 20px;"></div>
+                        <div class="player neutral" style="top: 20px; left: 50%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Joker always plays with possession team. Teaches compact defending, pressing triggers, and exploiting numerical advantages.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">4v4+2 WIDE</div>
+                    <div class="exercise-subtitle">SWITCHING PLAY</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 15px; left: 20px;"></div>
+                        <div class="player" style="top: 30px; left: 15px;"></div>
+                        <div class="player" style="top: 15px; left: 35px;"></div>
+                        <div class="player" style="top: 30px; left: 40px;"></div>
+                        <div class="player blue" style="top: 15px; right: 20px;"></div>
+                        <div class="player blue" style="top: 30px; right: 15px;"></div>
+                        <div class="player blue" style="top: 15px; right: 35px;"></div>
+                        <div class="player blue" style="top: 30px; right: 40px;"></div>
+                        <div class="player neutral" style="top: 20px; left: 5px;"></div>
+                        <div class="player neutral" style="top: 20px; right: 5px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Neutral players on sidelines. Develops width, switching play, and using third man to escape pressure and create space.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 5 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">5v5+2 CENTRAL</div>
+                    <div class="exercise-subtitle">PIVOT PLAY</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 10px; left: 15px;"></div>
+                        <div class="player" style="top: 20px; left: 10px;"></div>
+                        <div class="player" style="top: 30px; left: 15px;"></div>
+                        <div class="player" style="top: 35px; left: 25px;"></div>
+                        <div class="player" style="top: 25px; left: 30px;"></div>
+                        <div class="player blue" style="top: 10px; right: 15px;"></div>
+                        <div class="player blue" style="top: 20px; right: 10px;"></div>
+                        <div class="player blue" style="top: 30px; right: 15px;"></div>
+                        <div class="player blue" style="top: 35px; right: 25px;"></div>
+                        <div class="player blue" style="top: 25px; right: 30px;"></div>
+                        <div class="player neutral" style="top: 22px; left: 48%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Central joker acts as pivot player. Teaches playing into and off central support, timing of runs, and link-up play.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 6 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">6v6 TIGHT SPACE</div>
+                    <div class="exercise-subtitle">PRESSURE DECISIONS</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 8px; left: 12px;"></div>
+                        <div class="player" style="top: 18px; left: 8px;"></div>
+                        <div class="player" style="top: 28px; left: 15px;"></div>
+                        <div class="player" style="top: 38px; left: 20px;"></div>
+                        <div class="player" style="top: 18px; left: 25px;"></div>
+                        <div class="player" style="top: 35px; left: 35px;"></div>
+                        <div class="player blue" style="top: 8px; right: 12px;"></div>
+                        <div class="player blue" style="top: 18px; right: 8px;"></div>
+                        <div class="player blue" style="top: 28px; right: 15px;"></div>
+                        <div class="player blue" style="top: 38px; right: 20px;"></div>
+                        <div class="player blue" style="top: 18px; right: 25px;"></div>
+                        <div class="player blue" style="top: 35px; right: 35px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Small area forces quick decisions. Develops scanning, first touch under pressure, and finding space in tight areas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 7 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">7v7+1 FALSE 9</div>
+                    <div class="exercise-subtitle">CENTRAL SUPPORT</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 5px; left: 15px;"></div>
+                        <div class="player" style="top: 15px; left: 8px;"></div>
+                        <div class="player" style="top: 25px; left: 12px;"></div>
+                        <div class="player" style="top: 35px; left: 18px;"></div>
+                        <div class="player" style="top: 40px; left: 28px;"></div>
+                        <div class="player" style="top: 20px; left: 30px;"></div>
+                        <div class="player" style="top: 10px; left: 35px;"></div>
+                        <div class="player blue" style="top: 5px; right: 15px;"></div>
+                        <div class="player blue" style="top: 15px; right: 8px;"></div>
+                        <div class="player blue" style="top: 25px; right: 12px;"></div>
+                        <div class="player blue" style="top: 35px; right: 18px;"></div>
+                        <div class="player blue" style="top: 40px; right: 28px;"></div>
+                        <div class="player blue" style="top: 20px; right: 30px;"></div>
+                        <div class="player blue" style="top: 10px; right: 35px;"></div>
+                        <div class="player neutral" style="top: 25px; left: 48%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Central joker creates midfield-attack link. Develops false 9 movement, timing of support runs, and central overloads.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 8 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">8v8+2 TRANSFER</div>
+                    <div class="exercise-subtitle">TEAM PRESSING</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 5px; left: 10px;"></div>
+                        <div class="player" style="top: 15px; left: 5px;"></div>
+                        <div class="player" style="top: 25px; left: 8px;"></div>
+                        <div class="player" style="top: 35px; left: 12px;"></div>
+                        <div class="player" style="top: 40px; left: 22px;"></div>
+                        <div class="player" style="top: 30px; left: 28px;"></div>
+                        <div class="player" style="top: 20px; left: 32px;"></div>
+                        <div class="player" style="top: 10px; left: 25px;"></div>
+                        <div class="player blue" style="top: 5px; right: 10px;"></div>
+                        <div class="player blue" style="top: 15px; right: 5px;"></div>
+                        <div class="player blue" style="top: 25px; right: 8px;"></div>
+                        <div class="player blue" style="top: 35px; right: 12px;"></div>
+                        <div class="player blue" style="top: 40px; right: 22px;"></div>
+                        <div class="player blue" style="top: 30px; right: 28px;"></div>
+                        <div class="player blue" style="top: 20px; right: 32px;"></div>
+                        <div class="player blue" style="top: 10px; right: 25px;"></div>
+                        <div class="player neutral" style="top: 22px; left: 45%;"></div>
+                        <div class="player neutral" style="top: 22px; left: 55%;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Ball must transfer through central jokers. Teaches coordinated pressing, team shifting, and rest defence principles.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coaching Points -->
+        <div class="tips-section">
+            <div class="tips-title">COACHING POINTS</div>
+            <div class="tips-grid">
+                <div class="tip">
+                    <strong>Short Interventions</strong>
+                    Use freeze moments and quick questions. "Where's the space?" "Who's the extra player?" Keep players thinking.
+                </div>
+                <div class="tip">
+                    <strong>Game Transfer</strong>
+                    Connect SSG moments to match situations. Point out when similar decisions happen in games.
+                </div>
+                <div class="tip">
+                    <strong>Progressive Difficulty</strong>
+                    Start with lower numbers, add complexity. Build from 1v1 concepts to 8v8 team coordination.
+                </div>
+                <div class="tip">
+                    <strong>Coach the Moment</strong>
+                    Don't just let them play. Highlight key decisions, pressing triggers, and support movements as they happen.
+                </div>
+                <div class="tip">
+                    <strong>Condition for Purpose</strong>
+                    Use time limits, touch restrictions, or space constraints to emphasize specific learning outcomes.
+                </div>
+                <div class="tip">
+                    <strong>Multiple Outcomes</strong>
+                    Each game develops technical, tactical, and physical aspects simultaneously. Maximum learning efficiency.
+                </div>
+            </div>
+        </div>
+
+        <!-- Compact Footer -->
+        <div class="footer">
+            <p><strong>Smart small sided games create players who think faster and play smarter.</strong></p>
+            <p>For complete SSG session plans and progressions, visit 360TFT.com</p>
+            <div class="small">© Kevin Middleton / 360TFT - Not for reproduction without permission</div>
+        </div>
+    </div>
+</body>
+</html>

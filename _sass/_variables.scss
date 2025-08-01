@@ -18,6 +18,28 @@ $border-radius-large: 15px;
 $transition-fast: 0.3s ease;
 $container-max-width: 1200px;
 
+// CSS Custom Properties (for runtime access)
+:root {
+    --brand-primary: #{$brand-primary};
+    --brand-secondary: #{$brand-secondary};
+    --accent-color: #{$accent-color};
+    --accent-hover: #{$accent-hover};
+    --text-primary: #{$text-primary};
+    --text-secondary: #{$text-secondary};
+    --text-muted: #{$text-muted};
+    --background-primary: #{$background-primary};
+    --background-secondary: #{$background-secondary};
+    --background-accent: #{$background-accent};
+    --border-color: #{$border-color};
+    --shadow-light: #{$shadow-light};
+    --shadow-medium: #{$shadow-medium};
+    --shadow-heavy: #{$shadow-heavy};
+    --border-radius: #{$border-radius};
+    --border-radius-large: #{$border-radius-large};
+    --transition-fast: #{$transition-fast};
+    --container-max-width: #{$container-max-width};
+}
+
 // Breakpoints for responsive design
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;

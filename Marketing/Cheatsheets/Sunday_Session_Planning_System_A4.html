@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sunday Session Planning System - 360TFT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* A4 size setup for PDF printing */
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.4;
+            font-size: 11px;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        /* Compact header */
+        .header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .header .subtitle {
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+        
+        .header .author {
+            font-size: 11px;
+        }
+        
+        /* Planning steps */
+        .steps-headers {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            border: 1px solid #976bdd;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .step-header {
+            text-align: center;
+            color: #976bdd;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        
+        /* Compact intro */
+        .intro {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .intro strong {
+            color: #976bdd;
+        }
+        
+        /* Main sections grid */
+        .sections-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .section-card {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .section-header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 8px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .section-content {
+            padding: 10px;
+        }
+        
+        .step-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .step-list li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+            font-size: 9px;
+            line-height: 1.4;
+        }
+        
+        .step-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #976bdd;
+            font-weight: bold;
+        }
+        
+        .step-title {
+            font-weight: bold;
+            color: #976bdd;
+            margin-bottom: 2px;
+        }
+        
+        /* Framework section */
+        .framework-section {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .framework-title {
+            font-size: 14px;
+            color: #976bdd;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .framework-item {
+            background: white;
+            padding: 8px;
+            border-left: 3px solid #976bdd;
+            text-align: center;
+        }
+        
+        .framework-item .percentage {
+            font-size: 16px;
+            font-weight: bold;
+            color: #976bdd;
+            margin-bottom: 3px;
+        }
+        
+        .framework-item .label {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .framework-item .description {
+            font-size: 8px;
+            line-height: 1.2;
+        }
+        
+        /* Templates section */
+        .templates-section {
+            margin-bottom: 10px;
+        }
+        
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+        
+        .template-card {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .template-header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 6px;
+            text-align: center;
+            font-size: 9px;
+            font-weight: bold;
+        }
+        
+        .template-content {
+            padding: 6px;
+            font-size: 8px;
+            line-height: 1.3;
+        }
+        
+        /* Compact footer */
+        .footer {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .footer p {
+            margin-bottom: 5px;
+        }
+        
+        .footer .small {
+            font-size: 8px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        /* Print optimization */
+        @media print {
+            body {
+                margin: 0;
+            }
+            .page {
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Compact Header -->
+        <div class="header">
+            <h1>THE SUNDAY SESSION PLANNING SYSTEM</h1>
+            <div class="subtitle">FROM REACTIVE TO SYSTEMATIC DEVELOPMENT</div>
+            <div class="author">BY KEVIN MIDDLETON ⚽ 360TFT</div>
+        </div>
+
+        <!-- Planning Steps -->
+        <div class="steps-headers">
+            <div class="step-header">STEP 1<br>SET GOALS</div>
+            <div class="step-header">STEP 2<br>CREATE BLOCKS</div>
+            <div class="step-header">STEP 3<br>BUILD TEMPLATES</div>
+            <div class="step-header">STEP 4<br>TRACK PROGRESS</div>
+        </div>
+
+        <!-- Brief Introduction -->
+        <div class="intro">
+            <strong>Stop Sunday night panic.</strong> This system transforms reactive session planning into intentional 
+            player development. 15 minutes of planning creates weeks of purposeful training that builds systematic 
+            improvement rather than random activity.
+        </div>
+
+        <!-- Main Planning Sections -->
+        <div class="sections-grid">
+            <!-- Long-Term Goals -->
+            <div class="section-card">
+                <div class="section-header">STEP 1: LONG-TERM GOALS</div>
+                <div class="section-content">
+                    <ul class="step-list">
+                        <li>
+                            <div class="step-title">Technical Development</div>
+                            First touch, weak foot, 1v1 ability, passing accuracy
+                        </li>
+                        <li>
+                            <div class="step-title">Tactical Understanding</div>
+                            Positioning, decision-making, game awareness
+                        </li>
+                        <li>
+                            <div class="step-title">Physical Attributes</div>
+                            Speed, coordination, strength appropriate to age
+                        </li>
+                        <li>
+                            <div class="step-title">Mental Development</div>
+                            Confidence, problem-solving, resilience
+                        </li>
+                        <li>
+                            <div class="step-title">6-Month Vision</div>
+                            Write down where you want players to be
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Age-Appropriate Blocks -->
+            <div class="section-card">
+                <div class="section-header">STEP 2: 4-WEEK BLOCKS</div>
+                <div class="section-content">
+                    <ul class="step-list">
+                        <li>
+                            <div class="step-title">Ages 6-11: Ball Mastery</div>
+                            Focus on confidence, touches, basic skills
+                        </li>
+                        <li>
+                            <div class="step-title">Ages 8-12: Opposition</div>
+                            Add pressure, decision-making elements
+                        </li>
+                        <li>
+                            <div class="step-title">Ages 12+: Tactical</div>
+                            Complex patterns, game management
+                        </li>
+                        <li>
+                            <div class="step-title">Block Examples</div>
+                            First touch → 1v1 → Passing under pressure
+                        </li>
+                        <li>
+                            <div class="step-title">Progressive Difficulty</div>
+                            Each week builds on the previous
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Template Creation -->
+            <div class="section-card">
+                <div class="section-header">STEP 3: SESSION TEMPLATES</div>
+                <div class="section-content">
+                    <ul class="step-list">
+                        <li>
+                            <div class="step-title">Technical Focus</div>
+                            Ball mastery → Opposed practice → Application
+                        </li>
+                        <li>
+                            <div class="step-title">Tactical Development</div>
+                            Understanding → Pressure → Game situation
+                        </li>
+                        <li>
+                            <div class="step-title">Physical Conditioning</div>
+                            Game-based fitness, fun activities
+                        </li>
+                        <li>
+                            <div class="step-title">Match Preparation</div>
+                            Set pieces, formations, game scenarios
+                        </li>
+                        <li>
+                            <div class="step-title">15-Minute Planning</div>
+                            Review → Select template → Adapt exercises
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Progress Tracking -->
+            <div class="section-card">
+                <div class="section-header">STEP 4: TRACK PROGRESS</div>
+                <div class="section-content">
+                    <ul class="step-list">
+                        <li>
+                            <div class="step-title">What Worked?</div>
+                            Which exercises engaged players most?
+                        </li>
+                        <li>
+                            <div class="step-title">Skills Assessment</div>
+                            What needs more repetition next week?
+                        </li>
+                        <li>
+                            <div class="step-title">Player Response</div>
+                            How did they handle new challenges?
+                        </li>
+                        <li>
+                            <div class="step-title">Simple Notes</div>
+                            3-4 bullet points after each session
+                        </li>
+                        <li>
+                            <div class="step-title">Inform Planning</div>
+                            Use insights for next week's focus
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Foundation-Challenge-Application Framework -->
+        <div class="framework-section">
+            <div class="framework-title">FOUNDATION-CHALLENGE-APPLICATION FRAMEWORK</div>
+            <div class="framework-grid">
+                <div class="framework-item">
+                    <div class="percentage">20%</div>
+                    <div class="label">FOUNDATION</div>
+                    <div class="description">Review previous learning, warm-up, skill rehearsal</div>
+                </div>
+                <div class="framework-item">
+                    <div class="percentage">60%</div>
+                    <div class="label">CHALLENGE</div>
+                    <div class="description">New concepts, progressive difficulty, problem-solving</div>
+                </div>
+                <div class="framework-item">
+                    <div class="percentage">20%</div>
+                    <div class="label">APPLICATION</div>
+                    <div class="description">Game-like situations, match scenarios, skill transfer</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Templates -->
+        <div class="templates-section">
+            <div class="section-header" style="background: #976bdd; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 8px;">4 READY-TO-USE TEMPLATES</div>
+            <div class="templates-grid">
+                <div class="template-card">
+                    <div class="template-header">TECHNICAL FOCUS</div>
+                    <div class="template-content">
+                        • Ball mastery warm-up<br>
+                        • Skill with opposition<br>
+                        • Small sided games<br>
+                        • Match application<br>
+                        <strong>Best for:</strong> Developing individual skills
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-header">TACTICAL DEVELOPMENT</div>
+                    <div class="template-content">
+                        • Shape explanation<br>
+                        • Unopposed practice<br>
+                        • Progressive pressure<br>
+                        • Full game scenario<br>
+                        <strong>Best for:</strong> Team understanding
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-header">PHYSICAL CONDITIONING</div>
+                    <div class="template-content">
+                        • Dynamic warm-up<br>
+                        • Game-based fitness<br>
+                        • Competitive activities<br>
+                        • Recovery period<br>
+                        <strong>Best for:</strong> Fitness through fun
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-header">MATCH PREPARATION</div>
+                    <div class="template-content">
+                        • Set piece practice<br>
+                        • Formation work<br>
+                        • Scenario training<br>
+                        • Team talk<br>
+                        <strong>Best for:</strong> Game readiness
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compact Footer -->
+        <div class="footer">
+            <p><strong>Systematic planning creates systematic development. Random training creates random results.</strong></p>
+            <p>For complete session templates and planning resources, visit 360TFT.com</p>
+            <div class="small">© Kevin Middleton / 360TFT - Not for reproduction without permission</div>
+        </div>
+    </div>
+</body>
+</html>

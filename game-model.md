@@ -23,12 +23,9 @@ twitter_description: "The complete systematic approach to player development. 75
 twitter_image: "/assets/images/game-model-preview.jpg"
 
 # Page-specific CSS/JS
-# CSS is now handled by main.scss
+# CSS is now handled by main.scss compilation
 js: ["assets/js/product-tracking.js", "assets/js/game-model-countdown.js"]
 body_class: "game-model-page"
-
-# Force rebuild - CSS should load game-model-complete.css
-# Test deployment - timestamp: 2025-01-31 15:30
 
 # Product data
 product_type: "coaching_system"
