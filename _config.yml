@@ -47,12 +47,13 @@ exclude:
   - "*.json"
   - "*.bat"
   - requirements.txt
-  - automation_*.json
-  - automation_*.py
-  - Quality_Control_System.py
-  - Subagent_Orchestrator.py
-  - Topic_Selection_Manager.py
-  - Weekly_Content_Automation.py
+  - Marketing/
+  - AUTOMATION_INITIALIZATION_REPORT.md
+  - AUTOMATION_SETUP_GUIDE.md
+  - IMPLEMENTATION_SUMMARY.md
+  - QUICK_START.md
+  - temp_css_review.md
+  - ".claude/"
   - initialize_automation.py
   - test_integration.py
   - orchestrator_config.json
