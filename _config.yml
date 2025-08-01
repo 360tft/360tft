@@ -89,12 +89,12 @@ pricing:
     old: "$15"
     currency_symbol: "$"
   academy:
-    current_monthly: "$47"
-    current_yearly: "$499"
-    future_monthly: "$67"
-    future_yearly: "$699"
+    current_monthly: "$15"
+    current_yearly: "$99"
+    future_monthly: "$20"
+    future_yearly: "$150"
     currency_symbol: "$"
-    price_increase_date: "01/08/2025"
+    price_increase_date: "01/09/2025"
 
 # Purchase links (VERIFIED URLs)
 purchase_links:
