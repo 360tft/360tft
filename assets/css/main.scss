@@ -4,57 +4,33 @@
 
 /* ========================================
    360TFT Main SASS Entry Point - Complete Consolidation
-   This file imports and consolidates all existing CSS files
    ======================================== */
 
-/* CSS Variables for Brand Colors - Primary Palette */
-:root {
-    --brand-primary: #976bdd;
-    --brand-secondary: #7c5bc4;
-    --accent-color: #ff5757;
-    --accent-hover: #e64545;
-    --text-primary: #000000;
-    --text-secondary: #333333;
-    --text-muted: #666666;
-    --text-light: #ffffff;
-    --text-dark: #2c3e50;
-    --background-primary: #ffffff;
-    --background-secondary: #f8f9fa;
-    --background-accent: #e8d8d8;
-    --background-light: #f8f9fa;
-    --background-dark: #2c3e50;
-    --border-color: #e8e8e8;
-    --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
-    --shadow-medium: 0 5px 15px rgba(0,0,0,0.1);
-    --shadow-heavy: 0 15px 30px rgba(151, 107, 221, 0.15);
-    --border-radius: 8px;
-    --border-radius-large: 15px;
-    --transition-fast: 0.3s ease;
-    --container-max-width: 1200px;
-    --success-color: #27ae60;
-    --warning-color: #f39c12;
-}
+/* Import SASS Variables */
+@import "../../_sass/variables";
 
-/* Import all existing CSS files for compatibility */
-@import url('/assets/css/base/reset.css');
-@import url('/assets/css/base/typography.css');
-@import url('/assets/css/base/variables.css');
-@import url('/assets/css/layout/grid.css');
-@import url('/assets/css/components/header.css');
-@import url('/assets/css/components/footer.css');
-@import url('/assets/css/components/buttons.css');
-@import url('/assets/css/components/cards.css');
-@import url('/assets/css/components/forms.css');
-@import url('/assets/css/components/testimonials.css');
-@import url('/assets/css/components/images.css');
-@import url('/assets/css/components/authority-section.css');
-@import url('/assets/css/components/game-model-feature.css');
-@import url('/assets/css/pages/sessions.css');
-@import url('/assets/css/homepage-animations.css');
-@import url('/assets/css/homepage-problem-solving.css');
-@import url('/assets/css/product-pages.css');
-@import url('/assets/css/free-product.css');
-@import url('/assets/css/testimonials.css');
+/* Import Base Styles */
+@import "base/reset";
+@import "base/variables";
+@import "base/typography";
+
+/* Import Layout */
+@import "layout/grid";
+
+/* Import Components */
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
+@import "components/testimonials";
+@import "components/images";
+@import "components/authority-section";
+@import "components/game-model-feature";
+
+/* Import Pages */
+@import "pages/sessions";
+@import "pages/complete-system";
 
 /* Reset and Base Styles */
 * {
