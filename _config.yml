@@ -43,6 +43,31 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - "*.py"
+  - "*.json"
+  - "*.bat"
+  - requirements.txt
+  - automation_*.json
+  - automation_*.py
+  - Quality_Control_System.py
+  - Subagent_Orchestrator.py
+  - Topic_Selection_Manager.py
+  - Weekly_Content_Automation.py
+  - initialize_automation.py
+  - test_integration.py
+  - orchestrator_config.json
+  - automation_config.json
+  - automation_schedule.json
+  - content_templates.json
+  - quality_standards.json
+  - temp_css_review.md
+  - AUTOMATION_*.md
+  - IMPLEMENTATION_SUMMARY.md
+  - CSS_ARCHITECTURE_*.md
+  - GAME_MODEL_CSS_*.md
+  - MISSING_CSS_*.md
+  - ORPHANED_FILES_*.md
+  - QUICK_START.md
 
 # Site constants for reuse
 site_constants:
