@@ -1,0 +1,52 @@
+---
+---
+
+/* Minimal test CSS */
+body { font-family: Arial, sans-serif; }
+
+.age-groups {
+    padding: 4rem 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.age-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.age-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.age-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(151, 107, 221, 0.15);
+    border: 2px solid #976bdd;
+}
+
+.age-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.age-item h3 {
+    color: #976bdd;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.age-item p {
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
