@@ -28,7 +28,6 @@ permalink: pretty
 
 # SASS configuration
 sass:
-  sass_dir: _sass
   style: compressed
 
 # Plugins (GitHub Pages whitelist only)
