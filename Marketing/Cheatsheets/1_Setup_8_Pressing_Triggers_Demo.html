@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Setup 8 Pressing Triggers - 360TFT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            color: #333333;
+            line-height: 1.4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #8B1538 0%, #A91B47 100%);
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .header .subtitle {
+            font-size: 20px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .header .author {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .week-headers {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .week-header {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .intro-section {
+            background: rgba(255,255,255,0.15);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .intro-section h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #FFE4B5;
+        }
+        
+        .intro-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .exercises-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .exercise-card {
+            background: rgba(255,255,255,0.95);
+            color: #2d5a27;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .exercise-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .exercise-header {
+            background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 100%);
+            color: white;
+            padding: 15px;
+            margin: -25px -25px 20px -25px;
+            border-radius: 15px 15px 0 0;
+            text-align: center;
+        }
+        
+        .exercise-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .exercise-subtitle {
+            font-size: 12px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .field-diagram {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(45deg, #2d8a2f 0%, #4CAF50 100%);
+            border-radius: 10px;
+            margin: 15px 0;
+            position: relative;
+            border: 3px solid white;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .cone {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #FF6B35;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .cone.red { background: #FF6B35; }
+        .cone.blue { background: #2196F3; }
+        .cone.yellow { background: #FFD700; }
+        
+        .arrow {
+            position: absolute;
+            width: 2px;
+            background: white;
+            transform-origin: bottom;
+        }
+        
+        .arrow::after {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -4px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 8px solid white;
+        }
+        
+        .exercise-description {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+        }
+        
+        .general-tips {
+            background: rgba(255,255,255,0.15);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .general-tips h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #FFE4B5;
+            text-align: center;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .tip-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #FFE4B5;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #8B1538 0%, #A91B47 100%);
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .footer p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .footer .small-text {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 15px;
+        }
+        
+        @media print {
+            body { 
+                background: white; 
+                color: black; 
+            }
+            .container {
+                max-width: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>1 SETUP | 8 PRESSING TRIGGERS</h1>
+            <div class="subtitle">DEVELOP INTELLIGENT PRESSING DECISIONS</div>
+            <div class="author">BY KEVIN MIDDLETON 🔺 360TFT</div>
+        </div>
+
+        <!-- Week Headers -->
+        <div class="week-headers">
+            <div class="week-header">WEEK 1<br>BASIC TRIGGERS</div>
+            <div class="week-header">WEEK 2<br>PRESSURE COORDINATION</div>
+            <div class="week-header">WEEK 3<br>COUNTER-PRESS MOMENTS</div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="intro-section">
+            <h2>Why Pressing Triggers Matter</h2>
+            <p>Pressing without triggers is just chasing. Smart teams press at the right moments, in the right situations, with coordinated pressure that wins the ball back quickly and creates immediate attacking opportunities.</p>
+            <p>This simple setup teaches players to recognize the 8 most common pressing triggers that occur in matches. When players understand WHEN to press, they become more effective defenders and create more attacking chances for their team.</p>
+            <p><strong>The beauty of this setup:</strong> One area, multiple scenarios, maximum learning in minimum time!</p>
+        </div>
+
+        <!-- Exercises Grid -->
+        <div class="exercises-grid">
+            <!-- Exercise 1 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">HEAVY TOUCH</div>
+                    <div class="exercise-subtitle">IMMEDIATE PRESSURE TRIGGER</div>
+                </div>
+                <div class="field-diagram">
+                    <div class="cone red" style="top: 20px; left: 50px;"></div>
+                    <div class="cone blue" style="top: 60px; left: 90px;"></div>
+                    <div class="cone yellow" style="top: 80px; left: 140px;"></div>
+                    <div class="arrow" style="top: 30px; left: 60px; height: 40px; transform: rotate(35deg);"></div>
+                </div>
+                <div class="exercise-description">
+                    When the attacking player takes a heavy touch (more than 2 yards from their body), the nearest defender immediately closes down. Other players shift to cut off passing options. Practice recognizing the moment the ball gets away from the attacker.
+                </div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">BACK TO GOAL</div>
+                    <div class="exercise-subtitle">PRESSURE FROM BEHIND</div>
+                </div>
+                <div class="field-diagram">
+                    <div class="cone red" style="top: 40px; left: 70px;"></div>
+                    <div class="cone blue" style="top: 60px; left: 110px;"></div>
+                    <div class="cone yellow" style="top: 30px; left: 150px;"></div>
+                    <div class="arrow" style="top: 50px; left: 80px; height: 35px; transform: rotate(-20deg);"></div>
+                </div>
+                <div class="exercise-description">
+                    When an opponent receives with their back to goal, they can't see what's behind them. Immediate pressure prevents them from turning. Support players cover the sideways passing options while the presser approaches quickly but under control.
+                </div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">BAD FIRST TOUCH</div>
+                    <div class="exercise-subtitle">CAPITALIZE ON MISTAKES</div>
+                </div>
+                <div class="field-diagram">
+                    <div class="cone red" style="top: 25px; left: 60px;"></div>
+                    <div class="cone blue" style="top: 70px; left: 100px;"></div>
+                    <div class="cone yellow" style="top: 45px; left: 140px;"></div>
+                    <div class="arrow" style="top: 35px; left: 70px; height: 45px; transform: rotate(45deg);"></div>
+                </div>
+                <div class="exercise-description">
+                    Poor first touches create immediate pressing opportunities. The key is anticipating when a pass might be difficult to control (pace, angle, pressure). Position to pounce on loose balls while maintaining defensive shape.
+                </div>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">SIDEWAYS PASS</div>
+                    <div class="exercise-subtitle">COORDINATE TEAM PRESSURE</div>
+                </div>
+                <div class="field-diagram">
+                    <div class="cone red" style="top: 50px; left: 40px;"></div>
+                    <div class="cone blue" style="top: 50px; left: 100px;"></div>
+                    <div class="cone yellow" style="top: 30px; left: 160px;"></div>
+                    <div class="arrow" style="top: 60px; left: 50px; height: 50px; transform: rotate(0deg);"></div>
+                </div>
+                <div class="exercise-description">
+                    Sideways passes often indicate the attacking team is struggling to find forward options. This is a trigger for coordinated pressure. While one player presses the ball, others shift to prevent the next sideways pass and force forward play.
+                </div>
+            </div>
+
+            <!-- Exercise 5 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">ISOLATED PLAYER</div>
+                    <div class="exercise-subtitle">OUTNUMBER TO WIN BALL</div>
+                </div>
+                <div class="field-diagram">
+                    <div class="cone red" style="top: 60px; left: 90px;"></div>
+                    <div class="cone blue" style="top: 30px; left: 70px;"></div>
+                    <div class="cone yellow" style="top: 30px; left: 130px;"></div>
+                    <div class="arrow" style="top: 40px; left: 80px; height: 25px; transform: rotate(135deg);"></div>
+                </div>
+                <div class="exercise-description">
+                    When an opponent is isolated from teammates, create a numerical advantage around the ball. Two players press while others cover potential escape routes. The isolated player will either lose possession or make a poor pass under pressure.
+                </div>
+            </div>
+
+            <!-- Exercise 6 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">RUSHED PASS</div>
+                    <div class="exercise-subtitle">ANTICIPATE INTERCEPTIONS</div>
+                </div>
+                <div class="field-diagram">
+                    <div class="cone red" style="top: 40px; left: 50px;"></div>
+                    <div class="cone blue" style="top: 60px; left: 120px;"></div>
+                    <div class="cone yellow" style="top: 20px; left: 150px;"></div>
+                    <div class="arrow" style="top: 50px; left: 60px; height: 60px; transform: rotate(60deg);"></div>
+                </div>
+                <div class="exercise-description">
+                    Players under pressure often rush their passes. Position yourself in likely passing lanes when pressing occurs. Read the passer's body language and weight shift to anticipate where the ball will go. Interceptions create immediate counter-attacks.
+                </div>
+            </div>
+
+            <!-- Exercise 7 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">AFTER LOSING BALL</div>
+                    <div class="exercise-subtitle">IMMEDIATE COUNTER-PRESS</div>
+                </div>
+                <div class="field-diagram">
+                    <div class="cone red" style="top: 50px; left: 80px;"></div>
+                    <div class="cone blue" style="top: 70px; left: 110px;"></div>
+                    <div class="cone yellow" style="top: 30px; left: 140px;"></div>
+                    <div class="arrow" style="top: 60px; left: 90px; height: 20px; transform: rotate(-45deg);"></div>
+                </div>
+                <div class="exercise-description">
+                    The 6-second rule: After losing possession, immediate pressure prevents the opposition from organizing their attack. The closest player presses instantly while others recover defensive positions. This often wins the ball back quickly.
+                </div>
+            </div>
+
+            <!-- Exercise 8 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">POOR BODY POSITION</div>
+                    <div class="exercise-subtitle">EXPLOIT WEAK POSITIONING</div>
+                </div>
+                <div class="field-diagram">
+                    <div class="cone red" style="top: 35px; left: 70px;"></div>
+                    <div class="cone blue" style="top: 75px; left: 100px;"></div>
+                    <div class="cone yellow" style="top: 55px; left: 130px;"></div>
+                    <div class="arrow" style="top: 45px; left: 80px; height: 35px; transform: rotate(90deg);"></div>
+                </div>
+                <div class="exercise-description">
+                    When opponents receive with poor body position (closed body, facing away from the game), they have limited options. Press from their blind side to force them into mistakes or win the ball. Good pressing exploits positional weaknesses.
+                </div>
+            </div>
+        </div>
+
+        <!-- General Tips -->
+        <div class="general-tips">
+            <h3>COACHING POINTS</h3>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <strong>Start with Recognition:</strong> Players must learn to SEE the trigger before they can react to it. Use lots of repetition to develop trigger recognition.
+                </div>
+                <div class="tip-item">
+                    <strong>Speed of Reaction:</strong> The best pressing happens within 3 seconds of the trigger occurring. After that, the opposition has time to organize.
+                </div>
+                <div class="tip-item">
+                    <strong>Team Coordination:</strong> Individual pressing without team support is just chasing. Teach players to press together and cover for each other.
+                </div>
+                <div class="tip-item">
+                    <strong>Know When NOT to Press:</strong> Not every trigger means press. Consider your team's position, energy levels, and the game situation.
+                </div>
+                <div class="tip-item">
+                    <strong>Practice in Phases:</strong> Week 1 - recognize triggers, Week 2 - coordinate pressure, Week 3 - integrate with counter-pressing.
+                </div>
+                <div class="tip-item">
+                    <strong>Match Application:</strong> Point out these triggers during matches. Help players connect training scenarios to real game situations.
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Smart pressing creates more attacking opportunities than individual brilliance.</strong></p>
+            <p>When players understand WHEN to press, they become more effective defenders and create more chances for their team.</p>
+            <p>If you need further assistance with pressing and defensive organization, I have courses and session plans specifically designed to help develop intelligent defending.</p>
+            <div class="small-text">
+                This document may not be reproduced or transmitted in any form, in whole or in part, without the express written permission of the author.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
