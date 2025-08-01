@@ -31,7 +31,8 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:api.github.com)",
       "Bash(nslookup:*)",
-      "Bash(jekyll build)"
+      "Bash(jekyll build)",
+      "Bash(git rev-parse:*)"
     ],
     "deny": []
   }
