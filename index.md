@@ -351,7 +351,7 @@ body_class: "homepage"
                     </div>
                 </div>
                 <div class="testimonial-content">
-                    <p>I enjoyed Kevin's sessions a lot — they were <strong>position specific</strong> which allowed you to improve on areas you needed to and were always of <strong>high quality and intensity</strong>. <strong>Since Kev joined Arbroath I've seen an increase in my confidence on game days</strong>.</p>
+                    <p>I enjoyed Kevin's sessions a lot -- they were <strong>position specific</strong> which allowed you to improve on areas you needed to and were always of <strong>high quality and intensity</strong>. <strong>Since Kev joined Arbroath I've seen an increase in my confidence on game days</strong>.</p>
                 </div>
             </div>
             

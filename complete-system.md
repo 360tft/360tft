@@ -349,7 +349,7 @@ js:
             
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    <p><strong>I enjoyed Kevin's sessions a lot — they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</strong></p>
+                    <p><strong>I enjoyed Kevin's sessions a lot -- they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</strong></p>
                 </div>
                 <div class="testimonial-author">
                     <strong>Jay Bird</strong>
@@ -359,7 +359,7 @@ js:
             
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    <p><strong>Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game — strengthening their weaknesses as well as their strengths.</strong></p>
+                    <p><strong>Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game -- strengthening their weaknesses as well as their strengths.</strong></p>
                 </div>
                 <div class="testimonial-author">
                     <strong>Yasin Ben El-Mhanni</strong>

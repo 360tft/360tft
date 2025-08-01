@@ -942,14 +942,14 @@ member_limit: "Limited to 500 new members"
     
     <div class="stories-grid">
         <div class="story-card">
-            <p class="story-text">Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game — strengthening their weaknesses as well as their strengths.</p>
+            <p class="story-text">Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game -- strengthening their weaknesses as well as their strengths.</p>
             <div class="story-author">Yasin Ben El-Mhanni</div>
             <div class="story-role">Professional Player, Ex-Newcastle United</div>
             <div class="story-result">🚀 Result: Professional development at highest level</div>
         </div>
         
         <div class="story-card">
-            <p class="story-text">I enjoyed Kevin's sessions a lot — they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</p>
+            <p class="story-text">I enjoyed Kevin's sessions a lot -- they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</p>
             <div class="story-author">Jay Bird</div>
             <div class="story-role">Professional Player, Arbroath FC | Salford City</div>
             <div class="story-result">🧠 Result: Improved game confidence and positioning</div>

@@ -62,7 +62,7 @@ og_image: "/assets/images/328-sessions-cover.jpg"
 <section class="age-groups">
     <div class="container">
         <h2>🧒 AGE GROUPS COVERED</h2>
-        <p class="section-subtitle">From Foundation (5–8) to Adult (17–21+)</p>
+        <p class="section-subtitle">From Foundation (5-8) to Adult (17-21+)</p>
         
         <div class="age-grid">
             <div class="age-item">
@@ -100,7 +100,7 @@ og_image: "/assets/images/328-sessions-cover.jpg"
             </div>
             <div class="bonus-item">
                 <h3>🤖 ChatGPT Coaching Enhancement Guide (£6)</h3>
-                <p>Smarter session design using AI – save time, boost creativity</p>
+                <p>Smarter session design using AI - save time, boost creativity</p>
             </div>
             <div class="bonus-item">
                 <h3>⚽ Complete Grassroots Pack (£16)</h3>
@@ -128,15 +128,15 @@ og_image: "/assets/images/328-sessions-cover.jpg"
         <div class="testimonials-grid">
             <div class="testimonial">
                 <p>"Kevin's sessions are high intensity, quality sessions that I have definitely benefited from and improved my game. The sessions are always very beneficial for game days."</p>
-                <cite>— Jess Norey, Professional Player, Arbroath FC | East Fife</cite>
+                <cite>-- Jess Norey, Professional Player, Arbroath FC | East Fife</cite>
             </div>
             <div class="testimonial">
                 <p>"Kevin's sessions are great, high intensity, and very well explained, which makes them really easy to follow. They're quality sessions that I have definitely benefited from and improved my game."</p>
-                <cite>— Skye Allan, Female Footballer, AFCW</cite>
+                <cite>-- Skye Allan, Female Footballer, AFCW</cite>
             </div>
             <div class="testimonial">
                 <p>"I trained with Kevin when I was younger and he is still the coach that has improved my footballing ability the most. Everything that he taught me, I still try and bring to my games every week."</p>
-                <cite>— Adam, Youth Player, Age 14</cite>
+                <cite>-- Adam, Youth Player, Age 14</cite>
             </div>
         </div>
     </div>

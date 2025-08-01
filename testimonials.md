@@ -22,7 +22,7 @@ schema_type: "WebPage"
     <div class="container">
         <div class="hero-content">
             <h1>What Players & Coaches Are Saying</h1>
-            <p class="hero-subtitle">When you're building something that works, people notice. Here's what happens when players experience systematic development using the 360TFT methodology — not just random drill collections.</p>
+            <p class="hero-subtitle">When you're building something that works, people notice. Here's what happens when players experience systematic development using the 360TFT methodology -- not just random drill collections.</p>
         </div>
     </div>
 </section>
@@ -57,7 +57,7 @@ schema_type: "WebPage"
                     </div>
                 </div>
                 <div class="quote">
-                    I enjoyed Kevin's sessions a lot — they were <strong>position specific</strong> which allowed you to improve on areas you needed to and were always of <strong>high quality and intensity</strong>. <strong>Since Kev joined Arbroath I've seen an increase in my confidence on game days</strong>, playing out the back, decision making and positioning. Would definitely recommend.
+                    I enjoyed Kevin's sessions a lot -- they were <strong>position specific</strong> which allowed you to improve on areas you needed to and were always of <strong>high quality and intensity</strong>. <strong>Since Kev joined Arbroath I've seen an increase in my confidence on game days</strong>, playing out the back, decision making and positioning. Would definitely recommend.
                 </div>
             </div>
             
@@ -72,7 +72,7 @@ schema_type: "WebPage"
                     </div>
                 </div>
                 <div class="quote">
-                    Kevin Middleton possesses the characteristics of a <strong>top level coach</strong> demonstrating his <strong>attention to detail in every session</strong>. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, <strong>bringing out the best in every individual</strong> and improving their all-round game — <strong>strengthening their weaknesses as well as their strengths</strong>.
+                    Kevin Middleton possesses the characteristics of a <strong>top level coach</strong> demonstrating his <strong>attention to detail in every session</strong>. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, <strong>bringing out the best in every individual</strong> and improving their all-round game -- <strong>strengthening their weaknesses as well as their strengths</strong>.
                 </div>
             </div>
             
@@ -188,7 +188,7 @@ schema_type: "WebPage"
 <section class="cta-section">
     <div class="container">
         <h2>Ready to Transform Your Coaching?</h2>
-        <p>These aren't just nice words — they're the result of systematic development using proven 360TFT methodologies. Join {{ site.site_constants.coaches_mentored }} coaches worldwide who've transformed their approach.</p>
+        <p>These aren't just nice words -- they're the result of systematic development using proven 360TFT methodologies. Join {{ site.site_constants.coaches_mentored }} coaches worldwide who've transformed their approach.</p>
         <div class="cta-buttons">
             <a href="{{ site.purchase_links.academy }}" class="cta-button">Join Football Coaching Academy</a>
             <a href="{{ site.purchase_links.complete_system }}" class="cta-button secondary-button">Get Complete System</a>

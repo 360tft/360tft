@@ -858,13 +858,13 @@ resource_count: "10 Distinct Resources"
     
     <div class="testimonials-grid">
         <div class="testimonial">
-            <p class="testimonial-text">Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game — strengthening their weaknesses as well as their strengths.</p>
+            <p class="testimonial-text">Kevin Middleton possesses the characteristics of a top level coach demonstrating his attention to detail in every session. His enthusiasm paired with knowledge of the game allows him to deliver enjoyable and beneficial sessions, bringing out the best in every individual and improving their all-round game -- strengthening their weaknesses as well as their strengths.</p>
             <div class="testimonial-author">Yasin Ben El-Mhanni</div>
             <div class="testimonial-context">Professional Player, Ex-Newcastle United</div>
         </div>
         
         <div class="testimonial">
-            <p class="testimonial-text">I enjoyed Kevin's sessions a lot — they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</p>
+            <p class="testimonial-text">I enjoyed Kevin's sessions a lot -- they were position specific which allowed you to improve on areas you needed to and were always of high quality and intensity. Since Kev joined Arbroath I've seen an increase in my confidence on game days, playing out the back, decision making and positioning. Would definitely recommend.</p>
             <div class="testimonial-author">Jay Bird</div>
             <div class="testimonial-context">Professional Player, Arbroath FC | Salford City</div>
         </div>
