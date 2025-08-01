@@ -34,7 +34,7 @@ schema_type: "WebPage"
 <section class="coming-soon">
     <div class="container">
         <div class="coming-soon-content">
-            <div class="announcement-badge">=Ä Coming Soon</div>
+            <div class="announcement-badge">üöÄ Coming Soon</div>
             <h2>The 360TFT Blog is Under Development</h2>
             <p>We're building something special for coaches who want to stay at the cutting edge of player development.</p>
             
@@ -42,22 +42,22 @@ schema_type: "WebPage"
                 <h3>What You Can Expect:</h3>
                 <div class="preview-grid">
                     <div class="preview-item">
-                        <div class="preview-icon">= </div>
+                        <div class="preview-icon">‚öΩ</div>
                         <h4>Tactical Analysis</h4>
                         <p>Weekly breakdowns of professional matches through the 360TFT lens</p>
                     </div>
                     <div class="preview-item">
-                        <div class="preview-icon">Ω</div>
+                        <div class="preview-icon">üí°</div>
                         <h4>Training Insights</h4>
                         <p>Behind-the-scenes look at session design and player development principles</p>
                     </div>
                     <div class="preview-item">
-                        <div class="preview-icon"><Ø</div>
+                        <div class="preview-icon">üìä</div>
                         <h4>Case Studies</h4>
                         <p>Real examples of player transformation using 360TFT methodology</p>
                     </div>
                     <div class="preview-item">
-                        <div class="preview-icon">=°</div>
+                        <div class="preview-icon">üéØ</div>
                         <h4>Coaching Tips</h4>
                         <p>Practical advice for coaches at every level, from grassroots to professional</p>
                     </div>
@@ -86,21 +86,21 @@ schema_type: "WebPage"
         
         <div class="resource-links">
             <a href="{{ site.purchase_links.complete_system }}" class="resource-link">
-                <div class="resource-icon">=⁄</div>
+                <div class="resource-icon">üìö</div>
                 <div class="resource-content">
                     <h4>Complete Methodology System</h4>
                     <p>750+ pages of systematic player development frameworks</p>
                 </div>
             </a>
             <a href="{{ site.purchase_links.academy }}" class="resource-link">
-                <div class="resource-icon"><ì</div>
+                <div class="resource-icon">üèÜ</div>
                 <div class="resource-content">
                     <h4>Football Coaching Academy</h4>
                     <p>Monthly masterclasses and direct access to Kevin Middleton</p>
                 </div>
             </a>
             <a href="https://www.skool.com/360tft-6754" class="resource-link">
-                <div class="resource-icon">=e</div>
+                <div class="resource-icon">üë•</div>
                 <div class="resource-content">
                     <h4>Free 360TFT Community</h4>
                     <p>Connect with {{ site.site_constants.community_size }} coaches worldwide</p>
