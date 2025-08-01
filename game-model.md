@@ -48,7 +48,7 @@ launch_price: "$20"
             <p class="hero-description">The complete 360TFT methodology framework in action. After 15+ years of systematic player development, this comprehensive guide moves coaches from random drill searching to strategic player development through proven frameworks and progressive training blocks.</p>
             
             <div class="hero-cta-group">
-                <a href="#buy-now" class="hero-cta">Get Game Model Now - {{ page.product_price }}</a>
+                <a href="#buy-now" class="hero-cta-secondary">Get Game Model Now - {{ page.product_price }}</a>
                 <a href="#what-inside" class="hero-cta-secondary">See What's Inside</a>
             </div>
             

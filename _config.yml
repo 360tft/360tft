@@ -63,9 +63,9 @@ pricing:
     payments: "4 payments of $31.75"
     currency_symbol: "$"
   game_model:
-    current: "$20"
-    regular: "$40"
-    savings: "$20"
+    current: "$40"
+    regular: "$80"
+    savings: "$40"
     currency_symbol: "$"
   sessions_328:
     current: "$34.20"

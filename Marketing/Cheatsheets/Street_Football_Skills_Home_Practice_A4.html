@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Football Skills - Recreating the Streets at Home - 360TFT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* A4 size setup for PDF printing */
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.4;
+            font-size: 11px;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        /* Compact header */
+        .header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .header .subtitle {
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+        
+        .header .author {
+            font-size: 11px;
+        }
+        
+        /* Street games headers */
+        .games-headers {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            border: 1px solid #976bdd;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .game-header {
+            text-align: center;
+            color: #976bdd;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        
+        /* Compact intro */
+        .intro {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .intro strong {
+            color: #976bdd;
+        }
+        
+        /* Exercise grid - 4 columns */
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .exercise-card {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .exercise-header {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 6px;
+            text-align: center;
+        }
+        
+        .exercise-title {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .exercise-subtitle {
+            font-size: 8px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+        
+        .exercise-content {
+            padding: 8px;
+        }
+        
+        .field-diagram {
+            width: 100%;
+            height: 50px;
+            background: #f0f8f0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            margin: 5px 0;
+            position: relative;
+        }
+        
+        /* Simplified field elements */
+        .player {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #ff5757;
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+        
+        .cone {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #ffc107;
+            border-radius: 50%;
+        }
+        
+        .ball {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #000;
+            border-radius: 50%;
+        }
+        
+        .wall {
+            position: absolute;
+            width: 4px;
+            height: 35px;
+            background: #666;
+            border-radius: 1px;
+        }
+        
+        .movement-arrow {
+            position: absolute;
+            width: 2px;
+            height: 15px;
+            background: #976bdd;
+            transform-origin: bottom;
+        }
+        
+        .exercise-description {
+            font-size: 9px;
+            line-height: 1.3;
+            color: #333333;
+        }
+        
+        /* Tips section */
+        .tips-section {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .tips-title {
+            font-size: 14px;
+            color: #976bdd;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .tip {
+            background: white;
+            padding: 6px;
+            border-left: 3px solid #976bdd;
+            font-size: 9px;
+            line-height: 1.3;
+        }
+        
+        .tip strong {
+            display: block;
+            margin-bottom: 2px;
+            font-size: 9px;
+        }
+        
+        /* Compact footer */
+        .footer {
+            background: #976bdd;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+        
+        .footer p {
+            margin-bottom: 5px;
+        }
+        
+        .footer .small {
+            font-size: 8px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        /* Print optimization */
+        @media print {
+            body {
+                margin: 0;
+            }
+            .page {
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Compact Header -->
+        <div class="header">
+            <h1>STREET FOOTBALL SKILLS</h1>
+            <div class="subtitle">RECREATING THE STREETS AT HOME</div>
+            <div class="author">BY KEVIN MIDDLETON ⚽ 360TFT</div>
+        </div>
+
+        <!-- Street Games Headers -->
+        <div class="games-headers">
+            <div class="game-header">WORLDY<br>INDIVIDUAL SKILLS</div>
+            <div class="game-header">WALLY<br>FIRST TOUCH</div>
+            <div class="game-header">HEADERS & VOLLEYS<br>CROSSING SKILLS</div>
+        </div>
+
+        <!-- Brief Introduction -->
+        <div class="intro">
+            <strong>Drive past any park today and there won't be a football in sight.</strong> Kids don't play in the streets anymore. 
+            Those informal games taught valuable football lessons - pulling balls out of the air, dribbling multiple players, 
+            finishing under pressure. Here's how to replicate those skills at home with basic equipment.
+        </div>
+
+        <!-- 8 Skills from Street Games -->
+        <div class="exercise-grid">
+            <!-- Exercise 1 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">WORLDY SKILLS</div>
+                    <div class="exercise-subtitle">PULLING BALL FROM AIR</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 25px; left: 30%;"></div>
+                        <div class="ball" style="top: 8px; left: 35%;"></div>
+                        <div class="movement-arrow" style="top: 15px; left: 32%; transform: rotate(-45deg); height: 12px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Throw ball in air, control with top of foot. Don't bring foot to ball - let ball come to foot. Withdraw on contact to cushion.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">CONE DRIBBLING</div>
+                    <div class="exercise-subtitle">MULTIPLE DEFENDERS</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="cone" style="top: 15px; left: 15%;"></div>
+                        <div class="cone" style="top: 25px; left: 35%;"></div>
+                        <div class="cone" style="top: 20px; left: 55%;"></div>
+                        <div class="cone" style="top: 30px; left: 75%;"></div>
+                        <div class="player" style="top: 15px; left: 8%;"></div>
+                        <div class="movement-arrow" style="top: 20px; left: 12%; transform: rotate(25deg); height: 18px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Use cones, jumpers, shoes - anything! Dribble around them as fast as possible while keeping control. Perfect one or two moves.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">FINISHING ON MOVE</div>
+                    <div class="exercise-subtitle">AFTER DRIBBLE</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="cone" style="top: 20px; left: 15%;"></div>
+                        <div class="cone" style="top: 30px; left: 35%;"></div>
+                        <div class="player" style="top: 20px; left: 55%;"></div>
+                        <div class="ball" style="top: 15px; right: 20%;"></div>
+                        <div class="movement-arrow" style="top: 25px; left: 60%; transform: rotate(30deg); height: 15px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        After dribbling around obstacles, still need quality finish. Use mini-goals or targets. Finish must be accurate when tired.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">WALL PASSING</div>
+                    <div class="exercise-subtitle">WALLY GAME</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="wall" style="top: 8px; right: 15%;"></div>
+                        <div class="player" style="top: 25px; left: 25%;"></div>
+                        <div class="ball" style="top: 22px; left: 45%;"></div>
+                        <div class="movement-arrow" style="top: 27px; left: 30%; transform: rotate(15deg); height: 20px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Kick ball against wall, control return. Miss the wall = letter. Develops speed, balance, touch, and accuracy under pressure.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 5 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">FOOT SPEED</div>
+                    <div class="exercise-subtitle">TOE TAPS</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 20px; left: 35%;"></div>
+                        <div class="ball" style="top: 30px; left: 37%;"></div>
+                        <div class="movement-arrow" style="top: 25px; left: 32%; transform: rotate(90deg); height: 8px;"></div>
+                        <div class="movement-arrow" style="top: 25px; left: 42%; transform: rotate(90deg); height: 8px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Rapid toe taps on ball. How many before getting tired? Builds foot speed needed to reach ball quickly in Wally game.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 6 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">WALL ACCURACY</div>
+                    <div class="exercise-subtitle">EDGE TARGETING</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="wall" style="top: 8px; right: 15%;"></div>
+                        <div class="player" style="top: 25px; left: 15%;"></div>
+                        <div class="ball" style="top: 15px; left: 35%;"></div>
+                        <div class="movement-arrow" style="top: 20px; left: 20%; transform: rotate(5deg); height: 18px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Aim for edge of wall to make next shot difficult. Football skittles - knock ball off cone from 20-30 yards for accuracy practice.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 7 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">CROSSING PRACTICE</div>
+                    <div class="exercise-subtitle">HEADERS & VOLLEYS</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 35px; left: 15%;"></div>
+                        <div class="cone" style="top: 15px; right: 20%;"></div>
+                        <div class="ball" style="top: 12px; left: 45%;"></div>
+                        <div class="movement-arrow" style="top: 30px; left: 20%; transform: rotate(-30deg); height: 20px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Cross to targets or into goal from wide positions. Crosses need to be in air and accurate. Vary depth and pace by moving target.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercise 8 -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">JUGGLING BALANCE</div>
+                    <div class="exercise-subtitle">KEEP-UP CHALLENGE</div>
+                </div>
+                <div class="exercise-content">
+                    <div class="field-diagram">
+                        <div class="player" style="top: 20px; left: 35%;"></div>
+                        <div class="ball" style="top: 8px; left: 37%;"></div>
+                        <div class="ball" style="top: 15px; left: 42%;"></div>
+                        <div class="ball" style="top: 10px; left: 32%;"></div>
+                        <div class="movement-arrow" style="top: 13px; left: 38%; transform: rotate(-45deg); height: 8px;"></div>
+                    </div>
+                    <p class="exercise-description">
+                        Excellent way to improve balance and touch. Before wall returns, quickly look over both shoulders to "check space" like in matches.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practical Tips -->
+        <div class="tips-section">
+            <div class="tips-title">MAKING STREET SKILLS TRANSFER TO MATCHES</div>
+            <div class="tips-grid">
+                <div class="tip">
+                    <strong>Train at 100% Intensity</strong>
+                    Not only are you learning, but tiring yourself while doing so. Helps fitness and ensures energy in later stages of matches.
+                </div>
+                <div class="tip">
+                    <strong>Develop Awareness</strong>
+                    When dribbling multiple objects, be aware of where space is and where next "defender" is positioned. Look before you receive.
+                </div>
+                <div class="tip">
+                    <strong>Master One or Two Moves</strong>
+                    Don't learn lots of moves - perfect one or two and apply them repeatedly. Quality over quantity in skill development.
+                </div>
+                <div class="tip">
+                    <strong>Practice Under Fatigue</strong>
+                    Street games were tiring. You needed quality finish after exhausting dribble. Train when tired for match realism.
+                </div>
+                <div class="tip">
+                    <strong>Use Basic Equipment</strong>
+                    Cones, jumpers, shoes, wall, spare ball. Sometimes you just need a ball! Don't overcomplicate the setup.
+                </div>
+                <div class="tip">
+                    <strong>Build Defending Skills</strong>
+                    Practice standing tackles, not slide tackles. Need to win ball standing up so you can attack immediately after winning it.
+                </div>
+            </div>
+        </div>
+
+        <!-- Compact Footer -->
+        <div class="footer">
+            <p><strong>Children are spending less time outdoors. These factors can be overcome using the tips above.</strong></p>
+            <p>For complete individual practice ideas and the 360@HOME app, join the Skool Community at 360TFT.com</p>
+            <div class="small">© Kevin Middleton / 360TFT - Not for reproduction without permission</div>
+        </div>
+    </div>
+</body>
+</html>
