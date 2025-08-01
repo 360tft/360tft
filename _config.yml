@@ -54,6 +54,9 @@ exclude:
   - QUICK_START.md
   - temp_css_review.md
   - ".claude/"
+  - CSS_ARCHITECTURE_FIXES_SUMMARY.md
+  - MISSING_CSS_CLASSES.md
+  - ORPHANED_FILES_TO_DELETE.md
   - initialize_automation.py
   - test_integration.py
   - orchestrator_config.json
