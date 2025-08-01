@@ -1,0 +1,37 @@
+{
+  "max_retries": 3,
+  "retry_delay_seconds": 30,
+  "quality_gate_threshold": 35,
+  "dependency_timeout_minutes": 60,
+  "parallel_execution": false,
+  "content_templates": {
+    "blog_word_count_target": 2500,
+    "email_word_count_target": 1000,
+    "twitter_thread_length": 10,
+    "instagram_slides": 7,
+    "youtube_short_duration": 90
+  },
+  "template_settings": {
+    "use_dynamic_templates": true,
+    "template_versioning": true,
+    "backup_templates": true
+  },
+  "quality_control": {
+    "enable_automatic_qc": true,
+    "qc_between_phases": true,
+    "generate_improvement_suggestions": true,
+    "save_quality_reports": true
+  },
+  "error_handling": {
+    "auto_retry_on_failure": true,
+    "log_detailed_errors": true,
+    "notify_on_critical_failure": false,
+    "fallback_to_templates": true
+  },
+  "performance_monitoring": {
+    "track_generation_time": true,
+    "monitor_quality_trends": true,
+    "analyze_topic_performance": true,
+    "generate_weekly_reports": true
+  }
+}

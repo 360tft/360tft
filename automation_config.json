@@ -1,0 +1,49 @@
+{
+  "schedule": {
+    "sunday_planning": "09:00",
+    "monday_blog": "10:00",
+    "tuesday_email": "10:00",
+    "wednesday_social": "10:00",
+    "thursday_shortform": "10:00",
+    "friday_cheatsheet": "10:00",
+    "saturday_qc": "10:00"
+  },
+  "quality_thresholds": {
+    "value_equation_minimum": 35,
+    "british_english_compliance": 1.0,
+    "voice_consistency_minimum": 0.9
+  },
+  "topic_rotation": {
+    "cycle_length_weeks": 12,
+    "prevent_repetition_weeks": 4
+  },
+  "output_settings": {
+    "blog_word_count_target": 2500,
+    "email_word_count_target": 1000,
+    "twitter_thread_length": 10,
+    "instagram_carousel_slides": 7
+  },
+  "brand_settings": {
+    "brand_name": "360TFT",
+    "author_name": "Kevin Middleton",
+    "academy_name": "Football Coaching Academy",
+    "experience_years": "15+",
+    "players_trained": "1,000+",
+    "coaches_educated": "1,200+",
+    "community_size": "1,000+"
+  },
+  "integration_settings": {
+    "marketing_folder": "Marketing",
+    "produced_content_folder": "Produced Content",
+    "cheatsheets_folder": "Cheatsheets",
+    "voice_folder": "Voice",
+    "voice_file": "Voice"
+  },
+  "automation_preferences": {
+    "auto_publish": false,
+    "require_manual_approval": true,
+    "backup_content": true,
+    "generate_reports": true,
+    "track_performance": true
+  }
+}

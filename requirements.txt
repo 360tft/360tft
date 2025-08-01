@@ -1,0 +1,31 @@
+# 360TFT Weekly Content Automation System
+# Required Python packages
+
+# Core scheduling functionality
+schedule>=1.2.0
+
+# Standard library packages (usually included)
+pathlib2>=2.3.7; python_version < '3.4'
+asyncio; python_version >= '3.4'
+
+# Additional utilities for enhanced functionality
+python-dateutil>=2.8.2
+jsonschema>=4.0.0
+
+# Optional: Enhanced logging and monitoring
+colorlog>=6.7.0
+
+# Optional: Web scraping for content research (if needed)
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+
+# Optional: Text processing enhancements
+nltk>=3.8
+textstat>=0.7.3
+
+# Development and testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Documentation generation
+markdown>=3.4.0
