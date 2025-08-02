@@ -50,7 +50,7 @@ exclude:
   - Marketing/
   - AUTOMATION_INITIALIZATION_REPORT.md
   - AUTOMATION_SETUP_GUIDE.md
-  - IMPLEMENTATION_SUMMARY.md
+  - IMPLEMENTATION_SUMMARY.md # temp
   - QUICK_START.md
   - temp_css_review.md
   - ".claude/"

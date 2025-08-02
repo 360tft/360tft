@@ -2,8 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
-      "Bash(chmod:*)",
-      "Bash(./fix_utf8.sh:*)"
+      "Bash(git merge:*)"
     ],
     "deny": []
   }
