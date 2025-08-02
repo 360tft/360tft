@@ -46,37 +46,37 @@ schema_type: "WebPage"
         
         <div class="benefits-grid">
             <div class="benefit-item">
-                <div class="benefit-icon"><¯</div>
+                <div class="benefit-icon">âš½</div>
                 <h3>Session Design Tips</h3>
                 <p>Practical advice on creating purposeful training sessions that develop players systematically</p>
             </div>
             
             <div class="benefit-item">
-                <div class="benefit-icon">=Ê</div>
+                <div class="benefit-icon">ðŸ“Š</div>
                 <h3>Tactical Insights</h3>
                 <p>Weekly analysis of professional matches and how to adapt concepts for your team</p>
             </div>
             
             <div class="benefit-item">
-                <div class="benefit-icon">½</div>
+                <div class="benefit-icon">ðŸŽ¯</div>
                 <h3>Player Development</h3>
                 <p>Age-specific development strategies that progress players through the 360TFT methodology</p>
             </div>
             
             <div class="benefit-item">
-                <div class="benefit-icon">=¡</div>
+                <div class="benefit-icon">ðŸ’¡</div>
                 <h3>Coaching Solutions</h3>
                 <p>Answers to common coaching challenges with practical, tested solutions</p>
             </div>
             
             <div class="benefit-item">
-                <div class="benefit-icon"><¬</div>
+                <div class="benefit-icon">ðŸ“¹</div>
                 <h3>Video Analysis</h3>
                 <p>Exclusive video breakdowns of techniques, tactics, and training methods</p>
             </div>
             
             <div class="benefit-item">
-                <div class="benefit-icon">=Ú</div>
+                <div class="benefit-icon">ðŸ“š</div>
                 <h3>Resource Recommendations</h3>
                 <p>Curated coaching resources, books, and tools that Kevin actually uses and recommends</p>
             </div>

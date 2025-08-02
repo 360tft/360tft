@@ -994,7 +994,7 @@ member_limit: "Limited to 500 new members"
         <div class="pricing-options">
             <div class="pricing-card">
                 <div class="plan-name">Monthly Academy</div>
-                <div class="plan-price">${{ page.product_price | remove: ' | remove: '/month' }}</div>
+                <div class="plan-price">${{ page.product_price | remove: ' ' | remove: '/month' }}</div>
                 <div class="plan-period">per month</div>
                 
                 <ul class="plan-features">
